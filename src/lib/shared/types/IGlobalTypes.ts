@@ -1,3 +1,6 @@
+export type TUiSize = 'xl' | '2xl' |'3xl' | 'lg' | 'sm'| 'xs' | 'none' | 'full' | 'md'
+export type TUiVariant = 'primary' | 'warning' | 'danger' | 'white' | 'none' | 'black'
+
 export interface IChild {
     children: any;
 }
@@ -41,7 +44,7 @@ export interface IUiTypes {
     secondary?: string;
     white?: string;
     none?: string;
-    text?: string;
+    black?: string
 }
 
 export interface IScreenSizes {
