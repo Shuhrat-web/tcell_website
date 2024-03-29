@@ -11,6 +11,9 @@ export interface IProductsSectionProps extends IDefaultSectionProps{
     
 }
 
+export interface IFaqSectionProps extends IDefaultSectionProps{
+    
+}
 
 export interface IColoredBannerSectionProps extends IDefaultSectionProps{
     bgColor?: string;

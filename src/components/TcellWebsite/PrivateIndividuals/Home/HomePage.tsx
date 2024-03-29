@@ -3,9 +3,10 @@ import React from 'react'
 import NewsSection from './components/NewsSection'
 import ProductsSection from './components/ProductsSection'
 import ColoredBannerSection from './components/Banners/ColoredBannerSection'
+import FaqSection from './components/FaqSection'
 
 const HomePage = () => {
-  
+
   return (
     <div>
       <TextWithImageBanner 
@@ -15,17 +16,18 @@ const HomePage = () => {
         bannerIcon='/images/bannerIcon.svg'
         url='/'
       />
-      <div className='t__container'>
-        <NewsSection className=' mt-24' />
-        <ProductsSection className=' mt-24' />
+      <div className='t__container mt-24'>
+        <NewsSection />
+        <ProductsSection className=' my-24' />
         <ColoredBannerSection 
-          className='mt-24'
+          className='mb-24'
           bgColor='#F5D9FF'
           title='Стать абонентом Tcell'
           description='Участвуйте в онлайн аукционе и приобретите красивые номера от TCELL'
           url='/'
           img='/images/addon_banner_1.svg'
         />
+        <FaqSection />
       </div>
     </div>
   )

@@ -58,7 +58,7 @@ const ProductsSection = ({className}:IProductsSectionProps) => {
         url='/'
         img='/images/addon_banner_2.svg'
       />
-      <div className='my-6 grid grid-cols-2 gap-4'>
+      <div className='my-6 grid grid-cols-2 gap-6'>
         {
           products.map(product => (
             <ProductCard product={product} key={product.id} />
