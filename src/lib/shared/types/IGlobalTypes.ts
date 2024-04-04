@@ -1,5 +1,5 @@
 export type TUiSize = 'xl' | '2xl' |'3xl' | 'lg' | 'sm'| 'xs' | 'none' | 'full' | 'md'
-export type TUiVariant = 'primary' | 'warning' | 'danger' | 'white' | 'none' | 'black'
+export type TUiVariant = 'primary' | 'warning' | 'danger' | 'white' | 'none' | 'black' | 'secondary' | 'text'
 
 export interface IChild {
     children: any;
@@ -44,7 +44,8 @@ export interface IUiTypes {
     secondary?: string;
     white?: string;
     none?: string;
-    black?: string
+    black?: string;
+    text?: string
 }
 
 export interface IScreenSizes {
@@ -92,3 +93,16 @@ export interface IButtonSetting {
 }
 
 export type baseObject = { [key: string]: any };
+
+export interface IDefaultSectionProps{
+    className?: string
+}
+
+export interface IColoredBanner extends IDefaultSectionProps{
+    bgColor?: string;
+    textColor?: 'black' | 'white';
+    title: string;
+    description: string;
+    url: string;
+    img?: string;
+}

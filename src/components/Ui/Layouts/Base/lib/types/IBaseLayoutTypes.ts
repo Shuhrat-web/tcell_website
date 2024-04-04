@@ -3,6 +3,7 @@ import internal from "stream";
 export interface INavigationLinkTab{
     id: number;
     name: string;
+    route?: string;
     children: INavigationLink[];
 }
 

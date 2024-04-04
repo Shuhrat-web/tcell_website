@@ -4,10 +4,14 @@ import React, { useState } from 'react'
 import { IPcNavigationProprs } from '../../lib/types/IBaseLayoutTypes'
 import ContainButton from '@/components/Ui/Buttons/ContainButton'
 import { HiMagnifyingGlass,HiGlobeAlt,HiChevronDown   } from "react-icons/hi2";
+import { usePathname, useRouter } from 'next/navigation'
+import clsx from 'clsx'
 
 
 const PcNavigation = ({links}:IPcNavigationProprs) => {
   const [activeTab,setACtiveTab] = useState<number>(1)
+  const router = useRouter()
+  const pathName = usePathname()
   return (
     <div className='absolute top-5 left-0 z-40 w-full'>
       <div className='flex items-center justify-between t__container'>
@@ -19,7 +23,17 @@ const PcNavigation = ({links}:IPcNavigationProprs) => {
           <nav className=' text-white'>
             <ul className='flex gap-x-6'>
                 {links.map(tab => 
-                    <li className={`${tab.id === activeTab ? 'border-white font-medium' : 'border-transparent cursor-pointer'} border-b`} key={tab.id}>{tab.name}</li>
+                    <li 
+                    className={clsx('border-b',{
+                      'border-white font-medium': tab.route && tab.route === pathName,
+                      'border-transparent cursor-pointer': !tab.route || tab.route !== pathName 
+                    })}
+                    onClick={() => {
+                      if(tab.route)router.push(tab.route)                      
+                    }}
+                    key={tab.id}>
+                      {tab.name}
+                    </li>
                   )
                 }
             </ul>

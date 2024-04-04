@@ -12,6 +12,7 @@ const BaseLayout = ({
     {
       id: 1,
       name: 'Частным лицам',
+      route:'/',
       children:[
         {
           route: '/',
@@ -32,6 +33,28 @@ const BaseLayout = ({
     {
       id: 2,
       name: 'Бизнесу',
+      route:'/for-bussines',
+      children:[
+        {
+          route: '/',
+          name: 'Главная'
+        },
+        {
+          route: '/tarifs',
+          name: 'Тарифы',
+          children: [
+            {
+              route: '/tarifs/1',
+              name: 'Tarif1'
+            },  
+          ]
+        }
+      ]
+    },
+    {
+      id: 3,
+      name: 'Для дома',
+      route:'/for-home',
       children:[
         {
           route: '/',

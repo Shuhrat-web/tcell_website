@@ -23,7 +23,7 @@ const config: Config = {
       white: colors.white,
       'secondary': '#666666',
       'secondary-200': '#D9D9D9',
-      'secondary-300': '#A4AFBD',
+      'secondary-300': '#F3F4F6',
       'primary': '#821EBE',
       'primary-50': '#2F446B',
       'primary-200': '#0E1E32',
@@ -31,6 +31,7 @@ const config: Config = {
       'success': '#D9D9D9',
       'warning': '#FF8100',
       'danger': '#C31815',
+      'dark-blue': '#374151'
     },
   },
   plugins: [],

@@ -1,11 +1,10 @@
 import React from 'react'
-import { INewsSectionProps } from '../lib/types/IHomePageTypes'
-import Title from '@/components/Ui/Title/Title'
 import { IPost } from '@/lib/requests/resources/Posts/lib/IPostsResourcesTypes'
 import PostCard from '@/components/Ui/Cards/Post/PostCard'
 import SectionTitle from '@/components/Ui/Title/SectionTitle'
+import { IBusinessNewsSecropnProps } from '../lib/types/IHomeBusinessTypes'
 
-const NewsSection = ({className}:INewsSectionProps) => {
+const BusinessNewsSection = ({className}:IBusinessNewsSecropnProps) => {
     const news:IPost[] = [
         {
             id:1,
@@ -44,4 +43,4 @@ const NewsSection = ({className}:INewsSectionProps) => {
   )
 }
 
-export default NewsSection
+export default BusinessNewsSection

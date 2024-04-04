@@ -29,9 +29,10 @@ const ContainButton = ({
             primary: 'bg-primary text-white',
             warning: 'bg-warning',
             danger: 'bg-danger text-white',
-            secondary:'bg-secondary-200 text-white hover:bg-secondary-300 duration-150',
+            secondary:'bg-secondary-300 text-dark-blue',
             white: 'bg-white font-medium',
-            none: ''
+            none: '',
+            black: 'bg-black text-white font-medium'
         },
         round: {
             xs: 'rounded',

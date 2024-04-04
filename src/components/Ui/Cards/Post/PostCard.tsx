@@ -7,7 +7,7 @@ import TextButton from '../../Buttons/TextButton'
 const PostCard = ({post}:IPostCardProps) => {
   return (
     <article className='t__card__secondary'>
-        <Title size='lg' display='h5'>
+        <Title size='xl' font='lg' display='h5'>
             {post.title}
         </Title>
         <p className='text-secondary text-sm mt-4 mb-8'>
@@ -18,7 +18,10 @@ const PostCard = ({post}:IPostCardProps) => {
                 Подробнее
                 <HiArrowLongRight />
             </TextButton>
-            <span className='text-sm text-secondary'>{post.date}</span>
+            {
+                post.date &&
+                <span className='text-sm text-secondary'>{post.date}</span>
+            }
         </div>
     </article>
   )
