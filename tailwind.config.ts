@@ -23,7 +23,7 @@ const config: Config = {
       white: colors.white,
       'secondary': '#666666',
       'secondary-200': '#D9D9D9',
-      'secondary-300': '#F3F4F6',
+      'secondary-300': '#F2F3F7',
       'primary': '#821EBE',
       'primary-50': '#2F446B',
       'primary-200': '#0E1E32',

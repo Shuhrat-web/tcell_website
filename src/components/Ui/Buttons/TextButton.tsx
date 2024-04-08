@@ -30,7 +30,7 @@ const TextButton = ({
             warning: 'bg-warning',
             danger: 'bg-danger text-white',
             secondary:'bg-secondary-200 text-white hover:bg-secondary-300 duration-150',
-            white: 'bg-white'
+            white: 'text-white'
         },
         round: {
             xs: 'rounded',

@@ -19,6 +19,10 @@ const BaseLayout = ({
           name: 'Главная'
         },
         {
+          route: '/posts',
+          name: 'Новости'
+        },
+        {
           route: '/tarifs',
           name: 'Тарифы',
           children: [
@@ -59,16 +63,6 @@ const BaseLayout = ({
         {
           route: '/',
           name: 'Главная'
-        },
-        {
-          route: '/tarifs',
-          name: 'Тарифы',
-          children: [
-            {
-              route: '/tarifs/1',
-              name: 'Tarif1'
-            },  
-          ]
         }
       ]
     },

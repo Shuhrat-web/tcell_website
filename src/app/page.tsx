@@ -1,9 +1,5 @@
-import HomePage from "@/components/TcellWebsite/PrivateIndividuals/Home/HomePage";
+import {redirect} from 'next/navigation';
 
-export default function Home() {
-  return (
-    <>
-      <HomePage />
-    </>
-  );
+export default function RootPage() {
+  redirect('/ru');
 }
