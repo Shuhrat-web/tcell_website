@@ -8,7 +8,7 @@ import { HiArrowLongRight } from 'react-icons/hi2'
 const FaqChat = () => {
   return (
     <div 
-        className='min-h-[375px] bg-cover bg-no-repeat rounded-xl overflow-hidden p-8 bg-gradient-to-bl from-[#151B28] to-[#4A5E8E] relative'
+        className='min-h-[375px] bg-cover bg-no-repeat rounded-3xl overflow-hidden p-8 bg-gradient-to-bl from-[#151B28] to-[#4A5E8E] relative'
       >
         <div 
         style={{
