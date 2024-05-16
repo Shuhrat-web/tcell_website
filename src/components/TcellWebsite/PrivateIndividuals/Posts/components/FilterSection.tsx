@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { IPostpageFiltersSectionProps } from '../lib/types/IPostPageTyeps'
+import { IPostpageFiltersSectionProps } from '../lib/types/IPostPageTypes'
 import clsx from 'clsx'
 import { IDropdownOption } from '@/components/Ui/Dropdown/lib/type/DropDownTypes'
 import DropDown from '@/components/Ui/Dropdown/DropDown'
