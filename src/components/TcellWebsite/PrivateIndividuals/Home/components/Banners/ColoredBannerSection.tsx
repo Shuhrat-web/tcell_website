@@ -17,7 +17,7 @@ const ColoredBannerSection = ({bgColor,title,description,url,img,textColor='blac
             <Title color={textColor === 'white' ? 'white' : 'black'} size='2xl'>
                 {title}
             </Title>
-            <p className={`mt-4 max-w-[445px] ${textColor === 'white' ? 'text-white' : 'text-black'}`}>
+            <p className={`mt-4 max-w-[445px] ${textColor === 'white' ? 'text-[#9CA3AF]' : 'text-black'}`}>
                 {description}
             </p>
             {

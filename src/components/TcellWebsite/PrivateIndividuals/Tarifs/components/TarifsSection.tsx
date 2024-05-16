@@ -1,57 +1,112 @@
-'use client'
 import React from 'react'
+import { ITarifSectionProps } from '../lib/types/ITarifPageTypes'
+import Title from '@/components/Ui/Title/Title'
 import { ITarif } from '@/lib/requests/resources/Tarifs/lib/types/ITarifTypes'
 import TarifCard from '@/components/Ui/Cards/Tarif/TarifCard'
-import { ITarifsPageSectionProps } from '../lib/types/ITarifPageTypes'
 
-const TarifsSection = ({className}:ITarifsPageSectionProps) => {
-    const tarifs:ITarif[] = [
-        {
-            id: 1,
-            title: 'Солона 200',
-            content: `
+const TarifsSection = ({className}: ITarifSectionProps) => {
+  const tarifs: ITarif[] = [
+    {
+      id: 1,
+      title: "Салом 20",
+      content: `
                 <ul class="ml-5 list-disc">
-                    <li>Подарочный интернет пакет на телефон 20 000 мб/мес.</li>
-                    <li>Неограниченный трафик</li>
-                    <li>Интернет до 5 Мбит/с</li>
+                    <li>Безлимитные звонки внутри сети</li>
+                    <li>Дополнительный пакет 4 Гб на видео, соцсети, мессенджеры</li>
                 </ul>
             `,
-            price: '190 с. / мес.'
+      price: "20 сом / мес",
+      options: [
+        {
+          id: 1,
+          name: "4 ГБ",
+          type: "icon",
+          icon: "HiGlobeAlt",
         },
         {
-            id: 2,
-            title: 'Тезнет 200',
-            content: `
-            <ul class="ml-5 list-disc">
-                <li>Подарочный интернет пакет на телефон 20 000 мб/мес.</li>
-                <li>Неограниченный трафик</li>
-                <li>Интернет до 5 Мбит/с</li>
-            </ul>`,
-            price: '190 с. / мес.'
+          id: 2,
+          name: "20 минут",
+          type: "icon",
+          icon: "HiOutlinePhone",
         },
         {
-            id: 3,
-            title: 'Тезнет 200',
-            content: `
+          id: 3,
+          name: "20 sms",
+          type: "icon",
+          icon: "HiMail",
+        },
+      ],
+    },
+    {
+      id: 2,
+      title: "Салом 20",
+      content: `
             <ul class="ml-5 list-disc">
-                <li>Подарочный интернет пакет на телефон 20 000 мб/мес.</li>
-                <li>Неограниченный трафик</li>
-                <li>Интернет до 5 Мбит/с</li>
+                <li>Безлимитные звонки внутри сети</li>
+                <li>Дополнительный пакет 4 Гб на видео, соцсети, мессенджеры</li>
             </ul>`,
-            price: '190 с. / мес.'
-        }
-    ]
+      price: "20 сом / мес",
+      options: [
+        {
+          id: 1,
+          name: "4 ГБ",
+          type: "icon",
+          icon: "HiGlobeAlt",
+        },
+        {
+          id: 2,
+          name: "20 минут",
+          type: "icon",
+          icon: "HiOutlinePhone",
+        },
+        {
+          id: 3,
+          name: "20 sms",
+          type: "icon",
+          icon: "HiMail",
+        },
+      ],
+    },
+    {
+      id: 3,
+      title: "Салом 20",
+      content: `
+            <ul class="ml-5 list-disc">
+                <li>Безлимитные звонки внутри сети</li>
+                <li>Дополнительный пакет 4 Гб на видео, соцсети, мессенджеры</li>
+            </ul>`,
+      price: "20 сом / мес",
+      options: [
+        {
+          id: 1,
+          name: "4 ГБ",
+          type: "icon",
+          icon: "HiGlobeAlt",
+        },
+        {
+          id: 2,
+          name: "20 минут",
+          type: "icon",
+          icon: "HiOutlinePhone",
+        },
+        {
+          id: 3,
+          name: "20 sms",
+          type: "icon",
+          icon: "HiMail",
+        },
+      ],
+    },
+  ]
+
   return (
-    <div className={className}>
-        <div className='grid grid-cols-3 gap-6 mt-16'>
-            {
-                tarifs.map(tarif => (
-                    <TarifCard 
-                    tarif={tarif} 
-                    key={tarif.id} />
-                ))
-            }
-        </div>
+    <div>
+      <Title size='3xl' display='h2'>Тарифы</Title>
+      <div className='grid grid-cols-3 gap-6 mt-6'>
+        {tarifs.map((tarif) => (
+          <TarifCard key={tarif.id} tarif={tarif}/>
+        ))}
+      </div>
     </div>
   )
 }

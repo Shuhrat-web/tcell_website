@@ -1,6 +1,6 @@
 export interface IFaq{
     id: number;
     title: string;
-    descroption: string;
+    description: string;
     icon?: string
 }

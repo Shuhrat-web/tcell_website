@@ -15,7 +15,7 @@ const FaqCard = ({faq,iconHeight=120,iconWidth=120}:IFaqCardProps) => {
                 {faq.title}
             </Title>
             <p className='mt-4 text-secondary'>
-                {faq.descroption}
+                {faq.description}
             </p>
         </div>
         <div className='flex justify-between items-end'>
