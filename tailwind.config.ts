@@ -25,7 +25,7 @@ const config: Config = {
       'secondary-200': '#D9D9D9',
       'secondary-300': '#F2F3F7',
       'primary': '#821EBE',
-      'primary-50': '#2F446B',
+      'primary-50': '#6366F126',
       'primary-200': '#0E1E32',
       'primary-300': '#EDF4FD',
       'success': '#D9D9D9',
