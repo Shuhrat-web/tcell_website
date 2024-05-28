@@ -45,10 +45,11 @@ const TarifCard = ({tarif}:ITarifCardProps) => {
         <div className='max-w-[320px] h-[1px] my-8 bg-[#EDEDED]'></div>
         <div dangerouslySetInnerHTML={{__html: tarif.content}} />
         <div className='mt-8'>
-        <TextButton extraClass='flex items-center gap-x-2'>
+        {/* <TextButton extraClass='flex items-center gap-x-2'>
                 Подробнее
                 <HiArrowLongRight />
-            </TextButton>
+            </TextButton> */}
+            <Title color='primary' size='2xl' display='h3'>*200*100#</Title>
         </div>
     </div>
   )
