@@ -1,12 +1,12 @@
 import React from 'react'
 import SectionTitle from '@/components/Ui/Title/SectionTitle'
 import { IAdvantageSectionProps } from '../lib/types/ITSolutionPageTypes'
-import FaqCard from '@/components/Ui/Cards/Faq/FaqCard'
-import { IFaq } from '@/lib/requests/resources/Faq/lib/types/IFaqTypes'
+import SolutionCard from '@/components/Ui/Cards/Solution/Solution'
+import { ISolution } from '@/lib/requests/resources/Solutions/lib/types/ISolutionsRequestTypes'
 
 
 const Decision = ({className}: IAdvantageSectionProps) => {
-  const decisions: IFaq[] = [
+  const decisions: ISolution[] = [
     {
       id: 1,
       title: 'Опросник Gallup+eNPS',
@@ -50,7 +50,7 @@ const Decision = ({className}: IAdvantageSectionProps) => {
       <div className='grid grid-cols-3 gap-6 mt-16'>
         {
           decisions.map(faq => (
-            <FaqCard key={faq.id} faq={faq}/>
+            <SolutionCard key={faq.id} solution={faq}/>
           ))
         }
       </div>

@@ -1,11 +1,11 @@
 import React from 'react'
-import { IColoredBannerSectionProps } from '../../lib/types/IHomePageTypes'
 import Image from 'next/image'
 import Title from '@/components/Ui/Title/Title'
 import ContainButton from '@/components/Ui/Buttons/ContainButton'
+import { IColoredBannerPrivateIndividualsSectionProps } from '../../lib/types/IHomePageTypes'
 
 
-const ColoredBannerSection = ({bgColor,title,description,url,img,textColor='black',className}:IColoredBannerSectionProps) => {
+const ColoredBannerSection = ({bgColor,title,description,url,img,textColor='black',className}:IColoredBannerPrivateIndividualsSectionProps) => {
   return (
     <div
     style={{
@@ -17,7 +17,7 @@ const ColoredBannerSection = ({bgColor,title,description,url,img,textColor='blac
             <Title color={textColor === 'white' ? 'white' : 'black'} size='2xl'>
                 {title}
             </Title>
-            <p className={`mt-4 max-w-[445px] ${textColor === 'white' ? 'text-[#9CA3AF]' : 'text-black'}`}>
+            <p className={`mt-4 max-w-[445px] ${textColor === 'white' ? 'text-white' : 'text-black'}`}>
                 {description}
             </p>
             {

@@ -1,9 +1,9 @@
-import HomeBusiness from '@/components/TcellWebsite/ForHome/Home/HomeBusiness'
+import ForHomePage from '@/components/TcellWebsite/ForHome/Home/ForHomePage'
 import React from 'react'
 
 const ForHome = () => {
   return (
-    <HomeBusiness />
+    <ForHomePage />
   )
 }
 

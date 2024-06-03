@@ -1,4 +1,4 @@
-import TarifsPage from '@/components/TcellWebsite/PrivateIndividuals/Tarifs/TarifsPage'
+import TarifsPage from '@/components/TcellWebsite/Tarifs/TarifsPage'
 import React from 'react'
 
 const Tarifs = () => {

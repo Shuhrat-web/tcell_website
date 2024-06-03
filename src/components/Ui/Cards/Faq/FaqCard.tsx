@@ -1,39 +1,20 @@
 import React from 'react'
 import { IFaqCardProps } from './lib/types/IFaqCardTypes'
+import { HiChevronDown } from "react-icons/hi";
+
 import Title from '../../Title/Title'
-import TextButton from '../../Buttons/TextButton'
-import { HiArrowLongRight } from 'react-icons/hi2'
-import Image from 'next/image'
 
-
-
-const FaqCard = ({faq,iconHeight=120,iconWidth=120}:IFaqCardProps) => {
+const FaqCard = ({faq,activeFaqId=0,onToggleFaq}:IFaqCardProps) => {
   return (
-    <div className='flex flex-col justify-between t__card__secondary h-full'>
-        <div>
-            <Title size='xl'>
-                {faq.title}
-            </Title>
-            <p className='mt-4 text-secondary'>
-                {faq.description}
-            </p>
+    <div className=' border-t-2 border-secondary-300'>
+        <div onClick={() => onToggleFaq(faq.id)} className='flex justify-between py-4 cursor-pointer'>
+            <Title extraClass='w-10/12' size='lg' font='lg' display='h3'>{faq.question}</Title>
+            <div className='flex justify-end items-center w-2/12'>
+                <span className={`duration-150  ${activeFaqId === faq.id ? 'rotate-180' : 'rotate-0'}`}><HiChevronDown /></span>
+            </div>
         </div>
-        <div className='flex justify-between items-end'>
-            <TextButton extraClass='flex items-center gap-x-2' hideHover size='none'>
-                Подробнее
-                <HiArrowLongRight />
-            </TextButton>
-            {
-                faq.icon &&
-                <Image 
-                    src={faq.icon}
-                    height={iconHeight}
-                    width={iconWidth}
-                    alt={faq.title}
-                    unoptimized
-                    className='max-w-full'
-                />
-            }
+        <div className={` text-secondary-50 py-4 duration-150 ease-out ${activeFaqId === faq.id ? 'opacity-100 visible':' invisible opacity-0 absolute'}`}>
+            <div dangerouslySetInnerHTML={{__html: faq.answer}} />
         </div>
     </div>
   )

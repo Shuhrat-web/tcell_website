@@ -22,6 +22,18 @@ const BaseLayout = ({
           route: '/posts',
           name: 'Новости'
         },
+        // {
+        //   route: '/private-individuals/loyalty',
+        //   name: 'Лояльность'
+        // },
+        {
+          route: '/services',
+          name: 'Сервисы'
+        },
+        {
+          route: '/private-individuals/ussd-commands',
+          name: 'Комманды'
+        },
         {
           route: '/tarifs',
           name: 'Тарифы',
@@ -31,7 +43,11 @@ const BaseLayout = ({
               name: 'Tarif1'
             },  
           ]
-        }
+        },
+        {
+          route: '/faq',
+          name: 'Помощь'
+        },
       ]
     },
     {
@@ -52,7 +68,11 @@ const BaseLayout = ({
               name: 'Tarif1'
             },  
           ]
-        }
+        },
+        {
+          route: '/posts',
+          name: 'Новости'
+        },
       ]
     },
     {
@@ -61,11 +81,30 @@ const BaseLayout = ({
       route:'/for-home',
       children:[
         {
-          route: '/',
+          route: '/for-home',
           name: 'Главная'
-        }
+        },
+        {
+          route: '/for-home/ip-television',
+          name: 'IP Телевидение'
+        },
       ]
     },
+    // {
+    //   id: 4,
+    //   name: 'T-Solution',
+    //   route:'/t-solution',
+    //   children:[
+    //     {
+    //       route: '/t-solution',
+    //       name: 'Главная'
+    //     },
+    //     {
+    //       route: '/t-solution/chat-bot',
+    //       name: 'Чат бот'
+    //     }
+    //   ]
+    // },
   ] 
 
   return (

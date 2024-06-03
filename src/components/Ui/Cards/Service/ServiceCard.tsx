@@ -20,8 +20,8 @@ const ServiceCard = ({service}:IServiceCardProps) => {
             <div className='flex justify-end items-end'>
                 <Image 
                 src={service.img}
-                height={100}
-                width={100}
+                height={332}
+                width={138}
                 alt={service.name}
                 unoptimized
                 className='max-w-full'

@@ -5,17 +5,17 @@ import Title from '../../Title/Title'
 const BenefitCard = ({benefit}:IBenefitCardProps) => {
   return (
     <div className='t__card__secondary'>
-        <div className='text-5xl text-[#9CA3AF]'>
-            {benefit.icon}
+        <div className='text-5xl text-secondary-50'>
+          {benefit.icon}
         </div>
         <Title 
         extraClass='mb-4 mt-8'
         size='2xl' 
         display='h5'>
-            {benefit.title}
+          {benefit.title}
         </Title>
         <div className='text-secondary'>
-            {benefit.description}
+          {benefit.description}
         </div>
     </div>
   )

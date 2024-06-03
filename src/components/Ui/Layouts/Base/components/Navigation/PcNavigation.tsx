@@ -17,7 +17,7 @@ const PcNavigation = ({links}:IPcNavigationProprs) => {
   const router = useRouter()
   const pathName = usePathname()
   const [absoluteNav,setIsAbsoluteNav] = useState<boolean>(true)
-  const absoluteNavigationList:string[] = [`/${locale}/for-home`,`/${locale}`]
+  const absoluteNavigationList:string[] = [`/${locale}/for-home`,`/${locale}`,`/${locale}/for-bussines`]
 
   const isPathNameAbsolute = (el:any) => el === pathName
 
@@ -32,33 +32,33 @@ const PcNavigation = ({links}:IPcNavigationProprs) => {
   return (
     <div className={clsx('w-full',{
       'absolute top-5 left-0 z-40 ': absoluteNav,
-      'mb-16 py-4': !absoluteNav
+      'mb-10 py-4': !absoluteNav
     })}>
-      <div className='flex items-center justify-between t__container'>
+      <div className='flex flex-wrap gap-4 items-center justify-between t__container'>
         <div className='flex gap-x-5'>
           <Logo 
           height={48} 
           width={48} 
           fill={absoluteNav ? '#fff' : '#000'} />
-          <nav className={`${absoluteNav ? 'text-white' : 'text-black'}`}>
-            <ul className='flex gap-x-6'>
-                {links.map(tab => 
-                    <li 
-                    className={clsx('border-b',{
-                      'border-white font-medium': tab.route && tab.route === pathName,
-                      'border-transparent cursor-pointer': !tab.route || tab.route !== pathName 
-                    })}
-                    onClick={() => {
-                      if(tab.route)router.push(`/${locale}${tab.route}`)     
-                      if(tab.id) setACtiveTab(tab.id)                 
-                    }}
-                    key={tab.id}>
-                      {tab.name}
-                    </li>
-                  )
-                }
+          <nav className={`${absoluteNav ? 'text-white' : 'text-dark-blue'}`}>
+            <ul className='flex gap-x-6  sm:w-full w-60 overflow-x-auto'>
+              {links.map(tab => 
+                  <li 
+                  className={clsx('border-b shrink-0',{
+                    'border-transparent cursor-pointer font-medium': !tab.route || `/${locale}${tab.route}` !== pathName+'/',
+                    'border-white font-bold': tab.route && `/${locale}${tab.route}` === pathName || `${locale}${tab.route}/` === pathName
+                  })}
+                  onClick={() => {
+                    if(tab.route)router.push(`/${locale}${tab.route}`)     
+                    if(tab.id) setACtiveTab(tab.id)                 
+                  }}
+                  key={tab.id}>
+                    {tab.name} 
+                  </li>
+                )
+              }
             </ul>
-            <ul className='flex gap-x-4 mt-2'>
+            <ul className='flex gap-x-4 sm:w-full w-60 overflow-x-auto mt-2'>
               {links.find(tab => tab.id === activeTab)?.children.map((link,i) => 
                   <li key={i}>
                     <Link href={`/${locale}/${link.route}`}>
@@ -70,7 +70,7 @@ const PcNavigation = ({links}:IPcNavigationProprs) => {
             </ul>
           </nav>
         </div>
-        <div className='flex gap-x-4'>
+        <div className='hidden md:flex gap-x-4'>
           <ContainButton 
           size='none' 
           extraClass={`${absoluteNav ? 'text-white':'text-black'} flex items-center gap-x-1`}
@@ -78,14 +78,14 @@ const PcNavigation = ({links}:IPcNavigationProprs) => {
             <HiMagnifyingGlass />
             Поиск
           </ContainButton>
-          <ContainButton 
+          {/* <ContainButton 
           size='none' 
           extraClass={`${absoluteNav ? 'text-white':'text-black'} flex items-center gap-x-1`} 
           type='none'>
             <HiGlobeAlt />
             РУС
             <HiChevronDown/>
-          </ContainButton>
+          </ContainButton> */}
         </div>
       </div>
     </div>

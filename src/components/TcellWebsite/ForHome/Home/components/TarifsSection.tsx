@@ -106,7 +106,7 @@ const TarifsSection = ({ className }: ITarifSectionProps) => {
         routeTitle="Все тарифы"
         route="/tarifs"
       />
-      <div className="grid grid-cols-3 gap-6 mt-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-16">
         {tarifs.map((tarif) => (
           <TarifCard tarif={tarif} key={tarif.id} />
         ))}

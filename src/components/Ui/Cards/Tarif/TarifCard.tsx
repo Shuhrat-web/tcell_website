@@ -3,6 +3,8 @@ import { ITarifCardProps } from './lib/types/ITarifCardTypes'
 import Title from '../../Title/Title'
 import { HiGlobeAlt, HiOutlinePhone, HiMail, HiPhotograph  } from "react-icons/hi";
 import { HiArrowLongRight } from 'react-icons/hi2'
+import Image from 'next/image'
+
 import TextButton from '../../Buttons/TextButton';
 
 
@@ -22,8 +24,21 @@ const TarifCard = ({tarif}:ITarifCardProps) => {
     }
 
   return (
-    <div className='t__card__secondary'>
+    <div className='t__card__secondary relative overflow-hidden'>
+        {tarif.img &&
+            <div className='absolute top-0 left-0 h-32 w-full'>
+                <Image 
+                    src={tarif.img}
+                    height={332}
+                    width={138}
+                    alt={tarif.title}
+                    unoptimized
+                    className='w-full h-full object-cover'
+                />
+            </div>
+        }
         <Title 
+        extraClass={tarif.img ? 'mt-32' :''}
         size='xl' 
         display='h6'>
             {tarif.title}
@@ -45,10 +60,6 @@ const TarifCard = ({tarif}:ITarifCardProps) => {
         <div className='max-w-[320px] h-[1px] my-8 bg-[#EDEDED]'></div>
         <div dangerouslySetInnerHTML={{__html: tarif.content}} />
         <div className='mt-8'>
-        {/* <TextButton extraClass='flex items-center gap-x-2'>
-                Подробнее
-                <HiArrowLongRight />
-            </TextButton> */}
             <Title color='primary' size='2xl' display='h3'>*200*100#</Title>
         </div>
     </div>

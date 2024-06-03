@@ -1,4 +1,4 @@
-import ServicesPage from '@/components/TcellWebsite/PrivateIndividuals/Services/ServicesPage'
+import ServicesPage from '@/components/TcellWebsite/Services/ServicesPage'
 import React from 'react'
 
 const Services = () => {

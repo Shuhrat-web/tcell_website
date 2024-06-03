@@ -10,7 +10,7 @@ const Title = ({children,size = 'md',font='md', color='none', centered = false,u
             sm: 'text-sm',
             md: 'text-md',
             lg: 'text-lg',
-            xl: 'text-xl',
+            xl: 'text-[26px]',
             '2xl': 'text-lg xl:text-3xl',
             '3xl': 'text-xl xl:text-5xl',
         },
@@ -27,7 +27,7 @@ const Title = ({children,size = 'md',font='md', color='none', centered = false,u
             danger: 'text-danger',
             secondary:'text-secondary',
             white: 'text-white',
-            none: 'text-black'
+            none: 'text-dark-blue'
         },
     }
   

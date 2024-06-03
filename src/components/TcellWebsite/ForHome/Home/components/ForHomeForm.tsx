@@ -15,7 +15,7 @@ const ForHomeForm = () => {
     <div style={{
       backgroundImage: `url(/images/orange_contact_bg.svg)`,
     }} 
-    className='min-h-[440px] bg-cover bg-no-repeat rounded-3xl overflow-hidden p-8'
+    className='h-full bg-cover bg-no-repeat rounded-3xl overflow-hidden p-8'
     >
         <form onSubmit={handleSubmit}>
             <Title 

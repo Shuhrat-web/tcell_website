@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 export interface ITarif{
     id: number;
     title: string;
+    img?: string; 
     price: string;
     content: string;
     options: ITarifOptions[]

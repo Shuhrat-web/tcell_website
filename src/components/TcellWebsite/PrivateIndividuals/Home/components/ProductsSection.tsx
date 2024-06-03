@@ -3,18 +3,11 @@ import { IProductsSectionProps } from '../lib/types/IHomePageTypes'
 import Title from '@/components/Ui/Title/Title'
 import { IService } from '@/lib/requests/resources/Service/lib/IServicesTypes'
 import ServiceCard from '@/components/Ui/Cards/Service/ServiceCard'
-import { IProduct } from '@/lib/requests/resources/Product/lib/IProductTypes'
-import ProductCard from '@/components/Ui/Cards/Product/ProductCard'
 import ColoredBannerSection from './Banners/ColoredBannerSection'
+import clsx from 'clsx'
 
 const ProductsSection = ({className}:IProductsSectionProps) => {
   const services:IService[] = [
-    {
-      id: 1,
-      name: 'Тарифы',
-      desctiption: 'Список тарифных линеек',
-      img: '/images/services/service_1.svg'
-    },
     {
       id: 2,
       name: 'Услуги',
@@ -28,24 +21,9 @@ const ProductsSection = ({className}:IProductsSectionProps) => {
       img: '/images/services/service_3.svg'
     },
   ] 
-  const products:IProduct[] = [
-    {
-      id: 1,
-      name: 'Мой Tcell',
-      description: 'Скачивайте приложение ЧиГап и общайтесь с близкими в России и Таджикистане',
-      isOnAndroid: true,
-      isOnIOS: true
-    },
-    {
-      id: 2,
-      name: 'Чи Гап',
-      description: 'Скачивайте приложение ЧиГап и общайтесь с близкими в России и Таджикистане',
-      isOnAndroid: true,
-      isOnIOS: true
-    }
-  ]
+  
   return (
-    <section className={`${className}`}>
+    <section className={clsx(className,'')}>
       <Title size='3xl' display='h3'>
         Продукты Tcell
       </Title>
@@ -58,7 +36,7 @@ const ProductsSection = ({className}:IProductsSectionProps) => {
         url='/'
         img='/images/addon_banner_2.svg'
       />
-      <div className='grid grid-cols-3 gap-6 mt-6'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-6'>
         {
           services.map(service => (
             <ServiceCard service={service} key={service.id} />

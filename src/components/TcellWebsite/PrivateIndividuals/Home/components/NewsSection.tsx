@@ -1,11 +1,14 @@
+'use client'
 import React from 'react'
 import { INewsSectionProps } from '../lib/types/IHomePageTypes'
-import Title from '@/components/Ui/Title/Title'
 import { IPost } from '@/lib/requests/resources/Posts/lib/IPostsResourcesTypes'
 import PostCard from '@/components/Ui/Cards/Post/PostCard'
 import SectionTitle from '@/components/Ui/Title/SectionTitle'
+import { useLocale } from 'next-intl'
 
 const NewsSection = ({className}:INewsSectionProps) => {
+  const locale = useLocale()
+
     const news:IPost[] = [
         {
             id:1,
@@ -31,9 +34,9 @@ const NewsSection = ({className}:INewsSectionProps) => {
         <SectionTitle 
         titleText='Новости'
         routeTitle="Все новости" 
-        route='/news'
+        route={`/${locale}/posts`}
         />
-        <div className='grid grid-cols-3 gap-6 mt-16'>
+        <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-16'>
             {
                 news.map(post => (
                     <PostCard key={post.id} post={post} />

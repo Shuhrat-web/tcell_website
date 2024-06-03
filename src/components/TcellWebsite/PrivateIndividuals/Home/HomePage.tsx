@@ -2,8 +2,9 @@ import TextWithImageBanner from '@/components/Ui/Banners/TextWithImageBanner'
 import React from 'react'
 import NewsSection from './components/NewsSection'
 import ProductsSection from './components/ProductsSection'
-import ColoredBannerSection from './components/Banners/ColoredBannerSection'
 import FaqSection from './components/FaqSection'
+import AppsSection from './components/AppsSection'
+import TarifsSection from './components/TarifsSection'
 
 const HomePage = () => {
 
@@ -18,15 +19,9 @@ const HomePage = () => {
       />
       <div className='t__container mt-24'>
         <NewsSection />
-        <ProductsSection className=' my-24' />
-        <ColoredBannerSection 
-          className='mb-24'
-          bgColor='#F5D9FF'
-          title='Стать абонентом Tcell'
-          description='Участвуйте в онлайн аукционе и приобретите красивые номера от TCELL'
-          url='/'
-          img='/images/addon_banner_1.svg'
-        />
+        <TarifsSection className="my-24" />
+        <ProductsSection className='mb-24' />
+        <AppsSection className='mb-24' />
         <FaqSection />
       </div>
     </div>

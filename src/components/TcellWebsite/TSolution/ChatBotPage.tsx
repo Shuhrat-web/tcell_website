@@ -28,10 +28,10 @@ const ChatBotPage = () => {
       <Title extraClass="mt-11 mb-8" size="3xl" display="h2">
         CHATBOT/Голосовой робот
       </Title>
-      <div className="font-normal max-w-[695px]">
+      <div className="font-normal">
         {texts.map((text) => (
           <p
-            className="font-normal text-[20px] text-[#9CA3AF] mt-5 leading-5"
+            className="font-normal text-[20px] text-secondary-50 mt-5 leading-8"
             key={text.id}
           >
             {text.conText}

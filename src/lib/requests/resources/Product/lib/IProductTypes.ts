@@ -4,4 +4,7 @@ export interface IProduct{
     description: string;
     isOnAndroid: boolean;
     isOnIOS: boolean;
+    backgroundColor?:string;
+    productIcon?: string;
+    textColor?: 'white'|'black';
 }

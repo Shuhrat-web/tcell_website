@@ -4,6 +4,7 @@ import clsx from 'clsx'
 import { IPost } from '@/lib/requests/resources/Posts/lib/IPostsResourcesTypes'
 import PostCard from '@/components/Ui/Cards/Post/PostCard'
 import FaqChat from './FaqChat'
+import Title from '@/components/Ui/Title/Title'
 
 const FaqSection = ({className}:IFaqSectionProps) => {
     const news:IPost[] = [
@@ -20,18 +21,23 @@ const FaqSection = ({className}:IFaqSectionProps) => {
         },
     ]
   return (
-    <div className={clsx(className,'grid grid-cols-7 gap-6')}>
-        <div className='col-span-3'>
-            <FaqChat />
+    <section className={clsx(className,'')}>
+        <Title size='3xl' display='h3'>
+            Полезно знать
+        </Title>
+        <div className='grid grid-cols-7 gap-6 mt-16'>
+            <div className='col-span-7 lg:col-span-3'>
+                <FaqChat />
+            </div>
+            <div className='col-span-7 lg:col-span-4 flex flex-col gap-6'>
+                {
+                    news.map(el => (
+                        <PostCard post={el} key={el.id} />
+                    ))
+                }
+            </div>
         </div>
-        <div className='col-span-4 flex flex-col gap-6'>
-            {
-                news.map(el => (
-                    <PostCard post={el} key={el.id} />
-                ))
-            }
-        </div>
-    </div>
+    </section>
   )
 }
 

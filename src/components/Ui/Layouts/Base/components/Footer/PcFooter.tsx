@@ -105,7 +105,7 @@ const PcFooter = () => {
   return (
     <footer className='bg-black py-16 mt-10'>
       <div className='t__container'>
-        <div className='grid grid-cols-5'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {
             footerRows.map((row,i) => (
               <FooterRow 
@@ -120,7 +120,7 @@ const PcFooter = () => {
             Используя наш сайт, вы даете согласие на обработку файлов Cookies и других пользовательских данных, в соответствии с <span className='text-primary'>Политикой конфиденциальности</span>
           </p>
         </div>
-        <ul className='flex text-secondary justify-between text-sm'>
+        <ul className='flex flex-wrap gap-4 text-secondary justify-between text-sm'>
           <li>
             <LogoWithText width={72} height={24} />
           </li>

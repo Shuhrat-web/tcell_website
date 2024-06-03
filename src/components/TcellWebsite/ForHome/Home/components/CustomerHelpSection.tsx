@@ -22,10 +22,10 @@ const CustomerHelpSection = ({className}:ICustomerHelpSectionProps) => {
     ]
   return (
     <div className={clsx(className,'grid grid-cols-7 gap-6')}>
-        <div className='col-span-3'>
+        <div className='col-span-7 xl:col-span-3'>
             <ForHomeForm />
         </div>
-        <div className='col-span-4 flex flex-col gap-6'>
+        <div className='col-span-7 xl:col-span-4 flex flex-col gap-6'>
             {
                 news.map(el => (
                     <PostCard post={el} key={el.id} />

@@ -13,6 +13,10 @@ export interface IFaqSectionProps extends IDefaultSectionProps{
     
 }
 
-export interface IColoredBannerSectionProps extends IColoredBanner{
+export interface IColoredBannerPrivateIndividualsSectionProps extends IColoredBanner{
     
 }
+
+
+export interface IAppsSectionProps extends IDefaultSectionProps{}
+export interface ITarfisSectionProps extends IDefaultSectionProps{}

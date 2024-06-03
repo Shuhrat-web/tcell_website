@@ -1,11 +1,11 @@
 import AdvantageCard from "@/components/Ui/Cards/Advantage/AdvantageCard";
 import React from "react";
-import { IAdvantageSectionProps } from "../lib/types/ILoyalityPageTypes";
+import { IPrivateIndividualsAdvantageSectionProps } from "../lib/types/ILoyalityPageTypes";
 import SectionTitle from "@/components/Ui/Title/SectionTitle";
 import { IAdvantage } from "@/lib/requests/resources/Advantage/lib/types/IAdvantageTypes";
 import AppAddonCard from "@/components/Ui/Cards/AppAddon/AppAddonCard";
 
-const AdvantageSection = ({ className }: IAdvantageSectionProps) => {
+const AdvantageSection = ({ className }: IPrivateIndividualsAdvantageSectionProps) => {
   const advantages: IAdvantage[] = [
     {
       id: 1,
@@ -32,15 +32,15 @@ const AdvantageSection = ({ className }: IAdvantageSectionProps) => {
     <div className={className}>
       <SectionTitle titleText="Преимущества" />
       <div className="mt-8 grid grid-cols-3 gap-6">
-        <div>
+        <div className="flex justify-between flex-col">
           {advantages.slice(0, 2).map((advantage) => (
-            <AdvantageCard advantage={advantage} />
+            <AdvantageCard key={advantage.id} advantage={advantage} />
           ))}
         </div>
         <AppAddonCard googleLink="" appLink="" img="/images/app_addon.png" />
-        <div>
+        <div className="flex justify-between flex-col">
           {advantages.slice(2, 4).map((advantage) => (
-            <AdvantageCard advantage={advantage} />
+            <AdvantageCard key={advantage.id} advantage={advantage} />
           ))}
         </div>
       </div>

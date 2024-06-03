@@ -11,7 +11,17 @@ const IpTelevision = () => {
   return (
     <div className='t__container'>
       <BreadCrumbs links={breadcrumbPages}/>
-      <Title extraClass='my-8' size='3xl' display='h2'>IP Телевидение</Title>
+      <div className='mt-8 mb-16'>
+        <Title extraClass='my-8' size='3xl' display='h2'>IP Телевидение</Title>
+        <div className=' space-y-6 text-secondary-50 text-lg'>
+          <p>
+          IPTV – это цифровое телевидение с сотнями телеканалов, фильмов и специальными возможностями (пауза, перемотка, просмотр прошедших передач).
+          </p>
+          <p>
+            Для подключения IPTV вам необходимо быть абонентом TezNet и подключить ТВ-приставку.
+          </p>
+        </div>
+      </div>
       <IpTarifSection/>
     </div>
   )

@@ -4,11 +4,11 @@ import Title from '../../Title/Title'
 
 const AdvantageCard = ({advantage}: IAdvantageCardProps) => {
   return (
-    <div className='t__card__secondary text-center mb-6'>
-        <Title size='2xl' display='h3'>
-            {advantage.title}
-        </Title>
-        <p className='text-xl text-[#9CA3AF] font-normal mt-6'>{advantage.description}</p>
+    <div className='t__card__secondary flex justify-center items-center flex-col px-6 py-16'>
+      <Title size='xl' display='h3'>
+        {advantage.title}
+      </Title>
+      <div className='text-lg text-secondary-50 font-normal mt-6 max-w-60 text-center'>{advantage.description}</div>
     </div>
   )
 }

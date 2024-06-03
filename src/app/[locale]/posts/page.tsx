@@ -1,4 +1,4 @@
-import PostsPage from '@/components/TcellWebsite/PrivateIndividuals/Posts/PostsPage'
+import PostsPage from '@/components/TcellWebsite/Posts/PostsPage'
 import React from 'react'
 
 const News = () => {

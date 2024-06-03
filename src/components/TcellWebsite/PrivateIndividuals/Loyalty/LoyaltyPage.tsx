@@ -9,8 +9,8 @@ const LoyaltyPage = () => {
     ]
   return (
     <div className='t__container'>
-        <BreadCrumbs links={breadCrumbs}/>
-        <AdvantageSection className='mt-16'/>
+      <BreadCrumbs links={breadCrumbs}/>
+      <AdvantageSection className='mt-16'/>
     </div>
   )
 }
