@@ -12,7 +12,7 @@ const PrivateIndividualsAppsSection = ({className}:IPrivateIndividualsAppsSectio
         productIcon: '/images/tcell_card.png',
         backgroundColor: '#CED9F4',
         name: 'Мой Tcell',
-        description: 'Скачивайте приложение ЧиГап и общайтесь с близкими в России и Таджикистане',
+        description: 'Скачивайте приложение MyTcell и общайтесь с близкими в России и Таджикистане',
         isOnAndroid: true,
         isOnIOS: true,
         iosLink: 'https://apps.apple.com/tj/app/my-tcell/id966493756',

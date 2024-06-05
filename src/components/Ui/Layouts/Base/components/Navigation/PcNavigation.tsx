@@ -70,13 +70,13 @@ const PcNavigation = ({links,absoluteNav}:IPcNavigationProprs) => {
           </nav>
         </div>
         <div className='hidden md:flex gap-x-4'>
-          <ContainButton 
+          {/* <ContainButton 
           size='none' 
           extraClass={`${absoluteNav ? 'text-white':'text-black'} flex items-center gap-x-1`}
           type='none'>
             <HiMagnifyingGlass />
             Поиск
-          </ContainButton>
+          </ContainButton> */}
           {/* <ContainButton 
           size='none' 
           extraClass={`${absoluteNav ? 'text-white':'text-black'} flex items-center gap-x-1`} 

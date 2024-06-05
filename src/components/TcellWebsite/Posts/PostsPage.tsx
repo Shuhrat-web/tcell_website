@@ -4,7 +4,7 @@ import PostCard from '@/components/Ui/Cards/Post/PostCard';
 import Title from '@/components/Ui/Title/Title'
 import { IPost } from '@/lib/requests/resources/Posts/lib/IPostsResourcesTypes';
 import React from 'react'
-import FilterSection from './components/FilterSection';
+// import FilterSection from './components/FilterSection';
 
 const PostsPage = () => {
   const breadcrumbPages: IBreadCrumb[] = [
@@ -25,7 +25,7 @@ const PostsPage = () => {
       <Title extraClass='mt-11 mb-8' size='3xl' display='h2'>
         Новости
       </Title>
-      <FilterSection className='mb-4' />
+      {/* <FilterSection className='mb-4' /> */}
       <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6'>
         {
           news.map(post => (

@@ -38,7 +38,7 @@ const ForBussinessAdventagesSection = ({className}:IForBussinessAdventagesSectio
             <AdvantageCard key={advantage.id} advantage={advantage} />
           ))}
         </div>
-        <AppAddonCard googleLink="" appLink="" img="/images/app_addon.png" />
+        <AppAddonCard googleLink="https://play.google.com/store/apps/details?id=tj.tcell.odp" appLink="https://apps.apple.com/tj/app/my-tcell/id966493756" img="/images/app_addon.png" />
         <div className="flex  gap-6 xl:gap-2 justify-between flex-col">
           {advantages.slice(2, 4).map((advantage) => (
             <AdvantageCard key={advantage.id} advantage={advantage} />

@@ -33,14 +33,14 @@ const MobileNavigation = ({links,absoluteNav}:IMobileNavigationProps) => {
             setShowNavigationDialog(false)
         }>
             <div>
-                <form action="">
+                {/* <form action="">
                     <TextField
                         prevIcon={<HiMagnifyingGlass />}
                         value=''
                         onChange={() => {}} 
                         placeholder='Поиск'
                     />
-                </form>
+                </form> */}
                 <div className='mt-5'>
                     <ul className='flex flex-col gap-y-6'>
                         {
