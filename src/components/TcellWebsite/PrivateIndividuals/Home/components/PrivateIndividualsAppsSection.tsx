@@ -14,7 +14,9 @@ const PrivateIndividualsAppsSection = ({className}:IPrivateIndividualsAppsSectio
         name: 'Мой Tcell',
         description: 'Скачивайте приложение ЧиГап и общайтесь с близкими в России и Таджикистане',
         isOnAndroid: true,
-        isOnIOS: true
+        isOnIOS: true,
+        iosLink: 'https://apps.apple.com/tj/app/my-tcell/id966493756',
+        androidLink: 'https://play.google.com/store/apps/details?id=tj.tcell.odp'
       },
       {
         id: 2,
@@ -24,7 +26,9 @@ const PrivateIndividualsAppsSection = ({className}:IPrivateIndividualsAppsSectio
         name: 'Чи Гап',
         description: 'Скачивайте приложение ЧиГап и общайтесь с близкими в России и Таджикистане',
         isOnAndroid: true,
-        isOnIOS: true
+        isOnIOS: true,
+        iosLink: 'https://apps.apple.com/tj/app/chi-gap/id1497463446',
+        androidLink: 'https://play.google.com/store/apps/details?id=com.mno.tcell'
       }
     ]
   return (

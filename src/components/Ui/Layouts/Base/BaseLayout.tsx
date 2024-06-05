@@ -15,6 +15,7 @@ const BaseLayout = ({
       route:'/',
       children:[
         {
+          tabId: 1,
           route: '/',
           name: 'Главная'
         },
@@ -27,22 +28,19 @@ const BaseLayout = ({
         //   name: 'Лояльность'
         // },
         {
+          tabId: 1,
           route: '/services',
           name: 'Сервисы'
         },
         {
+          tabId: 1,
           route: '/private-individuals/ussd-commands',
           name: 'USSD-Команды'
         },
         {
+          tabId: 1,
           route: '/tarifs?category_id=1',
-          name: 'Тарифы',
-          children: [
-            {
-              route: '/tarifs/1',
-              name: 'Tarif1'
-            },  
-          ]
+          name: 'Тарифы'
         },
         // {
         //   route: '/faq',
@@ -56,10 +54,12 @@ const BaseLayout = ({
       route:'/for-bussines',
       children:[
         {
+          tabId: 2,
           route: '/for-bussines',
           name: 'Главная'
         },
         {
+          tabId: 2,
           route: '/tarifs?category_id=3',
           name: 'Тарифы',
           children: [
@@ -70,6 +70,7 @@ const BaseLayout = ({
           ]
         },
         {
+          tabId: 2,
           route: '/posts',
           name: 'Новости'
         },
@@ -81,6 +82,7 @@ const BaseLayout = ({
       route:'/for-home',
       children:[
         {
+          tabId: 3,
           route: '/for-home',
           name: 'Главная'
         },
@@ -89,6 +91,7 @@ const BaseLayout = ({
         //   name: 'IP Телевидение'
         // },
         {
+          tabId: 3,
           route: '/tarifs?category_id=2',
           name: 'Тарифы',
           children: [
@@ -99,6 +102,7 @@ const BaseLayout = ({
           ]
         },
         {
+          tabId: 3,
           route: '/posts',
           name: 'Новости'
         },

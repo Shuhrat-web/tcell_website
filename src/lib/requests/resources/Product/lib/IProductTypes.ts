@@ -7,4 +7,6 @@ export interface IProduct{
     backgroundColor?:string;
     productIcon?: string;
     textColor?: 'white'|'black';
+    iosLink?: string; 
+    androidLink?: string; 
 }

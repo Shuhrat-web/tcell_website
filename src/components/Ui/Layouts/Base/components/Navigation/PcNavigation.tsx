@@ -35,10 +35,11 @@ const PcNavigation = ({links,absoluteNav}:IPcNavigationProprs) => {
                   <li 
                   className={clsx('border-b shrink-0',{
                     'border-transparent cursor-pointer font-medium': !tab.route || `/${locale}${tab.route}` !== pathName+'/',
-                    'border-white font-bold': tab.route && `/${locale}${tab.route}` === pathName || `${locale}${tab.route}/` === pathName
+                    'border-white font-bold': absoluteNav && tab.route && `/${locale}${tab.route}` === pathName || `${locale}${tab.route}/` === pathName,
+                    'border-black font-bold': !absoluteNav && tab.route && `/${locale}${tab.route}` === pathName || `${locale}${tab.route}/` === pathName,
                   })}
                   onClick={() => {
-                    if(tab.route)router.push(`/${locale}${tab.route}`)     
+                    if(tab.route)router.push(`/${locale}${tab.route}?module_id=${tab.id}`)     
                     if(tab.id) setACtiveTab(tab.id)                 
                   }}
                   key={tab.id}>
@@ -50,7 +51,7 @@ const PcNavigation = ({links,absoluteNav}:IPcNavigationProprs) => {
             <ul className='flex gap-x-4 sm:w-full w-60 overflow-x-auto mt-2'>
               {links.find(tab => tab.id === activeTab)?.children.map((link,i) => 
                   <li key={i}>
-                    <Link href={`/${locale}/${link.route}`}>
+                    <Link href={`/${locale}/${link.route}${link.route?.includes('?') ?  '&module_id=' + link.tabId : `?module_id=${link.tabId}`}`}>
                       {link.name}
                     </Link>
                   </li>

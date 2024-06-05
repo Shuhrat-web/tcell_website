@@ -8,6 +8,7 @@ export interface INavigationLinkTab{
 }
 
 export interface INavigationLink{
+    tabId?: number;
     route?: string;
     name: string;
     children?: INavigationLink[]

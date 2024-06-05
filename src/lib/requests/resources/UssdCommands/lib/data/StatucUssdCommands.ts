@@ -83,7 +83,7 @@ export const staticUssdCommands:IUssdCommand[] = [
     },
     {
         id: 17,
-        command: '*115*21*номер# (0,224 сомони/день)',
+        command: '*115*21* номер # (0,224 сомони/день)',
         description: 'Черный список'
     },
     {
@@ -93,12 +93,12 @@ export const staticUssdCommands:IUssdCommand[] = [
     },
     {
         id: 19,
-        command: '*188*номер*сумма от 1 до 10 сомони# (0,20 сомони)',
+        command: '*188*номер* сумма от 1 до 10 сомони# (0,20 сомони)',
         description: 'Мобильный перевод'
     },
     {
         id: 20,
-        command: '*172*1*номер*Трафик(>500мб)',
+        command: '*172*1* номер * Трафик (>500мб)',
         description: 'Передача трафика'
     },
     {

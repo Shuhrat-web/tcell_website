@@ -26,24 +26,28 @@ const ProductCard = ({product}:IProductCardProps) => {
         </div>
         <ul className='flex flex-col gap-3 z-20'>
             <li>
-                <Image 
-                    src={`/images/google_store.svg`}
-                    height={47}
-                    width={152}
-                    alt={`google_play_${product.name}`}
-                    unoptimized
-                    className='max-w-full'
-                />
+                <a href={product.androidLink} target="_blank" rel="noopener noreferrer">
+                    <Image 
+                        src={`/images/google_store.svg`}
+                        height={47}
+                        width={152}
+                        alt={`google_play_${product.name}`}
+                        unoptimized
+                        className='max-w-full'
+                    />
+                </a>
             </li>
             <li>
-                <Image 
-                    src={`/images/apple_store.svg`}
-                    height={47}
-                    width={152}
-                    alt={`app_store_${product.name}`}
-                    unoptimized
-                    className='max-w-full'
-                />
+                <a href={product.iosLink} target="_blank" rel="noopener noreferrer">
+                    <Image 
+                        src={`/images/apple_store.svg`}
+                        height={47}
+                        width={152}
+                        alt={`app_store_${product.name}`}
+                        unoptimized
+                        className='max-w-full'
+                    />
+                </a>
             </li>
         </ul>
         {
