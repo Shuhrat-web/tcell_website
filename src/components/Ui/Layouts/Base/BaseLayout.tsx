@@ -20,6 +20,7 @@ const BaseLayout = ({
           name: 'Главная'
         },
         {
+          tabId: 1,
           route: '/posts',
           name: 'Новости'
         },
