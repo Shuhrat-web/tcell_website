@@ -32,7 +32,7 @@ const BaseLayout = ({
         },
         {
           route: '/private-individuals/ussd-commands',
-          name: 'Команды'
+          name: 'USSD-Команды'
         },
         {
           route: '/tarifs?category_id=1',
