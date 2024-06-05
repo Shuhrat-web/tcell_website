@@ -6,9 +6,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: auction-tcell
+    container_name: tcell-website
     ports:
-      - '4000:4000'
+      - '3000:3000'
     volumes:
       - .:/app
       - /app/node_modules
