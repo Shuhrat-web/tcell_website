@@ -1,6 +1,6 @@
 'use client'
 import Logo from '@/components/Ui/Logo'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { IPcNavigationProprs } from '../../lib/types/IBaseLayoutTypes'
 import ContainButton from '@/components/Ui/Buttons/ContainButton'
 import { HiMagnifyingGlass,HiGlobeAlt,HiChevronDown   } from "react-icons/hi2";
@@ -11,26 +11,15 @@ import Link from 'next/link'
 
 
 
-const PcNavigation = ({links}:IPcNavigationProprs) => {
+const PcNavigation = ({links,absoluteNav}:IPcNavigationProprs) => {
+
   const [activeTab,setACtiveTab] = useState<number>(1)
   const locale = useLocale()
   const router = useRouter()
   const pathName = usePathname()
-  const [absoluteNav,setIsAbsoluteNav] = useState<boolean>(true)
-  const absoluteNavigationList:string[] = [`/${locale}/for-home`,`/${locale}`,`/${locale}/for-bussines`]
-
-  const isPathNameAbsolute = (el:any) => el === pathName
-
-  const checkIfPathNameIsAbsoulute = ():boolean => {
-    return absoluteNavigationList.some(isPathNameAbsolute)
-  }
-
-  useEffect(() => {
-    setIsAbsoluteNav(checkIfPathNameIsAbsoulute)
-  },[pathName])
   
   return (
-    <div className={clsx('w-full',{
+    <div className={clsx('w-full md:block hidden',{
       'absolute top-5 left-0 z-40 ': absoluteNav,
       'mb-10 py-4': !absoluteNav
     })}>

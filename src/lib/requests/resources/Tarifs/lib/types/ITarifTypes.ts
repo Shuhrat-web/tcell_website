@@ -5,7 +5,10 @@ export interface ITarif{
     title: string;
     img?: string; 
     price: string;
-    content: string;
+    category_id: number;
+    content?: string;
+    ussd?: string;
+    callCenter?: string;
     options: ITarifOptions[]
 }
 
@@ -13,6 +16,10 @@ export interface ITarifOptions {
     id: number
     name: string,
     type: string,
-    icon : ReactNode
+    icon : string
 }
 
+export interface ITarifCategory{
+    id: number;
+    title: string;
+}

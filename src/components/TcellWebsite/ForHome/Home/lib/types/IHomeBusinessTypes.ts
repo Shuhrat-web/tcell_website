@@ -8,6 +8,6 @@ export interface IBusinessNewsSecropnProps extends IDefaultSectionProps{
 
 }
 
-export interface ITarifSectionProps extends IDefaultSectionProps{}
+export interface IForHomeTarifsSectionProps extends IDefaultSectionProps{}
 export interface IBenefitsSectionProps extends IDefaultSectionProps{}
 export interface ICustomerHelpSectionProps extends IDefaultSectionProps{}

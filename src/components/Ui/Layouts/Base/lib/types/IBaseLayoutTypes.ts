@@ -15,17 +15,22 @@ export interface INavigationLink{
 
 
 export interface IPcNavigationProprs{
-    links: INavigationLinkTab[]
+    links: INavigationLinkTab[];
+    absoluteNav: boolean;
+}
+
+export interface IMobileNavigationProps extends IPcNavigationProprs{
+
 }
 
 export interface IFooterRow{
     title: string;
-    children: IFooterRowChild[]
+    children?: IFooterRowChild[]
 }
 
 export interface IFooterRowChild{
     title: string;
-    children: IFooterRowLink[];
+    children?: IFooterRowLink[];
 }
 
 export interface IFooterRowLink{
@@ -35,4 +40,14 @@ export interface IFooterRowLink{
 
 export interface IFooterRowProps{
     footerRow: IFooterRow
+}
+
+export interface IPcNavigationProps{
+    links: INavigationLinkTab[];
+}
+
+export interface INavigationDialogprops{
+    children: React.ReactNode;
+    show: boolean;
+    toggleShow: () => void
 }

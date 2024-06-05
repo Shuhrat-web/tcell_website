@@ -42,7 +42,7 @@ const TextField = ({ value,
       },
       withIconSize: {
         prevIcon: {
-          md: 'pl-6 pr-4 py-2',
+          md: 'pl-8 pr-4 py-2',
           lg: 'pl-6 pr-3 px-1',
           sm: 'py-0.5 pl-5 pr-1',
         },
@@ -72,7 +72,7 @@ const TextField = ({ value,
       )}
       <div className={`${label ? 'mt-2' : ''} relative ${extraClass}`}>
         {
-          prevIcon || nextIcon &&
+          prevIcon || nextIcon ? 
           <div
           className={`h-full absolute flex items-center justify-center ${prevIcon ? 'left-2' : 'right-2'}`}
           >
@@ -83,6 +83,7 @@ const TextField = ({ value,
               nextIcon && nextIcon
             }
           </div>
+          :''
         }
         <input
           placeholder={placeholder}

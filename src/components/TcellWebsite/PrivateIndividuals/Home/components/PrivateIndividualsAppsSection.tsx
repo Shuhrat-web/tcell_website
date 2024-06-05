@@ -1,11 +1,11 @@
 import React from 'react'
 import { IProduct } from '@/lib/requests/resources/Product/lib/IProductTypes'
 import ProductCard from '@/components/Ui/Cards/Product/ProductCard'
-import { IAppsSectionProps } from '../lib/types/IHomePageTypes'
+import { IPrivateIndividualsAppsSectionProps } from '../lib/types/IHomePageTypes'
 import Title from '@/components/Ui/Title/Title'
 import clsx from 'clsx'
 
-const AppsSection = ({className}:IAppsSectionProps) => {
+const PrivateIndividualsAppsSection = ({className}:IPrivateIndividualsAppsSectionProps) => {
     const products:IProduct[] = [
       {
         id: 1,
@@ -43,4 +43,4 @@ const AppsSection = ({className}:IAppsSectionProps) => {
   )
 }
 
-export default AppsSection
+export default PrivateIndividualsAppsSection

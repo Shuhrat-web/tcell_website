@@ -1,15 +1,15 @@
 import { IColoredBanner, IDefaultSectionProps } from "@/lib/shared/types/IGlobalTypes";
 
-export interface INewsSectionProps extends IDefaultSectionProps{
+export interface IPrivateIndividualsNewsSection extends IDefaultSectionProps{
     
 }
 
 
-export interface IProductsSectionProps extends IDefaultSectionProps{
+export interface IPrivateIndividualsProductsSectionProps extends IDefaultSectionProps{
     
 }
 
-export interface IFaqSectionProps extends IDefaultSectionProps{
+export interface IPrivateIndividualsFaqSectionProps extends IDefaultSectionProps{
     
 }
 
@@ -18,5 +18,5 @@ export interface IColoredBannerPrivateIndividualsSectionProps extends IColoredBa
 }
 
 
-export interface IAppsSectionProps extends IDefaultSectionProps{}
-export interface ITarfisSectionProps extends IDefaultSectionProps{}
+export interface IPrivateIndividualsAppsSectionProps extends IDefaultSectionProps{}
+export interface IPrivateIndividualsTarifsSectionProps extends IDefaultSectionProps{}

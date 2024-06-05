@@ -1,7 +1,7 @@
 import React from 'react'
-import PcNavigation from './components/Navigation/PcNavigation'
 import PcFooter from './components/Footer/PcFooter'
 import { INavigationLinkTab } from './lib/types/IBaseLayoutTypes'
+import BaseNavigation from './components/Navigation/BaseNavigation'
 
 const BaseLayout = ({
   children
@@ -32,10 +32,10 @@ const BaseLayout = ({
         },
         {
           route: '/private-individuals/ussd-commands',
-          name: 'Комманды'
+          name: 'Команды'
         },
         {
-          route: '/tarifs',
+          route: '/tarifs?category_id=1',
           name: 'Тарифы',
           children: [
             {
@@ -44,10 +44,10 @@ const BaseLayout = ({
             },  
           ]
         },
-        {
-          route: '/faq',
-          name: 'Помощь'
-        },
+        // {
+        //   route: '/faq',
+        //   name: 'Помощь'
+        // },
       ]
     },
     {
@@ -60,7 +60,7 @@ const BaseLayout = ({
           name: 'Главная'
         },
         {
-          route: '/tarifs',
+          route: '/tarifs?category_id=3',
           name: 'Тарифы',
           children: [
             {
@@ -84,9 +84,23 @@ const BaseLayout = ({
           route: '/for-home',
           name: 'Главная'
         },
+        // {
+        //   route: '/for-home/ip-television',
+        //   name: 'IP Телевидение'
+        // },
         {
-          route: '/for-home/ip-television',
-          name: 'IP Телевидение'
+          route: '/tarifs?category_id=2',
+          name: 'Тарифы',
+          children: [
+            {
+              route: '/tarifs/1',
+              name: 'Tarif1'
+            },  
+          ]
+        },
+        {
+          route: '/posts',
+          name: 'Новости'
         },
       ]
     },
@@ -109,7 +123,7 @@ const BaseLayout = ({
 
   return (
     <>
-      <PcNavigation links={links} />
+      <BaseNavigation links={links} />
         <main>
           { children }
         </main>

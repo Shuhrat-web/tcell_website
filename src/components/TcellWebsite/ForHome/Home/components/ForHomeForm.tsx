@@ -27,7 +27,7 @@ const ForHomeForm = () => {
             <p className='text-dark-blue mt-5'>
                 Если у вас остались вопросы, можете написать в поддержку и мы с радостью поможем вас с вашей проблемой 
             </p>
-            <div className='space-y-5 my-8 w-96'>
+            <div className='space-y-5 my-8 w-full'>
                 <TextField 
                     size='lg'
                     name='fio'

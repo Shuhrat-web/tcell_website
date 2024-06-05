@@ -1,7 +1,7 @@
 import TextWithImageBanner from '@/components/Ui/Banners/TextWithImageBanner'
 import React from 'react'
 import ForHomeNewsSection from './components/ForHomeNewsSection'
-import TarifsSection from './components/TarifsSection'
+import ForHomeTarifsSection from './components/ForHomeTarifsSection'
 import BenefitsSection from './components/BenefitsSection'
 import CustomerHelpSection from './components/CustomerHelpSection'
 
@@ -18,7 +18,7 @@ const ForHomePage = () => {
       />
       <div className='t__container mt-24'>
         <ForHomeNewsSection />
-        <TarifsSection className='my-24' />
+        <ForHomeTarifsSection className='my-24' />
         <BenefitsSection />
         <CustomerHelpSection className='mt-24' />
       </div>

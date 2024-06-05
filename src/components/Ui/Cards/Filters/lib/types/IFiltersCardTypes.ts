@@ -1,10 +1,10 @@
+import { ITarifCategory } from "@/lib/requests/resources/Tarifs/lib/types/ITarifTypes";
+
 export interface ISortTypeSelectionCardProps{
     data: ISortingCardData
 }
 
-export interface ISortingCardData{
-    id: number;
-    title: string;
+export interface ISortingCardData extends ITarifCategory{
     active?: boolean;
     iconSrc?: string
 }

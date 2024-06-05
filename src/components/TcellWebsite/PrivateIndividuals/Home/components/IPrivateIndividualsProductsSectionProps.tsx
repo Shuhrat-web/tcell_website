@@ -1,12 +1,12 @@
 import React from 'react'
-import { IProductsSectionProps } from '../lib/types/IHomePageTypes'
+import { IPrivateIndividualsProductsSectionProps } from '../lib/types/IHomePageTypes'
 import Title from '@/components/Ui/Title/Title'
 import { IService } from '@/lib/requests/resources/Service/lib/IServicesTypes'
 import ServiceCard from '@/components/Ui/Cards/Service/ServiceCard'
 import ColoredBannerSection from './Banners/ColoredBannerSection'
 import clsx from 'clsx'
 
-const ProductsSection = ({className}:IProductsSectionProps) => {
+const PrivateIndividualsProductsSection = ({className}:IPrivateIndividualsProductsSectionProps) => {
   const services:IService[] = [
     {
       id: 2,
@@ -47,4 +47,4 @@ const ProductsSection = ({className}:IProductsSectionProps) => {
   )
 }
 
-export default ProductsSection
+export default PrivateIndividualsProductsSection

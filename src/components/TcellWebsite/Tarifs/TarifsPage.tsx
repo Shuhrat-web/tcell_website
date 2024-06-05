@@ -3,9 +3,11 @@ import { IBreadCrumb } from '@/components/Ui/BreadCrumbs/lib/types/BreadCrumbsTy
 import Title from '@/components/Ui/Title/Title';
 import React from 'react'
 import TarifsSection from './components/TarifsSection';
-import TarifsFilterSection from './components/TarifsFilterSection';
+import { ITarifsPageProps } from './lib/types/ITarifPageTypes';
+import { staticTarifs } from '@/lib/requests/resources/Tarifs/lib/data/StaticTarifsData';
+// import TarifsFilterSection from './components/TarifsFilterSection';
 
-const TarifsPage = () => {
+const TarifsPage = ({category_id}:ITarifsPageProps) => {
   const breadcrumbPages: IBreadCrumb[] = [
     { name: 'Тарифы', href: '/tarifs', current: true },
   ];
@@ -13,11 +15,11 @@ const TarifsPage = () => {
   return (
     <div className='t__container'>
       <BreadCrumbs links={breadcrumbPages} />
-      <Title extraClass='mt-11' size='3xl' display='h2'>
+      <Title extraClass='my-11' size='3xl' display='h2'>
         Тарифы
       </Title>
-      <TarifsFilterSection className="mt-8 mb-24" />
-      <TarifsSection />
+      {/* <TarifsFilterSection className="mt-8 mb-24" /> */}
+      <TarifsSection tarifs={staticTarifs.filter(tarif => tarif.category_id === category_id)} />
     </div>
   )
 }

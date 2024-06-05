@@ -2,15 +2,14 @@ import React, { ReactNode } from 'react'
 import { ITarifCardProps } from './lib/types/ITarifCardTypes'
 import Title from '../../Title/Title'
 import { HiGlobeAlt, HiOutlinePhone, HiMail, HiPhotograph  } from "react-icons/hi";
-import { HiArrowLongRight } from 'react-icons/hi2'
+import { MdOutlineSpeed } from "react-icons/md";
+
 import Image from 'next/image'
 
-import TextButton from '../../Buttons/TextButton';
 
+const TarifCard = ({tarif,showImg = false}:ITarifCardProps) => {
 
-const TarifCard = ({tarif}:ITarifCardProps) => {
-
-    const getIconByName = (icon: ReactNode ) => {
+    const getIconByName = (icon: string ) => {
         switch (icon) {
             case 'HiGlobeAlt': 
                 return <HiGlobeAlt/>
@@ -18,6 +17,8 @@ const TarifCard = ({tarif}:ITarifCardProps) => {
                 return <HiOutlinePhone/>
             case 'HiMail': 
                 return <HiMail/>
+            case 'MdOutlineSpeed': 
+                return <MdOutlineSpeed />
             default: 
                 return <HiPhotograph />
         }
@@ -25,7 +26,7 @@ const TarifCard = ({tarif}:ITarifCardProps) => {
 
   return (
     <div className='t__card__secondary relative overflow-hidden'>
-        {tarif.img &&
+        {tarif.img && showImg &&
             <div className='absolute top-0 left-0 h-32 w-full'>
                 <Image 
                     src={tarif.img}
@@ -38,7 +39,7 @@ const TarifCard = ({tarif}:ITarifCardProps) => {
             </div>
         }
         <Title 
-        extraClass={tarif.img ? 'mt-32' :''}
+        extraClass={tarif.img && showImg ? 'mt-32' :''}
         size='xl' 
         display='h6'>
             {tarif.title}
@@ -52,16 +53,30 @@ const TarifCard = ({tarif}:ITarifCardProps) => {
         <div>
             {tarif.options.map((option, index) => (
                 <div key={index} className='flex items-center gap-4 mt-8'>
-                    <div className='text-[#821EBE]'>{getIconByName(option.icon)}</div>
+                    <div className='text-[#821EBE] text-xl'>{getIconByName(option.icon)}</div>
                     <p className='font-medium text-xl leading-5'>{option.name}</p>
                 </div>
             ))}
         </div>
-        <div className='max-w-[320px] h-[1px] my-8 bg-[#EDEDED]'></div>
-        <div dangerouslySetInnerHTML={{__html: tarif.content}} />
-        <div className='mt-8'>
-            <Title color='primary' size='2xl' display='h3'>*200*100#</Title>
+        <div className='max-w-[320px] h-[1px] my-8 bg-[#EDEDED]'>            
         </div>
+        {tarif.content && 
+            <div dangerouslySetInnerHTML={{__html: tarif.content}} />        
+        }
+        {
+            tarif.ussd &&
+            <div className='mt-8 space-y-2'>
+                <Title size='lg' display='h5'>Команда для подключения:</Title>
+                <a className='text-primary text-lg xl:text-3xl font-medium' href={`tel:tarif.callCenter`}>{tarif.ussd}</a>
+            </div>
+        }
+        {
+            tarif.callCenter &&
+            <div className='mt-8 space-y-2'>
+                <Title size='lg' display='h5'>Call–центр:</Title>
+                <a className='text-primary text-lg xl:text-3xl font-medium' href={`tel:tarif.callCenter`}>{tarif.callCenter}</a>
+            </div>
+        }
     </div>
   )
 }

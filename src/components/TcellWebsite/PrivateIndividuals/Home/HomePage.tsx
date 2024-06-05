@@ -1,10 +1,10 @@
 import TextWithImageBanner from '@/components/Ui/Banners/TextWithImageBanner'
 import React from 'react'
-import NewsSection from './components/NewsSection'
-import ProductsSection from './components/ProductsSection'
-import FaqSection from './components/FaqSection'
-import AppsSection from './components/AppsSection'
-import TarifsSection from './components/TarifsSection'
+import PrivateIndividualsNewsSection from './components/PrivateIndividualsNewsSection'
+import PrivateIndividualsProductsSection from './components/IPrivateIndividualsProductsSectionProps'
+import PrivateIndividualsFaqSection from './components/PrivateIndividualsFaqSection'
+import PrivateIndividualsAppsSection from './components/PrivateIndividualsAppsSection'
+import PrivateIndividualsTarifsSection from './components/PrivateIndividualsTarifsSection'
 
 const HomePage = () => {
 
@@ -18,11 +18,11 @@ const HomePage = () => {
         url='/'
       />
       <div className='t__container mt-24'>
-        <NewsSection />
-        <TarifsSection className="my-24" />
-        <ProductsSection className='mb-24' />
-        <AppsSection className='mb-24' />
-        <FaqSection />
+        <PrivateIndividualsNewsSection />
+        <PrivateIndividualsTarifsSection className="my-24" />
+        <PrivateIndividualsProductsSection className='mb-24' />
+        <PrivateIndividualsAppsSection className='mb-24' />
+        <PrivateIndividualsFaqSection />
       </div>
     </div>
   )

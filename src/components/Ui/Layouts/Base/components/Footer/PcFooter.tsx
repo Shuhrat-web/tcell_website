@@ -1,9 +1,20 @@
+'use client'
 import React from 'react'
 import { IFooterRow } from '../../lib/types/IBaseLayoutTypes'
 import FooterRow from './FooterRow'
 import LogoWithText from '@/components/Ui/LogoWithText'
+import { LuMousePointer2 } from "react-icons/lu";
+import Title from '@/components/Ui/Title/Title';
+import Image from "next/image";
+import { AiFillInstagram } from "react-icons/ai";
+import { FaTelegramPlane } from "react-icons/fa";
+import { useLocale } from 'next-intl'
+
+
 
 const PcFooter = () => {
+  const locale = useLocale()
+
   const footerRows:IFooterRow[] = [
     {
       title: 'ЧАСТНЫМ ЛИЦАМ',
@@ -12,42 +23,36 @@ const PcFooter = () => {
           title: 'Тарифы',
           children:[
             {
-              url: '/',
-              name: 'Линейка тарифов Салом'
+              url: `/${locale}/tarifs`,
+              name: 'Список тарифов'
             },
-            {
-              url: '/',
-              name: 'Линейка тарифов Салом'
-            },
-            {
-              url: '/',
-              name: 'Линейка тарифов Салом'
-            },
-            {
-              url: '/',
-              name: 'Линейка тарифов Салом'
-            }
           ]
         },
         {
-          title: 'Красивые номера',
+          title: 'Новости',
           children:[
             {
               url: '/',
-              name: 'Линейка тарифов Салом'
+              name: 'Лента новостей'
             },
+          ]
+        },
+        {
+          title: 'Сервисы',
+          children:[
             {
               url: '/',
-              name: 'Линейка тарифов Салом'
+              name: 'Активные сервисы'
             },
+          ]
+        },
+        {
+          title: 'Команды',
+          children:[
             {
               url: '/',
-              name: 'Линейка тарифов Салом'
+              name: 'Список команд'
             },
-            {
-              url: '/',
-              name: 'Линейка тарифов Салом'
-            }
           ]
         }
       ]
@@ -59,44 +64,52 @@ const PcFooter = () => {
           title: 'Тарифы',
           children:[
             {
-              url: '/',
-              name: 'Линейка тарифов Салом'
+              url: `/${locale}/tarifs`,
+              name: 'Список тарифов'
             },
+          ]
+        },
+        {
+          title: 'IP Телевидение',
+          children:[
             {
               url: '/',
-              name: 'Линейка тарифов Салом'
-            },
-            {
-              url: '/',
-              name: 'Линейка тарифов Салом'
-            },
-            {
-              url: '/',
-              name: 'Линейка тарифов Салом'
+              name: 'Информация'
             }
           ]
         },
         {
-          title: 'Красивые номера',
+          title: 'Новости',
           children:[
             {
               url: '/',
-              name: 'Линейка тарифов Салом'
+              name: 'Лента новостей'
             },
-            {
-              url: '/',
-              name: 'Линейка тарифов Салом'
-            },
-            {
-              url: '/',
-              name: 'Линейка тарифов Салом'
-            },
-            {
-              url: '/',
-              name: 'Линейка тарифов Салом'
-            }
           ]
-        }
+        },
+      ]
+    },
+    {
+      title: 'ДЛЯ ДОМА',
+      children:[
+        {
+          title: 'Тарифы',
+          children:[
+            {
+              url: `/${locale}/tarifs`,
+              name: 'Список тарифов'
+            },
+          ]
+        },
+        {
+          title: 'Новости',
+          children:[
+            {
+              url: `/${locale}/posts`,
+              name: 'Лента новостей'
+            },
+          ]
+        },
       ]
     },
   ]
@@ -114,6 +127,47 @@ const PcFooter = () => {
               />
             ))
           }
+          <div className=''>
+            <div className='space-y-4'>
+              <div className='flex space-x-2 text-white items-center'>
+                <LuMousePointer2 /> <Title color='white'>Душанбе</Title>
+              </div>
+              <div>
+                <Title color='secondary'>Абонентам Tcell</Title>
+                <Title color='white'>700</Title>
+              </div>
+              <div>
+                <Title color='secondary'>Абонентам других операторов</Title>
+                <Title color='white'>+992 44 665 07 00 </Title>
+              </div>
+            </div>
+            <div className='my-8'>
+              <Title color='white'>Приложения</Title>
+              <ul className='flex flex-col gap-4 mt-4 font-medium'>
+                <li className='flex items-center gap-x-2'>
+                  <Image height={44} width={44} alt='myTcellApp' src={'/images/myTcell.png'} />
+                  <span className='text-secondary'>Мой Tcell</span>
+                </li>
+                <li className='flex items-center gap-x-2'>
+                  <Image height={44} width={44} alt='chiGapApp' src={'/images/chiGap.png'} />
+                  <span className='text-secondary'>Чигап</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <Title color='white'>Приложения</Title>
+              <ul className='mt-4 flex gap-3 text-white text-xl'>
+                <li>
+                  <a target="_blank" href="https://www.instagram.com/tcell.tj">
+                    <AiFillInstagram />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://t.me/tcellpublic" target="_blank" rel="noopener noreferrer"><FaTelegramPlane /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div className='text-center py-4 text-sm text-secondary my-12 border-y border-secondary'>
           <p>

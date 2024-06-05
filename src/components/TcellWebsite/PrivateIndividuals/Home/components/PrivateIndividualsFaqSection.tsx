@@ -1,12 +1,12 @@
 import React from 'react'
-import { IFaqSectionProps } from '../lib/types/IHomePageTypes'
+import { IPrivateIndividualsFaqSectionProps } from '../lib/types/IHomePageTypes'
 import clsx from 'clsx'
 import { IPost } from '@/lib/requests/resources/Posts/lib/IPostsResourcesTypes'
 import PostCard from '@/components/Ui/Cards/Post/PostCard'
 import FaqChat from './FaqChat'
 import Title from '@/components/Ui/Title/Title'
 
-const FaqSection = ({className}:IFaqSectionProps) => {
+const PrivateIndividualsFaqSection = ({className}:IPrivateIndividualsFaqSectionProps) => {
     const news:IPost[] = [
         {
             id:1,
@@ -41,4 +41,4 @@ const FaqSection = ({className}:IFaqSectionProps) => {
   )
 }
 
-export default FaqSection
+export default PrivateIndividualsFaqSection

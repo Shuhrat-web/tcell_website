@@ -8,6 +8,7 @@ const IpTarifSection = ({ className }: IIpTarifSecrionProps) => {
     {
       id: 1,
       title: "Салом 20",
+      category_id: 1,
       content: `
                     <ul class="ml-5 list-disc">
                         <li>Безлимитные звонки внутри сети</li>
@@ -38,6 +39,7 @@ const IpTarifSection = ({ className }: IIpTarifSecrionProps) => {
     },
     {
       id: 2,
+      category_id: 1,
       title: "Салом 20",
       content: `
                 <ul class="ml-5 list-disc">
@@ -69,6 +71,7 @@ const IpTarifSection = ({ className }: IIpTarifSecrionProps) => {
     {
       id: 3,
       title: "Салом 20",
+      category_id: 1,
       content: `
                 <ul class="ml-5 list-disc">
                     <li>Безлимитные звонки внутри сети</li>
