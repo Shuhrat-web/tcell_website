@@ -56,7 +56,7 @@ const BaseLayout = ({
       route:'/for-bussines',
       children:[
         {
-          route: '/',
+          route: '/for-bussines',
           name: 'Главная'
         },
         {
