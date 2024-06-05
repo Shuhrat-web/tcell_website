@@ -27,11 +27,11 @@ const BaseLayout = ({
         //   route: '/private-individuals/loyalty',
         //   name: 'Лояльность'
         // },
-        {
-          tabId: 1,
-          route: '/services',
-          name: 'Сервисы'
-        },
+        // {
+        //   tabId: 1,
+        //   route: '/services',
+        //   name: 'Сервисы'
+        // },
         {
           tabId: 1,
           route: '/private-individuals/ussd-commands',

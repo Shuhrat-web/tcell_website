@@ -1,10 +1,10 @@
 'use client'
 import Logo from '@/components/Ui/Logo'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { IPcNavigationProprs } from '../../lib/types/IBaseLayoutTypes'
 import ContainButton from '@/components/Ui/Buttons/ContainButton'
 import { HiMagnifyingGlass,HiGlobeAlt,HiChevronDown   } from "react-icons/hi2";
-import { usePathname, useRouter } from 'next/navigation'
+import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import clsx from 'clsx'
 import { useLocale } from 'next-intl'
 import Link from 'next/link'
@@ -17,6 +17,15 @@ const PcNavigation = ({links,absoluteNav}:IPcNavigationProprs) => {
   const locale = useLocale()
   const router = useRouter()
   const pathName = usePathname()
+  const searchParams = useSearchParams()
+  const module_id = searchParams.get('module_id')
+
+
+  useEffect(() => {
+    if(module_id)setACtiveTab(+module_id)
+      console.log(module_id);
+      
+  },[module_id])
   
   return (
     <div className={clsx('w-full md:block hidden',{
@@ -34,9 +43,9 @@ const PcNavigation = ({links,absoluteNav}:IPcNavigationProprs) => {
               {links.map(tab => 
                   <li 
                   className={clsx('border-b shrink-0',{
-                    'border-transparent cursor-pointer font-medium': !tab.route || `/${locale}${tab.route}` !== pathName+'/',
-                    'border-white font-bold': absoluteNav && tab.route && `/${locale}${tab.route}` === pathName || `${locale}${tab.route}/` === pathName,
-                    'border-black font-bold': !absoluteNav && tab.route && `/${locale}${tab.route}` === pathName || `${locale}${tab.route}/` === pathName,
+                    'border-transparent cursor-pointer font-medium': activeTab !== tab.id,
+                    'border-white font-bold': absoluteNav && activeTab === tab.id,
+                    'border-black font-bold': !absoluteNav && activeTab === tab.id,
                   })}
                   onClick={() => {
                     if(tab.route)router.push(`/${locale}${tab.route}?module_id=${tab.id}`)     
