@@ -1,26 +1,23 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import { ITarifCardProps } from './lib/types/ITarifCardTypes'
 import Title from '../../Title/Title'
-import { HiGlobeAlt, HiOutlinePhone, HiMail, HiPhotograph  } from "react-icons/hi";
-import { MdOutlineSpeed } from "react-icons/md";
-
 import Image from 'next/image'
 
 
 const TarifCard = ({tarif,showImg = false}:ITarifCardProps) => {
 
-    const getIconByName = (icon: string ) => {
+    const getIconByName = (icon: string ):string => {
         switch (icon) {
             case 'HiGlobeAlt': 
-                return <HiGlobeAlt/>
+                return '/images/icons/globe-alt.svg'
             case 'HiOutlinePhone': 
-                return <HiOutlinePhone/>
+                return '/images/icons/phone.svg'
             case 'HiMail': 
-                return <HiMail/>
+                return  '/images/icons/envelope.svg'
             case 'MdOutlineSpeed': 
-                return <MdOutlineSpeed />
+                return '/images/icons/speed-outline.svg'
             default: 
-                return <HiPhotograph />
+                return '/images/icons/envelope.svg'
         }
     }
 
@@ -53,7 +50,14 @@ const TarifCard = ({tarif,showImg = false}:ITarifCardProps) => {
         <div>
             {tarif.options.map((option, index) => (
                 <div key={index} className='flex items-center gap-4 mt-8'>
-                    <div className='text-[#821EBE] text-xl'>{getIconByName(option.icon)}</div>
+                    <Image 
+                        src={getIconByName(option.icon)}
+                        height={332}
+                        width={138}
+                        alt={option.icon}
+                        unoptimized
+                        className='w-6 h-6'
+                    />
                     <p className='font-medium text-xl leading-5'>{option.name}</p>
                 </div>
             ))}

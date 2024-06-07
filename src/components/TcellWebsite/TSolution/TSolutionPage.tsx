@@ -12,7 +12,7 @@ const TSolution = () => {
         url="/"
         img="/images/t_solution.svg"
       />
-      <AdvantageSection/>
+      <AdvantageSection className="mt-8"/>
       <Decision className="my-32"/>
     </div>
   );

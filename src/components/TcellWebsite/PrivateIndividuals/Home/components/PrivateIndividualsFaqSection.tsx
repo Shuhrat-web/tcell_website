@@ -19,7 +19,7 @@ const PrivateIndividualsFaqSection = ({className}:IPrivateIndividualsFaqSectionP
             </div>
             <div className='col-span-7 lg:col-span-4 flex flex-col gap-6'>
                 {
-                    staticPosts.map(el => (
+                    staticPosts.slice(0,2).map(el => (
                         <PostCard post={el} key={el.id} />
                     ))
                 }

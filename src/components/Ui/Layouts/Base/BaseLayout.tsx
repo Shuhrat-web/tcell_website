@@ -110,21 +110,23 @@ const BaseLayout = ({
         },
       ]
     },
-    // {
-    //   id: 4,
-    //   name: 'T-Solution',
-    //   route:'/t-solution',
-    //   children:[
-    //     {
-    //       route: '/t-solution',
-    //       name: 'Главная'
-    //     },
-    //     {
-    //       route: '/t-solution/chat-bot',
-    //       name: 'Чат бот'
-    //     }
-    //   ]
-    // },
+    {
+      id: 4,
+      name: 'T-Solution',
+      route:'/t-solution',
+      children:[
+        {
+          tabId: 4,
+          route: '/t-solution',
+          name: 'Главная'
+        },
+        {
+          tabId: 4,
+          route: '/t-solution/chat-bot',
+          name: 'Чат бот'
+        }
+      ]
+    },
   ] 
 
   return (

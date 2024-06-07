@@ -14,11 +14,11 @@ const PostCard = ({post}:IPostCardProps) => {
         <Title extraClass='truncate' size='xl' font='lg' display='h5'>
             {post.title}
         </Title>
-        <p className='text-secondary text-sm mt-4 mb-8 truncate'>
+        <p className='text-secondary text-sm mt-4 mb-8'>
             {post.excerpt}
         </p>
         <div className='flex justify-between'>
-            <TextButton extraClass='flex items-center gap-x-2' hideHover size='none'>
+            <TextButton extraClass='flex items-center gap-x-2 font-medium' hideHover size='none'>
                 Подробнее
                 <HiArrowLongRight />
             </TextButton>

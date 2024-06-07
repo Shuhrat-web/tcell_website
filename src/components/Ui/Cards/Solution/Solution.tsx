@@ -18,11 +18,11 @@ const SolutionCard = ({solution,iconHeight=120,iconWidth=120}:ISolutionCardProps
                 {solution.description}
             </p>
         </div>
-        <div className='flex justify-between items-end'>
-            <TextButton extraClass='flex items-center gap-x-2' hideHover size='none'>
+        <div className='flex justify-end items-end'>
+            {/* <TextButton extraClass='flex items-center gap-x-2' hideHover size='none'>
                 Подробнее
                 <HiArrowLongRight />
-            </TextButton>
+            </TextButton> */}
             {
                 solution.icon &&
                 <Image 

@@ -47,7 +47,7 @@ const Decision = ({className}: IAdvantageSectionProps) => {
   return (
     <div className={className}>
       <SectionTitle titleText='Решения T-Solution'/>
-      <div className='grid grid-cols-3 gap-6 mt-16'>
+      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-16'>
         {
           decisions.map(faq => (
             <SolutionCard key={faq.id} solution={faq}/>

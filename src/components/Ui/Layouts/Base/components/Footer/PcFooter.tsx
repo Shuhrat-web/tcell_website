@@ -32,7 +32,7 @@ const PcFooter = () => {
           title: 'Новости',
           children:[
             {
-              url: '/',
+              url: `/${locale}/posts`,
               name: 'Лента новостей'
             },
           ]
@@ -41,7 +41,7 @@ const PcFooter = () => {
           title: 'Сервисы',
           children:[
             {
-              url: '/',
+              url: `/${locale}/services`,
               name: 'Активные сервисы'
             },
           ]
@@ -73,7 +73,7 @@ const PcFooter = () => {
           title: 'IP Телевидение',
           children:[
             {
-              url: '/',
+              url: `/${locale}/for-home/ip-television`,
               name: 'Информация'
             }
           ]
@@ -82,7 +82,7 @@ const PcFooter = () => {
           title: 'Новости',
           children:[
             {
-              url: '/',
+              url: `/${locale}/posts`,
               name: 'Лента новостей'
             },
           ]

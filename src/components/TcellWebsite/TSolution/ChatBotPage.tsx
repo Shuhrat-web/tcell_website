@@ -6,8 +6,8 @@ import BusinessCardsSection from "./components/BusinessCardsSection";
 
 const ChatBotPage = () => {
   const breadcrumbPages: IBreadCrumb[] = [
-    { name: "Тарифы", href: "", current: false },
-    { name: "Название тарифы", href: "", current: true },
+    { name: "t-solution", href: "", current: false },
+    { name: "Чат бот", href: "", current: true },
   ];
 
   const texts = [
@@ -31,7 +31,7 @@ const ChatBotPage = () => {
       <div className="font-normal">
         {texts.map((text) => (
           <p
-            className="font-normal text-[20px] text-secondary-50 mt-5 leading-8"
+            className="font-normal text-[16px] text-secondary-50 mt-5 leading-8"
             key={text.id}
           >
             {text.conText}
