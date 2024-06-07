@@ -2,29 +2,14 @@
 
 import React from 'react'
 import { IForBussinesGoodToKnoeSection } from '../lib/types/IForBussinessHomePageTypes'
-import { IPost } from '@/lib/requests/resources/Posts/lib/IPostsResourcesTypes'
 import { useLocale } from 'next-intl'
 import SectionTitle from '@/components/Ui/Title/SectionTitle'
 import PostCard from '@/components/Ui/Cards/Post/PostCard'
 import clsx from 'clsx'
+import { staticPosts } from '@/lib/requests/resources/Posts/lib/data/StaticPostsData';
 
 const ForBussinesGoodToKnoeSection = ({className}:IForBussinesGoodToKnoeSection) => {
     const locale = useLocale()
-
-    const news:IPost[] = [
-        {
-            id:1,
-            title: 'Уважаемые абоненты!',
-            description: 'В связи с отключением света по всему городу мы приносим свои извинения,  ',
-            date: '13 мар. 2023 г.'
-        },
-        {
-            id:2,
-            title: 'Уважаемые абоненты!',
-            description: 'В связи с отключением света по всему городу мы приносим свои извинения,  ',
-            date: '13 мар. 2023 г.'
-        }
-    ]
   return (
     <section className={clsx(className,'')}>
         <SectionTitle 
@@ -32,7 +17,7 @@ const ForBussinesGoodToKnoeSection = ({className}:IForBussinesGoodToKnoeSection)
         />
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 mt-16'>
             {
-                news.map(post => (
+                staticPosts.map(post => (
                     <PostCard key={post.id} post={post} />
                 ))
             }

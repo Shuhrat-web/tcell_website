@@ -1,9 +1,10 @@
+import ShowPostsPage from '@/components/TcellWebsite/Posts/ShowPostPage'
 import React from 'react'
 
-const PostId = () => {
+const PostSonglePage = () => {
   return (
-    <div>PostId</div>
+    <ShowPostsPage />
   )
 }
 
-export default PostId
+export default PostSonglePage

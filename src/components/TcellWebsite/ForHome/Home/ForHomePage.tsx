@@ -9,11 +9,11 @@ const ForHomePage = () => {
   return (
     <div>
       <TextWithImageBanner 
-        title='Мы заботимся не только о вашем комфорте в интернете но и в небе'
-        description='Теперь в приложении MyTcell можно покупать билеты и туры, и не беспокоится за неудобства '
-        bannerIcon='/images/bannerIcon.svg'
-        bgColor='#5FD2E7'
-        url='/'
+        title='Домашний скоростной интернет «ТеzNet»'
+        description='Безлимитный интернет по передовой технологии Gpon'
+        bannerIcon='/images/03_banner.webp'
+        bgColor='#27B9D3'
+        // url='/'
         descriptionColor='white'
       />
       <div className='t__container mt-24'>

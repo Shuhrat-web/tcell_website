@@ -32,7 +32,7 @@ const TextWithImageBanner = ({
     }}
     className={`${bannerIcon ? 'min-h-[600px] md:min-h-[800px] lg:min-h-[580px]' : 'min-h-[580px]'} grid bg-cover`}>
       <div className={`flex ${bannerIcon ? 'items-start lg:items-center pt-32 lg:mt-0' : 'items-center'} t__container w-full h-full relative grid-cols-1`}>
-        <div className='max-w-[850px]'>
+        <div className='max-w-[650px]'>
           <Title 
             display='h2' 
             size='3xl' 
@@ -40,9 +40,12 @@ const TextWithImageBanner = ({
           >
             {title}
           </Title>
-          <p className={`${settings.textColor[descriptionColor]} mt-5 mb-10 w-10/12 z-20`}>
-            { description }
-          </p>
+          {
+            description &&
+            <p className={`${settings.textColor[descriptionColor]} mt-5 mb-10 w-10/12 z-20`}>
+              { description }
+            </p>
+          }
           {
             url &&
             <ContainButton extraClass='z-20' type='white'>
@@ -52,10 +55,10 @@ const TextWithImageBanner = ({
         </div>
         {
           bannerIcon &&
-          <div className='absolute right-2/4 translate-x-2/4 lg:ranslate-x-0 lg:right-56 xl:right-60 bottom-0 z-10'>
+          <div className='absolute right-2/4 translate-x-2/4 lg:ranslate-x-0 lg:right-56 xl:right-80 bottom-0 z-10'>
             <Image 
               src={bannerIcon}
-              height={350}
+              height={450}
               width={450}
               alt={title}
               unoptimized

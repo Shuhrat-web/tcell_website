@@ -6,7 +6,7 @@ import FaqQuestionarySection from './components/FaqQuestionarySection';
 
 const FaqPage = () => {
     const breadcrumbPages: IBreadCrumb[] = [
-        { name: 'Помощь', href: '/news', current: true },
+      { name: 'Помощь', href: '/news', current: true },
     ];
 
     

@@ -12,15 +12,15 @@ export default function NotFound() {
     <html lang="en">
       <body>
         <div className='dfo__container py-44'>
-            <div className='flex flex-col justify-center items-center'>
-            <Title size='3xl' color='primary'>
-                404 
-            </Title>
-            <p className='text-secondary mb-5'>Страница не найдена</p>
-            <ContainButton size='lg' animate>
-                Назад на главную
-            </ContainButton>
-            </div>
+          <div className='flex flex-col justify-center items-center'>
+          <Title size='3xl' color='primary'>
+            404 
+          </Title>
+          <p className='text-secondary mb-5'>Страница не найдена</p>
+          <ContainButton size='lg' animate>
+            Назад на главную
+          </ContainButton>
+          </div>
         </div>
       </body>
     </html>

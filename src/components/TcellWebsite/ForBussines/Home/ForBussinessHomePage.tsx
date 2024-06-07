@@ -8,10 +8,11 @@ const ForBussinessHomePage = () => {
   return (
     <div>
         <TextWithImageBanner 
-            title='Мы заботимся не только о вашем комфорте в интернете но и в небе'
-            description='Теперь в приложении MyTcell можно покупать билеты и туры, и не беспокоится за неудобства '
-            bgColor='#151515'
-            url='/'
+            title='Специальное тарифное предложение для корпоративных клиентов и бизнеса партнёров'
+            // description='Теперь в приложении MyTcell можно покупать билеты и туры, и не беспокоится за неудобства '
+            bgColor='#020204'
+            bannerIcon='/images/02_banner.webp'
+            // url='/'
         />
          <div className='t__container mt-24'>
             <ForBussinesNewsSection />

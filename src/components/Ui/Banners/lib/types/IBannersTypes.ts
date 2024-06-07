@@ -2,7 +2,7 @@ import { IUiTypes, TUiVariant } from "@/lib/shared/types/IGlobalTypes";
 
 export interface ITextWithImageBannerProps{
     title: string;
-    description: string;
+    description?: string;
     url?:string;
     bgImage?: string;
     bannerIcon?: string;

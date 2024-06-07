@@ -43,10 +43,11 @@ const BaseLayout = ({
           route: '/tarifs?category_id=1',
           name: 'Тарифы'
         },
-        // {
-        //   route: '/faq',
-        //   name: 'Помощь'
-        // },
+        {
+          tabId: 1,
+          route: '/faq',
+          name: 'Помощь'
+        },
       ]
     },
     {

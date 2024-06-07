@@ -11,11 +11,11 @@ const HomePage = () => {
   return (
     <div>
       <TextWithImageBanner 
-        title='Мы заботимся не только о вашем комфорте в интернете но и в небе'
-        description='Теперь в приложении MyTcell можно покупать билеты и туры, и не беспокоится за неудобства '
+        title='Опция «Мегабайты за звонки»'
+        description='Мегабайты интернета за входящие звонки с других мобильных операторов! 10 Мб - 1 мин. Команда подключения: *824*1#.'
         bgImage='/images/banner_bg.png'
-        bannerIcon='/images/bannerIcon.svg'
-        url='/'
+        bannerIcon='/images/01_banner.png'
+        // url='/'
       />
       <div className='t__container mt-24'>
         <PrivateIndividualsNewsSection />

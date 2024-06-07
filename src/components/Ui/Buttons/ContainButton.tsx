@@ -2,7 +2,6 @@
 import React from 'react'
 import { IContainButtonProps, IContainButtonSettings } from './lib/types/IButtonsType'
 import { FaSpinner } from 'react-icons/fa'
-import { IUiTypes } from '@/lib/shared/types/IGlobalTypes'
 
 const ContainButton = ({
     children,

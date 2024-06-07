@@ -11,13 +11,28 @@ const FaqQuestionarySection = ({className}:IFaqQuestionarySectionProps) => {
     const faqList:IFaq[] = [
         {
             id: 1,
-            question: 'What’s the best thing about Switzerland?',
-            answer: `I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.`
+            question: 'Как проверить свои расходы?',
+            answer: `Портал *105# и Мой Tcell`
         },
         {
             id: 2,
-            question: 'What’s the best thing about Switzerland?',
-            answer: `I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.`
+            question: 'Как узнать свой тарифный план?',
+            answer: `*105*3#`
+        },
+        {
+            id: 3,
+            question: 'Какие услуги активны на моем номере?',
+            answer: `*частично можно проверить по средствам приложения Мой Tcell`
+        },
+        {
+            id: 4,
+            question: 'Как проверить остаток на тарифе?',
+            answer: `*377#`
+        },
+        {
+            id: 5,
+            question: 'Как отключить рекламные сообщения?',
+            answer: `*1191*99#`
         }
     ]
   return (
