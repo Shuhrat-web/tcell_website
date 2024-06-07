@@ -4,11 +4,11 @@ export const staticTarifs:ITarif[] = [
     {
         id: 1,
         category_id: 1,
-        img: '/images/tarif_img.png',
+        img: '/images/Salom_50.webp',
         ussd: '*207*01#',
         title: "Салом+ 50",
         content: `
-            <ul class="ml-5 list-disc">
+            <ul style="list-style-type: disc; padding-left: 20px; text-size: 12px;">
                 <li>Мессенджеры (Text + Media ) - Viber, Whatsapp, Telegram, IMO, WeChat (полный контент), Мб(5 120)</li>
                 <li>Исходящие звонки внутри сети, TJS/min - Бесплатно</li>
                 <li>Стоимость GPRS за 1 Mb (сверх пакета), TJS	0,02</li>
@@ -44,18 +44,18 @@ export const staticTarifs:ITarif[] = [
         id: 2,
         ussd: '*207*02#',
         category_id: 1,
-        img: '/images/tarif_img.png',
+        img: '/images/Salom_70.webp',
         title: "Салом+ 70",
         content: `
-            <ul class="ml-5 list-disc">
-                <li>Мессенджеры (Text + Media ) - Viber, Whatsapp, Telegram, IMO, WeChat (полный контент), Мб(30 720)</li>
-                <li>Исходящие звонки внутри сети, TJS/min - Бесплатно</li>
-                <li>Стоимость GPRS за 1 Mb (сверх пакета), TJS	0,02</li>
-                <li>Исходящий SMS по РТ, TJS 0,10</li>
-                <li>Исходящий МН, SMS и MMS, TJS 0,50</li>
-                <li>Тарификация звонков -Поминутная</li>
-                <li>Тарификация GPRS - 10кб </li>
-            </ul>
+          <ul style="list-style:disc; padding-left: 15px; text-size: 12px;">
+            <li>Мессенджеры (Text + Media ) - Viber, Whatsapp, Telegram, IMO, WeChat (полный контент), Мб(30 720)</li>
+            <li>Исходящие звонки внутри сети, TJS/min - Бесплатно</li>
+            <li>Стоимость GPRS за 1 Mb (сверх пакета), TJS	0,02</li>
+            <li>Исходящий SMS по РТ, TJS 0,10</li>
+            <li>Исходящий МН, SMS и MMS, TJS 0,50</li>
+            <li>Тарификация звонков -Поминутная</li>
+            <li>Тарификация GPRS - 10кб </li>
+          </ul>
         `,
         price: "70 сом / мес",
         options: [
@@ -82,11 +82,11 @@ export const staticTarifs:ITarif[] = [
     {
         id: 3,
         ussd: '*207*03#',
-        img: '/images/tarif_img.png',
+        img: '/images/Salom_90.webp',
         category_id: 1,
         title: "Салом+ 90",
         content: `
-            <ul class="ml-5 list-disc">
+            <ul style="list-style:disc; padding-left: 15px; text-size: 12px;">
                 <li>Мессенджеры (Text + Media ) - Viber, Whatsapp, Telegram, IMO, WeChat (полный контент), Мб(20 480)</li>
                 <li>Исходящие звонки внутри сети, TJS/min - Бесплатно</li>
                 <li>Стоимость GPRS за 1 Mb (сверх пакета), TJS	0,02</li>
@@ -121,11 +121,11 @@ export const staticTarifs:ITarif[] = [
     {
         id: 4,
         ussd: '*207*04#',
-        img: '/images/tarif_img.png',
+        img: '/images/Salom_130.webp',
         category_id: 1,
         title: "Салом+ 130",
         content: `
-            <ul class="ml-5 list-disc">
+            <ul style="list-style:disc; padding-left: 15px; text-size: 12px;">
                 <li>Мессенджеры (Text + Media ) - Viber, Whatsapp, Telegram, IMO, WeChat (полный контент), Мб(40 960)</li>
                 <li>Исходящие звонки внутри сети, TJS/min - Бесплатно</li>
                 <li>Стоимость GPRS за 1 Mb (сверх пакета), TJS	0,02</li>
@@ -160,11 +160,11 @@ export const staticTarifs:ITarif[] = [
     {
         id: 5,
         ussd: '*207*05#',
-        img: '/images/tarif_img.png',
+        img: '/images/Salom_180.webp',
         category_id: 1,
         title: "Салом+ 180",
         content: `
-            <ul class="ml-5 list-disc">
+            <ul style="list-style:disc; padding-left: 15px; text-size: 12px;">
                 <li>Мессенджеры (Text + Media ) - Viber, Whatsapp, Telegram, IMO, WeChat (полный контент), Мб(61 440)</li>
                 <li>Исходящие звонки внутри сети, TJS/min - Бесплатно</li>
                 <li>Стоимость GPRS за 1 Mb (сверх пакета), TJS	0,02</li>
@@ -199,11 +199,11 @@ export const staticTarifs:ITarif[] = [
     {
         id: 6,
         ussd: '*207*06#',
-        img: '/images/tarif_img.png',
+        img: '/images/Salom_300.webp',
         category_id: 1,
         title: "Салом+ 300",
         content: `
-            <ul class="ml-5 list-disc">
+            <ul style="list-style:disc; padding-left: 15px; text-size: 12px;">
                 <li>Мессенджеры (Text + Media ) - Viber, Whatsapp, Telegram, IMO, WeChat (полный контент), Мб(102 400)</li>
                 <li>Исходящие звонки внутри сети, TJS/min - Бесплатно</li>
                 <li>Стоимость GPRS за 1 Mb (сверх пакета), TJS	0,02</li>
@@ -308,7 +308,7 @@ export const staticTarifs:ITarif[] = [
         callCenter: '8080',
         title: `Хамкор «20»`,
         content: `
-            <ul class="ml-5 list-disc">
+            <ul style="list-style:disc; padding-left: 15px; text-size: 12px;">
                 <li>Исходящие звонки внутри сети, сомони(Бесплатно)</li>
                 <li>Исходящие звонки на другие мобильные операторы РТ, сомони (0,25)</li>
                 <li>Стоимость GRPS за 1Мб (сверх пакета), сомони (0,02)</li>
@@ -351,7 +351,7 @@ export const staticTarifs:ITarif[] = [
         callCenter: '8080',
         title: `Хамкор «50»`,
         content: `
-            <ul class="ml-5 list-disc">
+            <ul style="list-style:disc; padding-left: 15px; text-size: 12px;">
                 <li>Исходящие звонки внутри сети, сомони(Бесплатно)</li>
                 <li>Исходящие звонки на другие мобильные операторы РТ, сомони (0,25)</li>
                 <li>Стоимость GRPS за 1Мб (сверх пакета), сомони (0,02)</li>
@@ -394,7 +394,7 @@ export const staticTarifs:ITarif[] = [
         callCenter: '8080',
         title: `Хамкор «100»`,
         content: `
-            <ul class="ml-5 list-disc">
+            <ul style="list-style:disc; padding-left: 15px; text-size: 12px;">
                 <li>Исходящие звонки внутри сети, сомони(Бесплатно)</li>
                 <li>Исходящие звонки на другие мобильные операторы РТ, сомони (0,25)</li>
                 <li>Стоимость GRPS за 1Мб (сверх пакета), сомони (0,02)</li>
@@ -437,7 +437,7 @@ export const staticTarifs:ITarif[] = [
         callCenter: '8080',
         title: `Хамкор «150»`,
         content: `
-            <ul class="ml-5 list-disc">
+            <ul style="list-style:disc; padding-left: 15px; text-size: 12px;">
                 <li>Исходящие звонки внутри сети, сомони(Бесплатно)</li>
                 <li>Исходящие звонки на другие мобильные операторы РТ, сомони (0,25)</li>
                 <li>Стоимость GRPS за 1Мб (сверх пакета), сомони (0,02)</li>
@@ -480,7 +480,7 @@ export const staticTarifs:ITarif[] = [
         callCenter: '8080',
         title: `Хамкор «300»`,
         content: `
-            <ul class="ml-5 list-disc">
+            <ul style="list-style:disc; padding-left: 15px; text-size: 12px;">
                 <li>Исходящие звонки внутри сети, сомони(Бесплатно)</li>
                 <li>Исходящие звонки на другие мобильные операторы РТ, сомони (0,25)</li>
                 <li>Стоимость GRPS за 1Мб (сверх пакета), сомони (0,02)</li>

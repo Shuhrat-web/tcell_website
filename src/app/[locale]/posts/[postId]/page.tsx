@@ -1,9 +1,11 @@
 import ShowPostsPage from '@/components/TcellWebsite/Posts/ShowPostPage'
 import React from 'react'
 
-const PostSonglePage = () => {
+const PostSonglePage = ({ params }: { params: { postId: string } }) => {
   return (
-    <ShowPostsPage />
+    <>
+      <ShowPostsPage id={+params.postId} />    
+    </>
   )
 }
 

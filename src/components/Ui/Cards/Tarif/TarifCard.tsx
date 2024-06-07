@@ -67,14 +67,14 @@ const TarifCard = ({tarif,showImg = false}:ITarifCardProps) => {
             tarif.ussd &&
             <div className='mt-8 space-y-2'>
                 <Title size='lg' display='h5'>Команда для подключения:</Title>
-                <a className='text-primary text-lg xl:text-3xl font-medium' href={`tel:tarif.callCenter`}>{tarif.ussd}</a>
+                <a className='text-primary text-lg xl:text-3xl font-medium mt-3 block' href={`tel:tarif.callCenter`}>{tarif.ussd}</a>
             </div>
         }
         {
             tarif.callCenter &&
             <div className='mt-8 space-y-2'>
                 <Title size='lg' display='h5'>Call–центр:</Title>
-                <a className='text-primary text-lg xl:text-3xl font-medium' href={`tel:tarif.callCenter`}>{tarif.callCenter}</a>
+                <a className='text-primary text-lg xl:text-3xl font-medium mt-3 block' href={`tel:tarif.callCenter`}>{tarif.callCenter}</a>
             </div>
         }
     </div>

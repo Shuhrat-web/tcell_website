@@ -130,7 +130,7 @@ const BaseLayout = ({
   return (
     <>
       <BaseNavigation links={links} />
-        <main>
+        <main className='mb-32'>
           { children }
         </main>
       <PcFooter />
