@@ -22,7 +22,7 @@ const TarifCard = ({tarif,showImg = false}:ITarifCardProps) => {
     }
 
   return (
-    <div className='t__card__secondary relative overflow-hidden'>
+    <div className='t__card__secondary relative overflow-hidden flex flex-col justify-between'>
         {tarif.img && showImg &&
             <div className='absolute top-0 left-0 h-32 w-full'>
                 <Image 
@@ -49,7 +49,7 @@ const TarifCard = ({tarif,showImg = false}:ITarifCardProps) => {
         </Title>
         <div>
             {tarif.options.map((option, index) => (
-                <div key={index} className='flex items-center gap-4 mt-8'>
+                <div key={index} className='flex items-center gap-4 mt-4'>
                     <Image 
                         src={getIconByName(option.icon)}
                         height={332}
@@ -62,8 +62,7 @@ const TarifCard = ({tarif,showImg = false}:ITarifCardProps) => {
                 </div>
             ))}
         </div>
-        <div className='max-w-[320px] h-[1px] my-8 bg-[#EDEDED]'>            
-        </div>
+        <div className='max-w-[320px] h-[1px] my-8 bg-[#EDEDED]' />
         {tarif.content && 
             <div dangerouslySetInnerHTML={{__html: tarif.content}} />        
         }
