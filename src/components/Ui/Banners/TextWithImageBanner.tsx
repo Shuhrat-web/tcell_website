@@ -32,7 +32,7 @@ const TextWithImageBanner = ({
     }}
     className={`${bannerIcon ? 'min-h-[600px] md:min-h-[800px] lg:min-h-[580px]' : 'min-h-[580px]'} grid bg-cover`}>
       <div className={`flex ${bannerIcon ? 'items-start lg:items-center pt-32 lg:mt-0' : 'items-center'} t__container w-full h-full relative grid-cols-1`}>
-        <div className='max-w-[650px]'>
+        <div className='max-w-[650px] lg:-mt-20'>
           <Title 
             display='h2' 
             size='3xl' 
