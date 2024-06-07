@@ -4,7 +4,7 @@ export const staticTarifs:ITarif[] = [
     {
         id: 1,
         category_id: 1,
-        img: '/images/Salom_50.webp',
+        img: '/images/Salom_500.webp',
         ussd: '*207*01#',
         title: "Салом+ 50",
         content: `
