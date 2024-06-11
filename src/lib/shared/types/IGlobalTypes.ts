@@ -41,6 +41,7 @@ export interface IUiTypes {
     primary: string;
     warning: string;
     danger: string;
+    success?: string;
     secondary?: string;
     white?: string;
     none?: string;

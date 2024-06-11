@@ -2,12 +2,11 @@
 import Logo from '@/components/Ui/Logo'
 import React, { useEffect, useState } from 'react'
 import { IPcNavigationProprs } from '../../lib/types/IBaseLayoutTypes'
-import ContainButton from '@/components/Ui/Buttons/ContainButton'
-import { HiMagnifyingGlass,HiGlobeAlt,HiChevronDown   } from "react-icons/hi2";
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import clsx from 'clsx'
 import { useLocale } from 'next-intl'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 
 
@@ -16,7 +15,6 @@ const PcNavigation = ({links,absoluteNav}:IPcNavigationProprs) => {
   const [activeTab,setACtiveTab] = useState<number>(1)
   const locale = useLocale()
   const router = useRouter()
-  const pathName = usePathname()
   const searchParams = useSearchParams()
   const module_id = searchParams.get('module_id')
 
@@ -39,13 +37,12 @@ const PcNavigation = ({links,absoluteNav}:IPcNavigationProprs) => {
           width={48} 
           fill={absoluteNav ? '#fff' : '#000'} />
           <nav className={`${absoluteNav ? 'text-white' : 'text-dark-blue'}`}>
-            <ul className='flex gap-x-6  sm:w-full w-60 overflow-x-auto'>
+            <ul className='flex gap-x-6  sm:w-full w-60 overflow-x-auto lg:overflow-hidden'>
               {links.map(tab => 
                   <li 
-                  className={clsx('border-b shrink-0',{
-                    'border-transparent cursor-pointer font-medium': activeTab !== tab.id,
-                    'border-white font-bold': absoluteNav && activeTab === tab.id,
-                    'border-black font-bold': !absoluteNav && activeTab === tab.id,
+                  className={clsx('shrink-0 relative',{
+                    'cursor-pointer font-medium': activeTab !== tab.id,
+                    'font-bold': absoluteNav && activeTab === tab.id
                   })}
                   onClick={() => {
                     if(tab.route)router.push(`/${locale}${tab.route}?module_id=${tab.id}`)     
@@ -53,6 +50,10 @@ const PcNavigation = ({links,absoluteNav}:IPcNavigationProprs) => {
                   }}
                   key={tab.id}>
                     {tab.name} 
+                    {
+                      activeTab === tab.id &&
+                      <motion.span layoutId='underline' className={`block left-0 top-full h-[1px] w-full ${ absoluteNav ? 'bg-white':'bg-black'}`} />
+                    }
                   </li>
                 )
               }

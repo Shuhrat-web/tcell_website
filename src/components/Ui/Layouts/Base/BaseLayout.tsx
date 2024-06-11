@@ -45,8 +45,13 @@ const BaseLayout = ({
         },
         {
           tabId: 1,
-          route: '/faq',
+          route: '/help/faq',
           name: 'Помощь'
+        },
+        {
+          tabId: 1,
+          route: '/help/service-points',
+          name: 'Точки обслуживания'
         },
       ]
     },

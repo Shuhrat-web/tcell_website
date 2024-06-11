@@ -12,7 +12,7 @@ const Title = ({children,size = 'md',font='md', color='none', centered = false,u
             lg: 'text-lg',
             xl: 'text-[24px]',
             '2xl': 'text-lg xl:text-3xl',
-            '3xl': 'text-xl xl:text-5xl',
+            '3xl': 'text-xl xl:text-[38px]',
         },
         font:  {
             sm: 'font-normal',

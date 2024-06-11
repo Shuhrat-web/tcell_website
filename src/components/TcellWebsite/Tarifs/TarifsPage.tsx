@@ -5,6 +5,7 @@ import React from 'react'
 import TarifsSection from './components/TarifsSection';
 import { ITarifsPageProps } from './lib/types/ITarifPageTypes';
 import { staticTarifs } from '@/lib/requests/resources/Tarifs/lib/data/StaticTarifsData';
+import FadeOutProvider from '@/components/Ui/AnimationProviders/FadeOutProvider';
 // import TarifsFilterSection from './components/TarifsFilterSection';
 
 const TarifsPage = ({category_id}:ITarifsPageProps) => {
@@ -13,14 +14,16 @@ const TarifsPage = ({category_id}:ITarifsPageProps) => {
   ];
 
   return (
-    <div className='t__container'>
-      <BreadCrumbs links={breadcrumbPages} />
-      <Title extraClass='my-11' size='3xl' display='h2'>
-        Тарифы
-      </Title>
-      {/* <TarifsFilterSection className="mt-8 mb-24" /> */}
-      <TarifsSection tarifs={staticTarifs.filter(tarif => tarif.category_id === category_id)} />
-    </div>
+    <FadeOutProvider>
+      <div className='t__container'>
+        <BreadCrumbs links={breadcrumbPages} />
+        <Title extraClass='my-11' size='3xl' display='h2'>
+          Тарифы
+        </Title>
+        {/* <TarifsFilterSection className="mt-8 mb-24" /> */}
+        <TarifsSection tarifs={staticTarifs.filter(tarif => tarif.category_id === category_id)} />
+      </div>
+    </FadeOutProvider>
   )
 }
 

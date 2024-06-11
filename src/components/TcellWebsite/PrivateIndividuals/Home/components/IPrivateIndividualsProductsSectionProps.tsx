@@ -31,10 +31,10 @@ const PrivateIndividualsProductsSection = ({className}:IPrivateIndividualsProduc
         className='mt-24'
         bgColor='#9747FF'
         textColor='white'
-        title='Стать абонентом Tcell'
-        description='Участвуйте в онлайн аукционе и приобретите красивые номера от TCELL'
+        title='Как стать абонентом Tcell?'
+        description='Для того, что бы стать абонентом компании Tcell вам необходимо подойти в любой центр обслуживания с пластиковым паспортом'
         url='/'
-        img='/images/addon_banner_2.svg'
+        img='/images/addon_banner_3.svg'
       />
       <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-6'>
         {

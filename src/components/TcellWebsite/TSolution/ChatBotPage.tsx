@@ -3,6 +3,7 @@ import { IBreadCrumb } from "@/components/Ui/BreadCrumbs/lib/types/BreadCrumbsTy
 import Title from "@/components/Ui/Title/Title";
 import React from "react";
 import BusinessCardsSection from "./components/BusinessCardsSection";
+import FadeOutProvider from "@/components/Ui/AnimationProviders/FadeOutProvider";
 
 const ChatBotPage = () => {
   const breadcrumbPages: IBreadCrumb[] = [
@@ -23,23 +24,25 @@ const ChatBotPage = () => {
     },
   ];
   return (
-    <div className="t__container">
-      <BreadCrumbs links={breadcrumbPages} />
-      <Title extraClass="mt-11 mb-8" size="3xl" display="h2">
-        CHATBOT/Голосовой робот
-      </Title>
-      <div className="font-normal">
-        {texts.map((text) => (
-          <p
-            className="font-normal text-[16px] text-secondary-50 mt-5 leading-8"
-            key={text.id}
-          >
-            {text.conText}
-          </p>
-        ))}
+    <FadeOutProvider>
+      <div className="t__container">
+        <BreadCrumbs links={breadcrumbPages} />
+        <Title extraClass="mt-11 mb-8" size="3xl" display="h2">
+          CHATBOT/Голосовой робот
+        </Title>
+        <div className="font-normal">
+          {texts.map((text) => (
+            <p
+              className="font-normal text-[16px] text-secondary-50 mt-5 leading-8"
+              key={text.id}
+            >
+              {text.conText}
+            </p>
+          ))}
+        </div>
+          <BusinessCardsSection className="mt-16"/>
       </div>
-        <BusinessCardsSection className="mt-16"/>
-    </div>
+    </FadeOutProvider>
   );
 };
 

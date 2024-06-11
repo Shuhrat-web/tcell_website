@@ -9,7 +9,7 @@ const PrivateIndividualsAppsSection = ({className}:IPrivateIndividualsAppsSectio
     const products:IProduct[] = [
       {
         id: 1,
-        productIcon: '/images/tcell_card.png',
+        productIcon: '/images/mytcell_app.svg',
         backgroundColor: '#CED9F4',
         name: 'Мой Tcell',
         description: 'Скачивайте приложение MyTcell и общайтесь с близкими в России и Таджикистане',
@@ -20,7 +20,7 @@ const PrivateIndividualsAppsSection = ({className}:IPrivateIndividualsAppsSectio
       },
       {
         id: 2,
-        productIcon: '/images/tcell_card.png',
+        productIcon: '/images/phone_chigap.svg',
         textColor: 'white',
         backgroundColor: '#C7A8F0',
         name: 'Чи Гап',

@@ -35,36 +35,37 @@ const TarifCard = ({tarif,showImg = false}:ITarifCardProps) => {
                 />
             </div>
         }
-        <Title 
-        extraClass={tarif.img && showImg ? 'mt-32' :''}
-        size='xl' 
-        display='h6'>
-            {tarif.title}
-        </Title>
-        <Title 
-            size='2xl' 
-            display='h5'
-            extraClass='mt-4'>
-                {tarif.price}
-        </Title>
         <div>
-            {tarif.options.map((option, index) => (
-                <div key={index} className='flex items-center gap-4 mt-4'>
-                    <Image 
-                        src={getIconByName(option.icon)}
-                        height={332}
-                        width={138}
-                        alt={option.icon}
-                        unoptimized
-                        className='w-6 h-6'
-                    />
-                    <p className='font-medium text-xl leading-5'>{option.name}</p>
-                </div>
-            ))}
+            <Title 
+            extraClass={tarif.img && showImg ? 'mt-32' :''}
+            size='2xl' 
+            display='h6'>
+                {tarif.title}
+            </Title>
+            <Title 
+            size='lg' 
+            display='h5'>
+                {tarif.price}
+            </Title>
+            <div className='flex gap-4 border-b-2 pb-5 border-secondary-200 mb-8'>
+                {tarif.options.map((option, index) => (
+                    <div key={index} className='flex items-center gap-4 mt-4'>
+                        <Image 
+                            src={getIconByName(option.icon)}
+                            height={332}
+                            width={138}
+                            alt={option.icon}
+                            unoptimized
+                            className='w-6 h-6'
+                        />
+                        <p className='font-bold text-sm leading-5'>{option.name}</p>
+                    </div>
+                ))}
+            </div>
         </div>
-        <div className='max-w-[320px] h-[1px] my-8 bg-[#EDEDED]' />
+        
         {tarif.content && 
-            <div dangerouslySetInnerHTML={{__html: tarif.content}} />        
+            <div className='flex-1' dangerouslySetInnerHTML={{__html: tarif.content}} />        
         }
         {
             tarif.ussd &&

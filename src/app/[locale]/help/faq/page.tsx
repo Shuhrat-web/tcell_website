@@ -1,4 +1,4 @@
-import FaqPage from '@/components/TcellWebsite/Faq/FaqPage'
+import FaqPage from '@/components/TcellWebsite/Help/Faq/FaqPage'
 import React from 'react'
 
 const Faq = () => {

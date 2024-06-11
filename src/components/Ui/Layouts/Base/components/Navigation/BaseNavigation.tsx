@@ -25,8 +25,8 @@ const BaseNavigation = ({links}:IPcNavigationProps) => {
     
   return (
     <>
-        <PcNavigation absoluteNav={absoluteNav} links={links} />
-        <MobileNavigation absoluteNav={absoluteNav} links={links} />
+      <PcNavigation absoluteNav={absoluteNav} links={links} />
+      <MobileNavigation absoluteNav={absoluteNav} links={links} />
     </>
   )
 }

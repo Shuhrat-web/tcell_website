@@ -1,3 +1,4 @@
+import FadeOutProvider from '@/components/Ui/AnimationProviders/FadeOutProvider';
 import BreadCrumbs from '@/components/Ui/BreadCrumbs/BreadCrumbs';
 import { IBreadCrumb } from '@/components/Ui/BreadCrumbs/lib/types/BreadCrumbsTypes';
 import PostCard from '@/components/Ui/Cards/Post/PostCard';
@@ -11,22 +12,25 @@ const PostsPage = () => {
   const breadcrumbPages: IBreadCrumb[] = [
     { name: 'Новости', href: '/news', current: true },
   ];
+  
 
   return (
-    <div className='t__container'>
-      <BreadCrumbs links={breadcrumbPages} />
-      <Title extraClass='mt-11 mb-8' size='3xl' display='h2'>
-        Новости
-      </Title>
-      {/* <FilterSection className='mb-4' /> */}
-      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6'>
-        {
-          staticPosts.map(post => (
-            <PostCard key={post.id} post={post} />
-          ))
-        }
+    <FadeOutProvider>
+      <div className='t__container'>
+        <BreadCrumbs links={breadcrumbPages} />
+        <Title extraClass='mt-11 mb-8' size='3xl' display='h2'>
+          Новости
+        </Title>
+        {/* <FilterSection className='mb-4' /> */}
+        <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6'>
+          {
+            staticPosts.map(post => (
+              <PostCard key={post.id} post={post} />
+            ))
+          }
+        </div>
       </div>
-    </div>
+    </FadeOutProvider>      
   )
 }
 
