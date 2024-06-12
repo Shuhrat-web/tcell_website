@@ -6,6 +6,7 @@ import React from 'react'
 import ServicesPointsListTable from './components/ServicesPointsListTable';
 import { staticServicePoints } from '@/lib/requests/resources/ServicePoints/lib/data/StaticServicePointsData';
 import FadeOutProvider from '@/components/Ui/AnimationProviders/FadeOutProvider';
+import ServicePointsMap from './components/ServicePointsMap';
 
 const ServicePointsPage = () => {
   const breadcrumbPages: IBreadCrumb[] = [
@@ -15,12 +16,19 @@ const ServicePointsPage = () => {
   return (
     <FadeOutProvider>
       <div className='t__container'>
-        <BreadCrumbs links={breadcrumbPages} />
+        <BreadCrumbs 
+          links={breadcrumbPages} 
+        />
+        <ServicePointsMap 
+          servicePoints={staticServicePoints} 
+        />
         <ContactsSection 
-        className='mt-11 mb-8' 
-        items={staticContacts}/>
+          className='mt-11 mb-8' 
+          items={staticContacts}
+        />
         <ServicesPointsListTable 
-        servicePoints={staticServicePoints} />
+          servicePoints={staticServicePoints} 
+        />
       </div>
     </FadeOutProvider>
   )

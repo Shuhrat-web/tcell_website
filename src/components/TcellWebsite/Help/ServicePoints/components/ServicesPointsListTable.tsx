@@ -6,8 +6,9 @@ import TableRow from '@/components/Ui/Table/components/TableRow'
 import TableColumn from '@/components/Ui/Table/components/TableColumn'
 import { ITableHead } from '@/components/Ui/Table/lib/types/TableTypes'
 import Title from '@/components/Ui/Title/Title'
+import clsx from 'clsx'
 
-const ServicesPointsListTable = ({servicePoints}:IServicesPointsTableListProps) => {
+const ServicesPointsListTable = ({servicePoints,className}:IServicesPointsTableListProps) => {
   const tableHeaders:ITableHead[] = [
     {
       id: 1,
@@ -39,7 +40,7 @@ const ServicesPointsListTable = ({servicePoints}:IServicesPointsTableListProps) 
     },
   ]
   return (
-    <>
+    <section className={clsx(className,' overflow-x-auto')}>
       <Title extraClass='mb-8' size='3xl' display='h2'>
        Список точек обслуживания
       </Title>
@@ -66,7 +67,7 @@ const ServicesPointsListTable = ({servicePoints}:IServicesPointsTableListProps) 
         ))
       }
       </TableContainer> 
-    </>
+    </section>
   )
 }
 
