@@ -1,6 +1,8 @@
-import { IService } from "@/lib/requests/resources/Service/lib/IServicesTypes";
+import { IMaintenance, IMaintenanceCard, IMaintenanceOption } from "@/lib/requests/resources/Maintenance/lib/IMaintenance";
 
 export interface IMaintenanceCardProps {
-    maintenance: IService;
+    maintenance: IMaintenance;
+    option: IMaintenanceOption;
+    card: IMaintenanceCard;
     
 }
