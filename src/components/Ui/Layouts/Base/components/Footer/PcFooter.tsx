@@ -116,7 +116,7 @@ const PcFooter = () => {
 
   const lcLinks:string[] = ['(с) 2024 ЗАО «Индиго Таджикистан»','Условия оказания услуг','Публичная оферта','Политика конфеденциальности','Лицензии']
   return (
-    <footer className='bg-black py-16 mt-10'>
+    <footer className='bg-[#F2F3F7] py-16 mt-10'>
       <div className='t__container'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {
@@ -129,20 +129,20 @@ const PcFooter = () => {
           }
           <div className=''>
             <div className='space-y-4'>
-              <div className='flex space-x-2 text-white items-center'>
-                <LuMousePointer2 /> <Title color='white'>Душанбе</Title>
+              <div className='flex space-x-2 items-center'>
+                <LuMousePointer2 /> <Title>Душанбе</Title>
               </div>
               <div>
                 <Title color='secondary'>Абонентам Tcell</Title>
-                <Title color='white'>700</Title>
+                <Title>700</Title>
               </div>
               <div>
                 <Title color='secondary'>Абонентам других операторов</Title>
-                <Title color='white'>+992 44 665 07 00 </Title>
+                <Title>+992 44 665 07 00 </Title>
               </div>
             </div>
             <div className='my-8'>
-              <Title color='white'>Приложения</Title>
+              <Title>Приложения</Title>
               <ul className='flex flex-col gap-4 mt-4 font-medium'>
                 <li className='flex items-center gap-x-2'>
                   <Image height={44} width={44} alt='myTcellApp' src={'/images/myTcell.png'} />
@@ -155,8 +155,8 @@ const PcFooter = () => {
               </ul>
             </div>
             <div>
-              <Title color='white'>Приложения</Title>
-              <ul className='mt-4 flex gap-3 text-white text-xl'>
+              <Title>Приложения</Title>
+              <ul className='mt-4 flex gap-3 text-xl'>
                 <li>
                   <a target="_blank" href="https://www.instagram.com/tcell.tj">
                     <AiFillInstagram />

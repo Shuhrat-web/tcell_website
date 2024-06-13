@@ -9,4 +9,5 @@ export interface IProduct{
     textColor?: 'white'|'black';
     iosLink?: string; 
     androidLink?: string; 
+    qrCode?: string;
 }

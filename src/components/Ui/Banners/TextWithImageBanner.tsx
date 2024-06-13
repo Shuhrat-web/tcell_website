@@ -44,7 +44,7 @@ const TextWithImageBanner = ({
             display='h2' 
             size='3xl' 
             color={titleColor}
-            extraClass='leading-10'
+            extraClass='leading-8 md:leading-10'
           >
             {title}
           </Title>
@@ -70,7 +70,7 @@ const TextWithImageBanner = ({
               width={450}
               alt={title}
               unoptimized
-              className='max-w-full'
+              className='max-w-full h-[300px] w-[300px] md:h-[450px] md:w-[450px] object-cover'
             />
           </div>
         }

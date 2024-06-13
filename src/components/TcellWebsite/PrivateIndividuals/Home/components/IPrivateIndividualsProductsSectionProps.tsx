@@ -1,7 +1,7 @@
 import React from 'react'
 import { IPrivateIndividualsProductsSectionProps } from '../lib/types/IHomePageTypes'
 import Title from '@/components/Ui/Title/Title'
-import { IService } from '@/lib/requests/resources/Service/lib/IServicesTypes'
+import { IService } from '@/lib/requests/resources/Service/lib/types/IServicesTypes'
 import ServiceCard from '@/components/Ui/Cards/Service/ServiceCard'
 import ColoredBannerSection from './Banners/ColoredBannerSection'
 import clsx from 'clsx'

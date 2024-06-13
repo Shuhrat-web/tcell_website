@@ -28,7 +28,7 @@ const BusinessCardsSection = ({className}: IAdvantageSectionProps) => {
   return (
     <div className={className}>
         <SectionTitle titleText='Что получит бизнес?'/>
-        <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-16'>
+        <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-11'>
             {
                 cards.map(benefit => (
                     <BenefitCard key={benefit.id} benefit={benefit}/>

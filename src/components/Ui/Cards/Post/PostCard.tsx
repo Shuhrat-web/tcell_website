@@ -11,10 +11,10 @@ const PostCard = ({post}:IPostCardProps) => {
     const locale = useLocale()
   return (
     <article className='t__card__secondary relative'>
-        <Title extraClass='truncate' size='xl' font='lg' display='h5'>
+        <Title extraClass='truncate' size='lg' font='md' display='h5'>
             {post.title}
         </Title>
-        <p className='text-secondary text-sm mt-4 mb-8'>
+        <p className='text-secondary text-sm mt-2 mb-8'>
             {post.excerpt}
         </p>
         <div className='flex justify-between'>

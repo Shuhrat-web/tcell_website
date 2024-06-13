@@ -12,10 +12,10 @@ const PrivateIndividualsTarifsSection = ({className}:IPrivateIndividualsTarifsSe
     <section className={clsx(className,'')}>
       <SectionTitle 
       titleText='Популярные тарифы'
-      routeTitle="Все тарифы" 
+      routeTitle="Тарифы" 
       route={`/${locale}/tarifs?category_id=1&module_id=1`}
       />
-      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-16'>
+      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-11'>
         {staticTarifs.filter(tarif => tarif.category_id === 1).slice(0,3).map((tarif) => (
           <TarifCard showImg key={tarif.id} tarif={tarif}/>
         ))}

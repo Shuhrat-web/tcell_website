@@ -16,7 +16,8 @@ const PrivateIndividualsAppsSection = ({className}:IPrivateIndividualsAppsSectio
         isOnAndroid: true,
         isOnIOS: true,
         iosLink: 'https://apps.apple.com/tj/app/my-tcell/id966493756',
-        androidLink: 'https://play.google.com/store/apps/details?id=tj.tcell.odp'
+        androidLink: 'https://play.google.com/store/apps/details?id=tj.tcell.odp',
+        qrCode:'/images/qr-code(2).svg'
       },
       {
         id: 2,
@@ -28,7 +29,8 @@ const PrivateIndividualsAppsSection = ({className}:IPrivateIndividualsAppsSectio
         isOnAndroid: true,
         isOnIOS: true,
         iosLink: 'https://apps.apple.com/tj/app/chi-gap/id1497463446',
-        androidLink: 'https://play.google.com/store/apps/details?id=com.mno.tcell'
+        androidLink: 'https://play.google.com/store/apps/details?id=com.mno.tcell',
+        qrCode:'/images/qr-code(1).svg'
       }
     ]
   return (

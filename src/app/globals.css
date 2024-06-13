@@ -9,6 +9,6 @@
     }
 
     .t__card__secondary{
-      @apply border border-secondary-200 p-6 rounded-3xl;
+      @apply border border-secondary-200 bg-secondary-500 p-6 rounded-3xl;
     }
   }

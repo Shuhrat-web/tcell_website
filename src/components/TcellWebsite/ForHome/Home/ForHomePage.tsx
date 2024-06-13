@@ -22,7 +22,7 @@ const ForHomePage = () => {
           <ForHomeNewsSection />
           <ForHomeTarifsSection className='my-24' />
           <BenefitsSection />
-          <CustomerHelpSection className='mt-24' />
+          {/* <CustomerHelpSection className='mt-24' /> */}
         </div>
       </div>
     </FromLeftAnimationProvider>

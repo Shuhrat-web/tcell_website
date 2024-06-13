@@ -43,13 +43,13 @@ const TarifCard = ({tarif,showImg = false}:ITarifCardProps) => {
                 {tarif.title}
             </Title>
             <Title 
-            size='lg' 
+            size='md' 
             display='h5'>
                 {tarif.price}
             </Title>
             <div className='flex gap-4 border-b-2 pb-5 border-secondary-200 mb-8'>
                 {tarif.options.map((option, index) => (
-                    <div key={index} className='flex items-center gap-4 mt-4'>
+                    <div key={index} className='flex items-center gap-2 mt-4'>
                         <Image 
                             src={getIconByName(option.icon)}
                             height={332}

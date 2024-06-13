@@ -26,7 +26,7 @@ export const staticTarifs:ITarif[] = [
           },
           {
             id: 2,
-            name: "20 минут",
+            name: "20 мин",
             type: "icon",
             icon: "HiOutlinePhone",
           },
@@ -63,7 +63,7 @@ export const staticTarifs:ITarif[] = [
           },
           {
             id: 2,
-            name: "30 минут",
+            name: "30 мин",
             type: "icon",
             icon: "HiOutlinePhone",
           },
@@ -101,7 +101,7 @@ export const staticTarifs:ITarif[] = [
           },
           {
             id: 2,
-            name: "40 минут",
+            name: "40 мин",
             type: "icon",
             icon: "HiOutlinePhone",
           },
@@ -142,7 +142,7 @@ export const staticTarifs:ITarif[] = [
           },
           {
             id: 2,
-            name: "60 минут",
+            name: "60 мин",
             type: "icon",
             icon: "HiOutlinePhone",
           },
@@ -184,7 +184,7 @@ export const staticTarifs:ITarif[] = [
           },
           {
             id: 2,
-            name: "100 минут",
+            name: "100 мин",
             type: "icon",
             icon: "HiOutlinePhone",
           },
@@ -226,7 +226,7 @@ export const staticTarifs:ITarif[] = [
           },
           {
             id: 2,
-            name: "300 минут",
+            name: "300 мин",
             type: "icon",
             icon: "HiOutlinePhone",
           },

@@ -19,20 +19,21 @@ const BaseLayout = ({
           route: '/',
           name: 'Главная'
         },
-        {
-          tabId: 1,
-          route: '/posts',
-          name: 'Новости'
-        },
-        // {
-        //   route: '/private-individuals/loyalty',
-        //   name: 'Лояльность'
-        // },
         // {
         //   tabId: 1,
-        //   route: '/services',
-        //   name: 'Сервисы'
+        //   route: '/posts',
+        //   name: 'Новости'
         // },
+        {
+          tabId: 1,
+          route: '/private-individuals/loyalty',
+          name: 'Лояльность'
+        },
+        {
+          tabId: 1,
+          route: '/services',
+          name: 'Сервисы'
+        },
         {
           tabId: 1,
           route: '/private-individuals/ussd-commands',

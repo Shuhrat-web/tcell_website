@@ -11,7 +11,7 @@ const ColoredBannerSection = ({bgColor,title,description,url,img,textColor='blac
     style={{
         backgroundColor: bgColor
     }}
-    className={`${className} flex justify-between rounded-3xl px-12`}
+    className={`${className} flex justify-center items-center md:justify-between md:flex-row flex-col rounded-3xl px-12`}
     >
         <div className='py-11'>
             <Title color={textColor === 'white' ? 'white' : 'black'} size='2xl'>

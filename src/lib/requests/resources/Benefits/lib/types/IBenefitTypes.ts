@@ -6,3 +6,9 @@ export interface IBenefit{
     title: string;
     description: string;
 }
+
+export interface ILoyaltyBenefit{
+    id: number;
+    title: string;
+    description: string;
+}

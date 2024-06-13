@@ -13,10 +13,10 @@ const ForHomeTarifsSection = ({ className }: IForHomeTarifsSectionProps) => {
     <div className={className}>
       <SectionTitle
         titleText="Тарифы"
-        routeTitle="Все тарифы"
+        routeTitle="Тарифы"
         route={`/${locale}/tarifs?category_id=2&module_id=3`}
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-11">
         {staticTarifs.filter(tarif => tarif.category_id === 2).slice(0,3).map((tarif) => (
           <TarifCard tarif={tarif} key={tarif.id} />
         ))}
