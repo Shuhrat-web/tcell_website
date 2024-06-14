@@ -8,7 +8,7 @@ import { statisLoyaltyBenefits } from '@/lib/requests/resources/Benefits/lib/dat
 
 const LoyaltyPage = () => {
     const breadCrumbs: IBreadCrumb[] = [
-        {name: "Лояльность", href: "/loyalty", current: true}
+      {name: "Лояльность", href: "/loyalty", current: true}
     ]
   return (
     <FadeOutProvider>

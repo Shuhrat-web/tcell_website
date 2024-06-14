@@ -2,6 +2,7 @@ import React from 'react'
 import { ITarifCardProps } from './lib/types/ITarifCardTypes'
 import Title from '../../Title/Title'
 import Image from 'next/image'
+import clsx from 'clsx'
 
 
 const TarifCard = ({tarif,showImg = false}:ITarifCardProps) => {
@@ -47,9 +48,12 @@ const TarifCard = ({tarif,showImg = false}:ITarifCardProps) => {
             display='h5'>
                 {tarif.price}
             </Title>
-            <div className='flex justify-between border-b-2 pb-5 border-secondary-200 mb-8'>
+            <div className={clsx('flex border-b-2 pb-5 border-secondary-200 mb-8',{
+                'justify-between': tarif.options.length > 2,
+                'gap-6': tarif.options.length <= 2
+            })}>
                 {tarif.options.map((option, index) => (
-                    <div key={index} className='flex flex-col gap-2 items-start justify-between mt-4'>
+                    <div key={index} className={`flex flex-col gap-2 items-start justify-between mt-4`}>
                         <Image 
                             src={getIconByName(option.icon)}
                             height={332}

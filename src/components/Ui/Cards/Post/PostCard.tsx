@@ -10,13 +10,15 @@ import { useLocale } from 'next-intl';
 const PostCard = ({post}:IPostCardProps) => {
     const locale = useLocale()
   return (
-    <article className='t__card__secondary relative'>
-        <Title extraClass='truncate' size='lg' font='md' display='h5'>
-            {post.title}
-        </Title>
-        <p className='text-secondary text-sm mt-2 mb-8'>
-            {post.excerpt}
-        </p>
+    <article className='t__card__secondary relative flex flex-col justify-between'>
+        <div>
+            <Title extraClass='truncate' size='lg' font='md' display='h5'>
+                {post.title}
+            </Title>
+            <div className='text-secondary text-sm mt-2 mb-8'>
+                {post.excerpt}
+            </div>
+        </div>
         <div className='flex justify-between'>
             <TextButton extraClass='flex items-center gap-x-2 font-medium' hideHover size='none'>
                 Подробнее
