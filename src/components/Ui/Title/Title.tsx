@@ -10,7 +10,7 @@ const Title = ({children,size = 'md',font='md', color='none', centered = false,u
             sm: 'text-sm',
             md: 'text-md',
             lg: 'text-lg',
-            xl: 'text-[24px]',
+            xl: 'text-[20px] md:text-[24px]',
             '2xl': 'text-lg xl:text-3xl',
             '3xl': 'text-xl xl:text-[38px]',
         },

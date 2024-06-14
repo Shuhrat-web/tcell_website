@@ -11,6 +11,7 @@ export interface IButton {
     round?: TUiSize;
     extraClass?: string;
     animate?: boolean;
+    url?:string;
 }
 
 export interface IButtonSettings{

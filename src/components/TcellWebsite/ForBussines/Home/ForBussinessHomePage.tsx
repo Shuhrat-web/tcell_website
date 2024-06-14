@@ -1,10 +1,11 @@
 import TextWithImageBanner from '@/components/Ui/Banners/TextWithImageBanner'
 import React from 'react'
-import ForBussinesNewsSection from './components/ForBussinesNewsSection'
-import ForBussinesGoodToKnoeSection from './components/ForBussinesGoodToKnoeSection'
+// import ForBussinesNewsSection from './components/ForBussinesNewsSection'
+// import ForBussinesGoodToKnoeSection from './components/ForBussinesGoodToKnoeSection'
 import ForBussinessAdventagesSection from './components/ForBussinessAdventagesSection'
-import FadeOutProvider from '@/components/Ui/AnimationProviders/FadeOutProvider'
+// import FadeOutProvider from '@/components/Ui/AnimationProviders/FadeOutProvider'
 import FromLeftAnimationProvider from '@/components/Ui/AnimationProviders/FromLeftAnimationProvider'
+import ForBussinesAppsSection from './components/ForBussinesAppsSection'
 
 const ForBussinessHomePage = () => {
   return (
@@ -18,9 +19,10 @@ const ForBussinessHomePage = () => {
           // url='/'
         />
         <div className='t__container mt-24'>
-            <ForBussinesNewsSection />
+            {/* <ForBussinesNewsSection /> */}
             <ForBussinessAdventagesSection  className="my-24" />
-            <ForBussinesGoodToKnoeSection />
+            <ForBussinesAppsSection />
+            {/* <ForBussinesGoodToKnoeSection /> */}
         </div>
       </div>
     </FromLeftAnimationProvider>

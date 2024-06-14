@@ -5,15 +5,15 @@ import ContainButton from '@/components/Ui/Buttons/ContainButton'
 import { IColoredBannerPrivateIndividualsSectionProps } from '../../lib/types/IHomePageTypes'
 
 
-const ColoredBannerSection = ({bgColor,title,description,url,img,textColor='black',className}:IColoredBannerPrivateIndividualsSectionProps) => {
+const ColoredBannerSection = ({bgColor,title,description,url,img,textColor='black', btnText="Подробнее",className}:IColoredBannerPrivateIndividualsSectionProps) => {
   return (
     <div
     style={{
         backgroundColor: bgColor
     }}
-    className={`${className} flex justify-center items-center md:justify-between md:flex-row flex-col rounded-3xl px-12`}
+    className={`${className} flex justify-center items-center md:justify-between md:flex-row flex-col rounded-3xl px-6 md:px-12`}
     >
-        <div className='py-11'>
+        <div className='py-6 md:py-11'>
             <Title color={textColor === 'white' ? 'white' : 'black'} size='2xl'>
                 {title}
             </Title>
@@ -22,8 +22,8 @@ const ColoredBannerSection = ({bgColor,title,description,url,img,textColor='blac
             </p>
             {
             url &&
-                <ContainButton extraClass='mt-16 text-black' type='white'>
-                    Подробнее
+                <ContainButton url={url} extraClass='mt-16 text-black' type='white'>
+                    {btnText}
                 </ContainButton>
             }
         </div>

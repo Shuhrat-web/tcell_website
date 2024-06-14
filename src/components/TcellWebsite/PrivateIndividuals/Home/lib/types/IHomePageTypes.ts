@@ -14,7 +14,7 @@ export interface IPrivateIndividualsFaqSectionProps extends IDefaultSectionProps
 }
 
 export interface IColoredBannerPrivateIndividualsSectionProps extends IColoredBanner{
-    
+    btnText?:string;
 }
 
 

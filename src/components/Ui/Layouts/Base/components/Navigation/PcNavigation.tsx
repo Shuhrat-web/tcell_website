@@ -32,10 +32,12 @@ const PcNavigation = ({links,absoluteNav}:IPcNavigationProprs) => {
     })}>
       <div className='flex flex-wrap gap-4 items-center justify-between t__container'>
         <div className='flex gap-x-5'>
-          <Logo 
-          height={48} 
-          width={48} 
-          fill={absoluteNav ? '#fff' : '#000'} />
+          <Link href={`/${locale}?module_id=1`}>
+            <Logo 
+            height={48} 
+            width={48} 
+            fill={absoluteNav ? '#fff' : '#000'} />
+          </Link>
           <nav className={`${absoluteNav ? 'text-white' : 'text-dark-blue'}`}>
             <ul className='flex gap-x-6  sm:w-full w-60 overflow-x-auto lg:overflow-hidden'>
               {links.map(tab => 

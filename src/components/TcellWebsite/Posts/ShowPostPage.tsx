@@ -21,7 +21,7 @@ const ShowPostsPage = ({id}:{id:number}) => {
       <BreadCrumbs links={breadcrumbPages} />
       {post &&
       <div className='grid grid-cols-12 mt-8'>
-        <article className='col-span-12 lg:col-span-7 xl:col-span-8 px-8 xl:px-28'>
+        <article className='col-span-12 lg:col-span-7 xl:col-span-8 px-4 xl:px-28'>
           <Title display='h2' size='2xl'>
             {post.title}
           </Title>

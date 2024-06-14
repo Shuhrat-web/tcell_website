@@ -23,7 +23,7 @@ const FaqChat = () => {
                 display='h3'>
                     Остались вопросы?
                 </Title>
-                <p className='text-white mt-5 text-lg'>
+                <p className='text-white mt-5 md:text-lg'>
                     Не ждите на телефонных линиях!<br />
                     Мгновенное решение вопросов через чат-бот WhatsApp
                 </p>
@@ -38,7 +38,7 @@ const FaqChat = () => {
             </TextButton>
         </div>
         <Image 
-            src={'/images/wsapp_chat.svg'}
+            src={'/images/wsapp_chat.png'}
             height={390}
             width={390}
             alt={'wsapp_chat'}

@@ -3,6 +3,7 @@ export interface IService{
     name: string;
     desctiption: string;
     img: string;
+    url?: string;
 }
 
 export interface IServiceOptionData{

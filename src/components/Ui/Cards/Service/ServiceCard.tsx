@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Title from '../../Title/Title'
 import { IServiceCardProps } from './lib/types/IServiceCardTypes'
+import Link from 'next/link'
 
 
 const ServiceCard = ({service}:IServiceCardProps) => {
@@ -27,6 +28,10 @@ const ServiceCard = ({service}:IServiceCardProps) => {
                 className='max-w-full'
                 />
             </div>
+        }
+        {
+            service.url &&
+            <Link className="absolute left-0 top-0 w-full h-full" href={service.url} />
         }
     </article>
   )

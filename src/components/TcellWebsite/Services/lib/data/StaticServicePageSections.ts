@@ -47,8 +47,8 @@ export const serviceSectionsData:IServiceSectionList[] = [
       ],
       content: `
         <div class="text-secondary-50">
-            <h5 class="text-lg">* Сервис не доступен для абонентов с тарифами Безлимитный 4G и Интернет 4G, а также:</h5>
-            <ul class="leading-8 mt-4 list-disc ml-4">
+            <h5>* Сервис не доступен для абонентов с тарифами Безлимитный 4G и Интернет 4G, а также:</h5>
+            <ul class="leading-8 list-disc ml-4">
                 <li>
                     Безлимитный смартфон
                 </li>
@@ -97,8 +97,8 @@ export const serviceSectionsData:IServiceSectionList[] = [
       ],
       content: `
         <div class="text-secondary-50">
-            <h5 class="text-lg">Услуга «Приложение Садо» не доступна для следующих тарифных планов и опций:</h5>
-            <ul class="leading-8 mt-4 list-disc ml-4">
+            <h5>Услуга «Приложение Садо» не доступна для следующих тарифных планов и опций:</h5>
+            <ul class="leading-8 list-disc ml-4">
                 <li>
                     Безлимитный интернет для Даркор 256 кб/c
                 </li>

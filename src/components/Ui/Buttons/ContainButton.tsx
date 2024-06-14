@@ -2,6 +2,7 @@
 import React from 'react'
 import { IContainButtonProps, IContainButtonSettings } from './lib/types/IButtonsType'
 import { FaSpinner } from 'react-icons/fa'
+import Link from 'next/link'
 
 const ContainButton = ({
     children,
@@ -13,7 +14,8 @@ const ContainButton = ({
     loading = false,
     disabled = false,
     extraClass,
-    animate = true
+    animate = true,
+    url
 }:IContainButtonProps) => {
     const settings:IContainButtonSettings = {
         size: {
@@ -54,6 +56,7 @@ const ContainButton = ({
             ${settings.round[round]}
             ${animate ? settings.animate : ''}
             ${extraClass}
+            relative
         `}
     >
         {
@@ -61,6 +64,10 @@ const ContainButton = ({
             <FaSpinner className="animate-spin h-5 w-5"/>
             :
             children
+        }
+        {
+            url &&
+            <Link className='absolute left-0 top-0 w-full h-full' href={url} />
         }
     </button>
   )

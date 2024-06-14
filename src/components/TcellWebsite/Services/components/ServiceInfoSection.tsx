@@ -7,8 +7,8 @@ import MaintenanceCard from '@/components/Ui/Cards/Maintenance/MaintenanceCard'
 const ServiceInfoSection = ({className,title,description,services,options,content}:IServiceInfoSectionProps) => {
   return (
     <section className={clsx(className,'')}>
-       <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
-            <div>
+       <div>
+            <div className='mb-5'>
                 <Title size='xl'>
                     {title}
                 </Title>
@@ -16,7 +16,7 @@ const ServiceInfoSection = ({className,title,description,services,options,conten
                     {description}
                 </p>
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3'>
+            <div className='lg:w-10/12 xl:w-8/12 gap-6 grid grid-cols-1 md:grid-cols-3'>
                 {options.map(el => (
                     <div key={el.id}>
                         <Title font='lg' size='lg'>

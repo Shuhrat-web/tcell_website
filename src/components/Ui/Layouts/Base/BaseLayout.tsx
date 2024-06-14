@@ -37,7 +37,7 @@ const BaseLayout = ({
         {
           tabId: 1,
           route: '/private-individuals/ussd-commands',
-          name: 'USSD-Команды'
+          name: 'Команды'
         },
         {
           tabId: 1,
@@ -77,11 +77,11 @@ const BaseLayout = ({
             },  
           ]
         },
-        {
-          tabId: 2,
-          route: '/posts',
-          name: 'Новости'
-        },
+        // {
+        //   tabId: 2,
+        //   route: '/posts',
+        //   name: 'Новости'
+        // },
       ]
     },
     {

@@ -40,7 +40,7 @@ const ProductCard = ({product}:IProductCardProps) => {
         <div className='flex flex-wrap gap-4 justify-between'>
             {
                 product.qrCode &&
-                <div className='flex items-center gap-4'>
+                <div className='hidden md:flex items-center gap-4'>
                     <Image 
                         src={product.qrCode}
                         height={110}

@@ -42,7 +42,7 @@ const TextWithImageBanner = ({
         className='max-w-[650px] lg:-mt-20'>
           <Title 
             display='h2' 
-            size='3xl' 
+            size='2xl' 
             color={titleColor}
             extraClass='leading-8 md:leading-10'
           >
@@ -63,7 +63,7 @@ const TextWithImageBanner = ({
         </motion.div>
         {
           bannerIcon &&
-          <div className='absolute right-2/4 translate-x-2/4 lg:ranslate-x-0 lg:right-56 xl:right-80 bottom-0 z-10'>
+          <div className='absolute w-full flex justify-center items-center md:block md:w-auto right-2/4 translate-x-2/4 lg:ranslate-x-0 lg:right-56 xl:right-80 bottom-0 z-10'>
             <Image 
               src={bannerIcon}
               height={450}

@@ -11,37 +11,37 @@ const Decision = ({className}: IAdvantageSectionProps) => {
       id: 1,
       title: 'Опросник Gallup+eNPS',
       description: 'Опрос, измеряющий наиболее важные элементы вовлеченности сотрудников',
-      icon: '/images/faq_chat.svg'
+      icon: '/images/faq_chat.png'
     },
     {
       id: 2,
       title: 'Оценка эффективности персонала',
       description: 'Внедрение системы оценки работы персонала - ключевой шаг в развитии организации.',
-      icon: '/images/faq_estimation.svg'
+      icon: '/images/faq_estimation.png'
     },
     {
       id: 3,
       title: 'Разработка профиля должности',
       description: 'Эффективный найм сотрудников',
-      icon: '/images/faq_profile.svg'
+      icon: '/images/faq_profile.png'
     },
     {
       id: 4,
       title: 'CHATBOT/Голосовой робот',
       description: 'Программы на ИИ для автоматизации коммуникации специалистов с соискателями и внутренними сотрудниками.',
-      icon: '/images/faq_chatbot.svg'
+      icon: '/images/faq_chatbot.png'
     },
     {
       id: 5,
       title: 'Разработка внутренних документов',
       description: 'Во всех областях деятельности',
-      icon: '/images/faq_document.svg'
+      icon: '/images/faq_document.png'
     },
     {
       id: 6,
       title: 'Разработка модели компетенций',
       description: 'Инструмент управления эффективностью',
-      icon: '/images/faq_model.svg'
+      icon: '/images/faq_model.png'
     }
   ]
   return (

@@ -8,13 +8,13 @@ import FadeOutProvider from '@/components/Ui/AnimationProviders/FadeOutProvider'
 const UssdCommandsPage = () => {
   const breadcrumbPages: IBreadCrumb[] = [
     { name: 'Помощь', href: '#', current: false },
-    { name: 'USSD Комманды', href: '#', current: true },
+    { name: 'Комманды', href: '#', current: true },
   ];
   return (
     <FadeOutProvider>
       <div className='t__container'>
         <BreadCrumbs links={breadcrumbPages} />
-        <Title extraClass='mt-11 mb-24' size='3xl' display='h2'>
+        <Title extraClass='mt-11 mb-5 md:mb-20' size='3xl' display='h2'>
           USSD команды
         </Title>
         <UssdCommandsSection />
