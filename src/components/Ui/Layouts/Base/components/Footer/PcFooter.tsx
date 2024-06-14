@@ -90,7 +90,7 @@ const PcFooter = () => {
       ]
     },
     {
-      title: 'ДЛЯ ДОМА',
+      title: 'ДЛЯ БИЗНЕСА',
       children:[
         {
           title: 'Тарифы',
