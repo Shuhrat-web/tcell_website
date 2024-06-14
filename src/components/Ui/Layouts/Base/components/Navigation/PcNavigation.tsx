@@ -10,7 +10,7 @@ import { motion } from 'framer-motion'
 
 
 
-const PcNavigation = ({links,absoluteNav}:IPcNavigationProprs) => {
+const PcNavigation = ({links}:IPcNavigationProprs) => {
 
   const [activeTab,setACtiveTab] = useState<number>(1)
   const locale = useLocale()
@@ -26,25 +26,22 @@ const PcNavigation = ({links,absoluteNav}:IPcNavigationProprs) => {
   },[module_id])
   
   return (
-    <div className={clsx('w-full md:block hidden',{
-      'absolute top-4 left-0 z-40 ': absoluteNav,
-      'mb-10 py-4': !absoluteNav
-    })}>
+    <div className={clsx('w-full md:block hidden mb-10 py-4')}>
       <div className='flex flex-wrap gap-4 items-center justify-between t__container'>
         <div className='flex gap-x-5'>
           <Link href={`/${locale}?module_id=1`}>
             <Logo 
             height={48} 
             width={48} 
-            fill={absoluteNav ? '#fff' : '#000'} />
+            fill={'#821EBE'} />
           </Link>
-          <nav className={`${absoluteNav ? 'text-white' : 'text-dark-blue'}`}>
+          <nav className={`'text-dark-blue'}`}>
             <ul className='flex gap-x-6  sm:w-full w-60 overflow-x-auto lg:overflow-hidden'>
               {links.map(tab => 
                   <li 
                   className={clsx('shrink-0 relative',{
                     'cursor-pointer font-medium': activeTab !== tab.id,
-                    'font-bold': absoluteNav && activeTab === tab.id
+                    'font-bold':  activeTab === tab.id
                   })}
                   onClick={() => {
                     if(tab.route)router.push(`/${locale}${tab.route}?module_id=${tab.id}`)     
@@ -54,7 +51,7 @@ const PcNavigation = ({links,absoluteNav}:IPcNavigationProprs) => {
                     {tab.name} 
                     {
                       activeTab === tab.id &&
-                      <motion.span layoutId='underline' className={`block left-0 top-full h-[1px] w-full ${ absoluteNav ? 'bg-white':'bg-black'}`} />
+                      <motion.span layoutId='underline' className={`block left-0 top-full h-[1px] w-full bg-dark-blue`} />
                     }
                   </li>
                 )

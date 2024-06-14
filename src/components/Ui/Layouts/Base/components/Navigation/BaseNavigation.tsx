@@ -9,7 +9,7 @@ import MobileNavigation from './MobileNavigation'
 
 const BaseNavigation = ({links}:IPcNavigationProps) => {
     const pathName = usePathname()
-    const [absoluteNav,setIsAbsoluteNav] = useState<boolean>(true)
+    // const [absoluteNav,setIsAbsoluteNav] = useState<boolean>(true)
     const locale = useLocale()
     const absoluteNavigationList:string[] = [`/${locale}/for-home`,`/${locale}`,`/${locale}/for-bussines`]
 
@@ -19,14 +19,14 @@ const BaseNavigation = ({links}:IPcNavigationProps) => {
         return absoluteNavigationList.some(isPathNameAbsolute)
     }
 
-    useEffect(() => {
-        setIsAbsoluteNav(checkIfPathNameIsAbsoulute)
-    },[pathName])
+    // useEffect(() => {
+    //     setIsAbsoluteNav(checkIfPathNameIsAbsoulute)
+    // },[pathName])
     
   return (
     <>
-      <PcNavigation absoluteNav={absoluteNav} links={links} />
-      <MobileNavigation absoluteNav={absoluteNav} links={links} />
+      <PcNavigation links={links} />
+      <MobileNavigation links={links} />
     </>
   )
 }

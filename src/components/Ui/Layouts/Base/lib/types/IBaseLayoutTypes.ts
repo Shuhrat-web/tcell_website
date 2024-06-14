@@ -17,7 +17,7 @@ export interface INavigationLink{
 
 export interface IPcNavigationProprs{
     links: INavigationLinkTab[];
-    absoluteNav: boolean;
+    // absoluteNav: boolean;
 }
 
 export interface IMobileNavigationProps extends IPcNavigationProprs{

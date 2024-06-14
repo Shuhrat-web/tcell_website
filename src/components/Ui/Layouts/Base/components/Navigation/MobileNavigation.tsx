@@ -7,15 +7,15 @@ import ContainButton from '@/components/Ui/Buttons/ContainButton'
 import { HiMenu } from "react-icons/hi";
 import NavigationDialog from '../Dialogs/NavigationDialog'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
+// import { useRouter } from 'next/navigation'
 import { HiChevronDown } from "react-icons/hi2";
 import { useLocale } from 'next-intl'
 
 
-const MobileNavigation = ({links,absoluteNav}:IMobileNavigationProps) => {
+const MobileNavigation = ({links}:IMobileNavigationProps) => {
     const [showNavigationDialog,setShowNavigationDialog] = useState(false)
     const [activeTab,setACtiveTab] = useState<number>(0)
-    const router = useRouter()
+    // const router = useRouter()
     const locale = useLocale()
 
     useEffect(() => {
@@ -75,18 +75,15 @@ const MobileNavigation = ({links,absoluteNav}:IMobileNavigationProps) => {
                 </div>
             </div>
         </NavigationDialog>
-        <div  className={clsx('w-full md:hidden flex justify-between items-center t__container',{
-            'absolute top-5 left-0 z-40 ': absoluteNav,
-            'mb-10 py-4': !absoluteNav
-        })}>
+        <div  className={clsx('w-full md:hidden flex justify-between items-center t__container mb-10 py-4')}>
             <Logo 
             height={48} 
             width={48}  
-            fill={absoluteNav ? '#fff' : '#000'} />
+            fill={'#821EBE'} />
             <ContainButton 
             onClick={() => setShowNavigationDialog(true)}
             size='none' 
-            extraClass={`${absoluteNav ? 'text-dark-blue': 'text-black'} text-4xl`}
+            extraClass={`text-primary text-4xl`}
             type='none'>
                 <HiMenu />
             </ContainButton>

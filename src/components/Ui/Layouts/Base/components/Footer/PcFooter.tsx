@@ -145,11 +145,11 @@ const PcFooter = () => {
               <Title>Приложения</Title>
               <ul className='flex flex-col gap-4 mt-4 font-medium'>
                 <li className='flex items-center gap-x-2'>
-                  <Image height={44} width={44} alt='myTcellApp' src={'/images/myTcell.webp'} />
+                  <Image unoptimized height={44} width={44} alt='myTcellApp' src={'/images/myTcell.webp'} />
                   <span className='text-secondary'>Мой Tcell</span>
                 </li>
                 <li className='flex items-center gap-x-2'>
-                  <Image height={44} width={44} alt='chiGapApp' src={'/images/chiGap.webp'} />
+                  <Image unoptimized height={44} width={44} alt='chiGapApp' src={'/images/chiGap.webp'} />
                   <span className='text-secondary'>Чигап</span>
                 </li>
               </ul>

@@ -14,3 +14,8 @@ export interface ITextWithImageBannerProps{
 export interface ITextWIthImageBannerSettings{
     textColor: IUiTypes
 }
+
+export interface IImageBannerProps{
+    img: string;
+    alt: string;
+}
