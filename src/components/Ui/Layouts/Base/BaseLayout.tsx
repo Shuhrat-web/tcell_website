@@ -24,11 +24,11 @@ const BaseLayout = ({
         //   route: '/posts',
         //   name: 'Новости'
         // },
-        {
-          tabId: 1,
-          route: '/private-individuals/loyalty',
-          name: 'Баракат'
-        },
+        // {
+        //   tabId: 1,
+        //   route: '/private-individuals/loyalty',
+        //   name: 'Баракат'
+        // },
         {
           tabId: 1,
           route: '/services',

@@ -134,11 +134,11 @@ const PcFooter = () => {
               </div>
               <div>
                 <Title color='secondary'>Абонентам Tcell</Title>
-                <Title>700</Title>
+                <Title>7070</Title>
               </div>
               <div>
                 <Title color='secondary'>Абонентам других операторов</Title>
-                <Title>+992 44 665 07 00 </Title>
+                <Title>+992 93 505 0000</Title>
               </div>
             </div>
             <div className='my-8'>
