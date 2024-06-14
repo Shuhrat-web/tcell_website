@@ -38,13 +38,13 @@ export const statisLoyaltyBenefits:ILoyaltyBenefit[] = [
     },
     {
         id: 8,
-        title: '8 лет (3285 д.)',
-        description: '3000 МБ на 7 дней'
+        title: '8 лет (2920 д.)',
+        description: '3500 МБ на 7 дней'
     },
     {
         id: 9,
         title: '9 лет (3285 д.)',
-        description: '4000 МБ на 3 д.'
+        description: '4000 МБ на 7 д.'
     },
     {
         id: 10,
