@@ -26,7 +26,7 @@ const TextButton = ({
             full:'w-full h-full'
         },
         type: {
-            primary: 'text-primary hover:bg-primary/40 duration-150',
+            primary: 'text-primary',
             warning: 'bg-warning',
             danger: 'bg-danger text-white',
             secondary:'bg-secondary-200 text-white hover:bg-secondary-300 duration-150',

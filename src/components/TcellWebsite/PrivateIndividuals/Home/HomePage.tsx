@@ -16,7 +16,7 @@ const HomePage = () => {
           title='Опция «Мегабайты за звонки»'
           description='Мегабайты интернета за входящие звонки с других мобильных операторов! 10 Мб - 1 мин. Команда подключения: *824*1#.'
           bgImage='/images/banner_bg.png'
-          bannerIcon='/images/01_banner.png'
+          bannerIcon='/images/01_banner.webp'
         />
         <div className='t__container mt-24'>
           <PrivateIndividualsNewsSection />

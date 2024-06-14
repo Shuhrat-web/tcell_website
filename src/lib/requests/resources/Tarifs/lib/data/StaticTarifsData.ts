@@ -4,7 +4,7 @@ export const staticTarifs:ITarif[] = [
     {
         id: 1,
         category_id: 1,
-        img: '/images/Salom_500.webp',
+        img: '/images/Salom_50.png',
         ussd: '*207*01#',
         title: "Салом+ 50",
         content: `
@@ -42,7 +42,7 @@ export const staticTarifs:ITarif[] = [
         id: 2,
         ussd: '*207*02#',
         category_id: 1,
-        img: '/images/Salom_70.webp',
+        img: '/images/Salom_70.png',
         title: "Салом+ 70",
         content: `
           <ul style="list-style:none; padding-left: 0px;  line-height: 1.5;">
@@ -78,7 +78,7 @@ export const staticTarifs:ITarif[] = [
     {
         id: 3,
         ussd: '*207*03#',
-        img: '/images/Salom_90.webp',
+        img: '/images/Salom_90.png',
         category_id: 1,
         title: "Салом+ 90",
         content: `
@@ -116,7 +116,7 @@ export const staticTarifs:ITarif[] = [
     {
         id: 4,
         ussd: '*207*04#',
-        img: '/images/Salom_130.webp',
+        img: '/images/Salom_130.png',
         category_id: 1,
         title: "Салом+ 130",
         content: `
@@ -157,7 +157,7 @@ export const staticTarifs:ITarif[] = [
     {
         id: 5,
         ussd: '*207*05#',
-        img: '/images/Salom_180.webp',
+        img: '/images/Salom_180.png',
         category_id: 1,
         title: "Салом+ 180",
         content: `
@@ -199,7 +199,7 @@ export const staticTarifs:ITarif[] = [
     {
         id: 6,
         ussd: '*207*06#',
-        img: '/images/Salom_300.webp',
+        img: '/images/Salom_300.png',
         category_id: 1,
         title: "Салом+ 300",
         content: `

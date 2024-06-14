@@ -9,7 +9,7 @@ import { HiChevronRight } from "react-icons/hi";
 const BreadCrumbs = ({links}:IBreadCrumbsProps) => {
   return (
     <nav className="flex" aria-label="Breadcrumb">
-      <ol role="list" className="flex items-center space-x-2">
+      <ol role="list" className="flex items-center space-x-2 flex-wrap">
         <li>
           <div>
             <Link href="/" className="text-secondary hover:text-secondary">

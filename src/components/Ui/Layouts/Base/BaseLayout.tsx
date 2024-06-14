@@ -27,7 +27,7 @@ const BaseLayout = ({
         {
           tabId: 1,
           route: '/private-individuals/loyalty',
-          name: 'Лояльность'
+          name: 'Баракат'
         },
         {
           tabId: 1,

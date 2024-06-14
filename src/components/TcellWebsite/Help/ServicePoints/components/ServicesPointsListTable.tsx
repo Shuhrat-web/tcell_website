@@ -1,14 +1,17 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import { IServicesPointsTableListProps } from '../lib/types/IServicePointsPageTypes'
 import TableContainer from '@/components/Ui/Table/TableContainer'
 import TableRow from '@/components/Ui/Table/components/TableRow'
 import TableColumn from '@/components/Ui/Table/components/TableColumn'
 import { ITableHead } from '@/components/Ui/Table/lib/types/TableTypes'
 import Title from '@/components/Ui/Title/Title'
+import { HiArrowLongDown } from "react-icons/hi2";
 import clsx from 'clsx'
+import TextButton from '@/components/Ui/Buttons/TextButton'
 
 const ServicesPointsListTable = ({servicePoints,className}:IServicesPointsTableListProps) => {
+  const [showAllList,setShowAllList] = useState<boolean>(false)
   const tableHeaders:ITableHead[] = [
     {
       id: 1,
@@ -39,6 +42,7 @@ const ServicesPointsListTable = ({servicePoints,className}:IServicesPointsTableL
       rowSpan: 1
     },
   ]
+  const getServicePointsList = () => showAllList ? servicePoints : servicePoints.slice(0,15)
   return (
     <section className={clsx(className,' overflow-x-auto')}>
       <Title extraClass='mb-8' size='3xl' display='h2'>
@@ -49,7 +53,7 @@ const ServicesPointsListTable = ({servicePoints,className}:IServicesPointsTableL
       headers={tableHeaders}
      >
       {
-        servicePoints.map(el => (
+        getServicePointsList().map(el => (
         <TableRow key={el.id}>
           <TableColumn colSpan={1}>
             {el.adress}
@@ -67,6 +71,11 @@ const ServicesPointsListTable = ({servicePoints,className}:IServicesPointsTableL
         ))
       }
       </TableContainer> 
+      <div className='mt-5 flex justify-center items-center'>
+        <TextButton onClick={() => setShowAllList(!showAllList)} extraClass='flex justify-center items-center gap-2'>
+          {showAllList ? 'Закрыть':'Показать ещё'} <span className={`duration-150 ${showAllList ? 'rotate-180' : 'rotate-0'}`}><HiArrowLongDown /></span>
+        </TextButton>
+      </div>
     </section>
   )
 }

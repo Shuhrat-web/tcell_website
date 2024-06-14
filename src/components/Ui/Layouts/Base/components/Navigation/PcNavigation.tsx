@@ -27,7 +27,7 @@ const PcNavigation = ({links,absoluteNav}:IPcNavigationProprs) => {
   
   return (
     <div className={clsx('w-full md:block hidden',{
-      'absolute top-5 left-0 z-40 ': absoluteNav,
+      'absolute top-4 left-0 z-40 ': absoluteNav,
       'mb-10 py-4': !absoluteNav
     })}>
       <div className='flex flex-wrap gap-4 items-center justify-between t__container'>

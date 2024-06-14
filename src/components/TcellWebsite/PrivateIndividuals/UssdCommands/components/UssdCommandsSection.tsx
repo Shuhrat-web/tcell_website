@@ -6,7 +6,7 @@ import { staticUssdCommands } from '@/lib/requests/resources/UssdCommands/lib/da
 const UssdCommandsSection = ({className}:IUssdCommandsSectionTypes) => {
   return (
     <section>
-      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12'>
+      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7'>
         {
           staticUssdCommands.map((command,i) => <UssdCommandCard key={i} command={command.command} description={command.description} />)
         }

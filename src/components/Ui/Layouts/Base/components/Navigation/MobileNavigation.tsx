@@ -6,12 +6,9 @@ import Logo from '@/components/Ui/Logo'
 import ContainButton from '@/components/Ui/Buttons/ContainButton'
 import { HiMenu } from "react-icons/hi";
 import NavigationDialog from '../Dialogs/NavigationDialog'
-import TextField from '@/components/Ui/Textfield/Textfield'
-import { HiMagnifyingGlass } from 'react-icons/hi2'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { HiChevronDown } from "react-icons/hi2";
-
 import { useLocale } from 'next-intl'
 
 
@@ -52,7 +49,7 @@ const MobileNavigation = ({links,absoluteNav}:IMobileNavigationProps) => {
                                 // setShowNavigationDialog(false)
                             } }
                             key={link.id}>
-                                <div className='flex justify-between w-full text-white text-2xl font-medium uppercase'>
+                                <div className='flex justify-between w-full text-dark-blue text-2xl font-medium uppercase'>
                                     <div className='w-10/12'>
                                         {link.name}
                                     </div>
@@ -89,7 +86,7 @@ const MobileNavigation = ({links,absoluteNav}:IMobileNavigationProps) => {
             <ContainButton 
             onClick={() => setShowNavigationDialog(true)}
             size='none' 
-            extraClass={`${absoluteNav ? 'text-white': 'text-black'} text-4xl`}
+            extraClass={`${absoluteNav ? 'text-dark-blue': 'text-black'} text-4xl`}
             type='none'>
                 <HiMenu />
             </ContainButton>
