@@ -19,14 +19,14 @@ export const staticContacts:IContact[] = [
         id: 3,
         img: '/images/icons/big_phone.svg',
         name: 'Для абонентов Tcell',
-        value: '9090',
+        value: '7070',
         type: 'phone'
     },
     {
         id: 4,
         img: '/images/icons/incoming_phone.svg',
         name: 'Для других операторов',
-        value: ' +992 44 600 9090',
+        value: ' +992 93 505 0000',
         type: 'phone'
     },
 ]
