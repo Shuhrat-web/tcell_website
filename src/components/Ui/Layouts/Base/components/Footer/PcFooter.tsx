@@ -155,7 +155,7 @@ const PcFooter = () => {
               </ul>
             </div>
             <div>
-              <Title>Приложения</Title>
+              <Title>Соц.сети</Title>
               <ul className='mt-4 flex gap-3 text-xl'>
                 <li>
                   <a target="_blank" href="https://www.instagram.com/tcell.tj">
