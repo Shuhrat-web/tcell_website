@@ -25,8 +25,8 @@ const ForBussinessHomePage = () => {
         /> */}
         <div className='t__container mt-24'>
             {/* <ForBussinesNewsSection /> */}
-            <ForBussinesBussinesSolutionsSection/>
-            <ForBussinessAdventagesSection  className="my-24" />
+            <ForBussinesBussinesSolutionsSection className='mb-24'/>
+            {/* <ForBussinessAdventagesSection  className="my-24" /> */}
             <ForBussinesAppsSection />
         </div>
       </div>

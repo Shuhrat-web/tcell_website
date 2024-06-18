@@ -1,6 +1,7 @@
 import React from 'react'
 import { IFooterRowProps } from '../../lib/types/IBaseLayoutTypes'
 import Title from '@/components/Ui/Title/Title'
+import Link from 'next/link'
 
 const FooterRow = ({footerRow}:IFooterRowProps) => {
   return (
@@ -14,7 +15,9 @@ const FooterRow = ({footerRow}:IFooterRowProps) => {
                         {
                             rowParent.children?.map((el,i) => (
                                 <li key={i}>
-                                    {el.name}
+                                    <Link href={el.url}>
+                                        {el.name}                                    
+                                    </Link>
                                 </li>
                             ))
                         }

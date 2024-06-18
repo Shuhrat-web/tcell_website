@@ -23,7 +23,7 @@ const PcFooter = () => {
           title: 'Тарифы',
           children:[
             {
-              url: `/${locale}/tarifs`,
+              url: `/${locale}/tarifs?category_id=1&module_id=1`,
               name: 'Список тарифов'
             },
           ]
@@ -32,7 +32,7 @@ const PcFooter = () => {
           title: 'Новости',
           children:[
             {
-              url: `/${locale}/posts`,
+              url: `/${locale}/posts?category_id=1&module_id=1`,
               name: 'Лента новостей'
             },
           ]
@@ -41,7 +41,7 @@ const PcFooter = () => {
           title: 'Сервисы',
           children:[
             {
-              url: `/${locale}/services`,
+              url: `/${locale}/services?module_id=1`,
               name: 'Активные сервисы'
             },
           ]
@@ -50,7 +50,7 @@ const PcFooter = () => {
           title: 'Команды',
           children:[
             {
-              url: '/',
+              url: `/${locale}/private-individuals/ussd-commands?module_id=1`,
               name: 'Список команд'
             },
           ]
@@ -64,25 +64,25 @@ const PcFooter = () => {
           title: 'Тарифы',
           children:[
             {
-              url: `/${locale}/tarifs`,
+              url: `/${locale}/tarifs?category_id=2&module_id=3`,
               name: 'Список тарифов'
             },
           ]
         },
-        {
-          title: 'IP Телевидение',
-          children:[
-            {
-              url: `/${locale}/for-home/ip-television`,
-              name: 'Информация'
-            }
-          ]
-        },
+        // {
+        //   title: 'IP Телевидение',
+        //   children:[
+        //     {
+        //       url: `/${locale}/for-home/ip-television`,
+        //       name: 'Информация'
+        //     }
+        //   ]
+        // },
         {
           title: 'Новости',
           children:[
             {
-              url: `/${locale}/posts`,
+              url: `/${locale}/posts?module_id=3`,
               name: 'Лента новостей'
             },
           ]
@@ -96,7 +96,7 @@ const PcFooter = () => {
           title: 'Тарифы',
           children:[
             {
-              url: `/${locale}/tarifs`,
+              url: `/${locale}/tarifs?category_id=3&module_id=2`,
               name: 'Список тарифов'
             },
           ]
@@ -105,7 +105,7 @@ const PcFooter = () => {
           title: 'Новости',
           children:[
             {
-              url: `/${locale}/posts`,
+              url: `/${locale}/posts?&module_id=2`,
               name: 'Лента новостей'
             },
           ]
