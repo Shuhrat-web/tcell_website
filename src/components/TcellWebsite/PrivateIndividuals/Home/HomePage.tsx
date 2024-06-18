@@ -1,7 +1,6 @@
-// import TextWithImageBanner from '@/components/Ui/Banners/TextWithImageBanner'
 import React from 'react'
 import PrivateIndividualsNewsSection from './components/PrivateIndividualsNewsSection'
-import PrivateIndividualsProductsSection from './components/IPrivateIndividualsProductsSectionProps'
+import PrivateIndividualsProductsSection from './components/PrivateIndividualsProductsSectionProps'
 import PrivateIndividualsFaqSection from './components/PrivateIndividualsFaqSection'
 import PrivateIndividualsAppsSection from './components/PrivateIndividualsAppsSection'
 import PrivateIndividualsTarifsSection from './components/PrivateIndividualsTarifsSection'
@@ -17,12 +16,6 @@ const HomePage = () => {
           img="/images/banner_test.png"
           alt='privateIndividualsBanner' 
         />
-        {/* <TextWithImageBanner 
-          title='Опция «Мегабайты за звонки»'
-          description='Мегабайты интернета за входящие звонки с других мобильных операторов! 10 Мб - 1 мин. Команда подключения: *824*1#.'
-          bgImage='/images/banner_bg.png'
-          bannerIcon='/images/01_banner.webp'
-        /> */}
         <div className='t__container mt-24'>
           <PrivateIndividualsNewsSection />
           <PrivateIndividualsTarifsSection className="my-24" />

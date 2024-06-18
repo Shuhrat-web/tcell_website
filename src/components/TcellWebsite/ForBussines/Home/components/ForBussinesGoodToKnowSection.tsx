@@ -8,7 +8,7 @@ import PostCard from '@/components/Ui/Cards/Post/PostCard'
 import clsx from 'clsx'
 import { staticPosts } from '@/lib/requests/resources/Posts/lib/data/StaticPostsData';
 
-const ForBussinesGoodToKnoeSection = ({className}:IForBussinesGoodToKnoeSection) => {
+const ForBussinesGoodToKnowSection = ({className}:IForBussinesGoodToKnoeSection) => {
     const locale = useLocale()
   return (
     <section className={clsx(className,'')}>
@@ -26,4 +26,4 @@ const ForBussinesGoodToKnoeSection = ({className}:IForBussinesGoodToKnoeSection)
   )
 }
 
-export default ForBussinesGoodToKnoeSection
+export default ForBussinesGoodToKnowSection

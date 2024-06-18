@@ -1,12 +1,12 @@
 // import TextWithImageBanner from '@/components/Ui/Banners/TextWithImageBanner'
 import React from 'react'
 // import ForBussinesNewsSection from './components/ForBussinesNewsSection'
-// import ForBussinesGoodToKnoeSection from './components/ForBussinesGoodToKnoeSection'
 import ForBussinessAdventagesSection from './components/ForBussinessAdventagesSection'
 // import FadeOutProvider from '@/components/Ui/AnimationProviders/FadeOutProvider'
 import FromLeftAnimationProvider from '@/components/Ui/AnimationProviders/FromLeftAnimationProvider'
 import ForBussinesAppsSection from './components/ForBussinesAppsSection'
 import ImageBanner from '@/components/Ui/Banners/ImageBanner'
+import ForBussinesBussinesSolutionsSection from './components/ForBussinesBussinesSolutionsSection'
 
 const ForBussinessHomePage = () => {
   return (
@@ -25,9 +25,9 @@ const ForBussinessHomePage = () => {
         /> */}
         <div className='t__container mt-24'>
             {/* <ForBussinesNewsSection /> */}
+            <ForBussinesBussinesSolutionsSection/>
             <ForBussinessAdventagesSection  className="my-24" />
             <ForBussinesAppsSection />
-            {/* <ForBussinesGoodToKnoeSection /> */}
         </div>
       </div>
     </FromLeftAnimationProvider>

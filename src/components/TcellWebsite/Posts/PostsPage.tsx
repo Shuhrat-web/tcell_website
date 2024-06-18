@@ -24,7 +24,7 @@ const PostsPage = () => {
         {/* <FilterSection className='mb-4' /> */}
         <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6'>
           {
-            staticPosts.filter(el => el.id !== 5 && el.id !== 6).map(post => (
+            staticPosts.filter(el => el.id !== 5 && el.id !== 6).reverse().map(post => (
               <PostCard key={post.id} post={post} />
             ))
           }
