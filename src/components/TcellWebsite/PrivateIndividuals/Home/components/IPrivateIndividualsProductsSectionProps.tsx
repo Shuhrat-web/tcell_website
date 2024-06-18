@@ -24,7 +24,7 @@ const PrivateIndividualsProductsSection = ({className}:IPrivateIndividualsProduc
       name: 'Лояльность',
       desctiption: 'Наслаждайтесь любимой музыкой',
       img: '/images/services/service_3.svg',
-      url: `/${locale}/private-individuals/loyalty?module_id=1`
+      // url: `/${locale}/private-individuals/loyalty?module_id=1`
     },
   ] 
   
