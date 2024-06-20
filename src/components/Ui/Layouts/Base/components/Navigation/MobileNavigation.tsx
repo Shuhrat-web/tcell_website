@@ -60,8 +60,8 @@ const MobileNavigation = ({links}:IMobileNavigationProps) => {
                                 <div className={`${activeTab === link.id ? 'visible opacity-100 mt-5' : ' absolute top-full left-0 invisible opacity-0 mt-0'} overflow-hidden duration-300 ease-out`}>
                                     <ul className=' text-secondary-50 flex flex-col gap-y-2 ml-2'>
                                         {
-                                            link.children.map((linkChild,i) => <li onClick={() => setShowNavigationDialog(false)} className='text-lg uppercase' key={i}>
-                                                <Link className='w-full' href={`/${locale}/${linkChild.route}`}>
+                                            link.children.map((linkChild,i) => <li onClick={() => setShowNavigationDialog(false)} className='text-lg uppercase w-full' key={i}>
+                                                <Link className='block' href={`/${locale}/${linkChild.route}`}>
                                                     {linkChild.name}                                                
                                                 </Link>
                                             </li>)
@@ -76,10 +76,12 @@ const MobileNavigation = ({links}:IMobileNavigationProps) => {
             </div>
         </NavigationDialog>
         <div  className={clsx('w-full md:hidden flex justify-between items-center t__container mb-10 py-4')}>
-            <Logo 
-            height={48} 
-            width={48}  
-            fill={'#821EBE'} />
+            <Link href={`/${locale}`}>
+                <Logo 
+                height={48} 
+                width={48}  
+                fill={'#821EBE'} />
+            </Link>
             <ContainButton 
             onClick={() => setShowNavigationDialog(true)}
             size='none' 

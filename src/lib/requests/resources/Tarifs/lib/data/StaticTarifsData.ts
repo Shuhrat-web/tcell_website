@@ -210,7 +210,7 @@ export const staticTarifs:ITarif[] = [
             <li>-102 400 Mb на соцсети и мессенджеры</li>
           </ul>
         `,
-        price: "180 сомони / мес.",
+        price: "300 сомони / мес.",
         options: [
           {
             id: 1,
