@@ -19,13 +19,13 @@ const PrivateIndividualsProductsSection = ({className}:IPrivateIndividualsProduc
       img: '/images/services/service_2.svg',
       url: `/${locale}/services?module_id=1`
     },
-    {
-      id: 3,
-      name: 'Лояльность',
-      desctiption: 'Наслаждайтесь любимой музыкой',
-      img: '/images/services/service_3.svg',
-      // url: `/${locale}/private-individuals/loyalty?module_id=1`
-    },
+    // {
+    //   id: 3,
+    //   name: 'Лояльность',
+    //   desctiption: 'Наслаждайтесь любимой музыкой',
+    //   img: '/images/services/service_3.svg',
+    //   // url: `/${locale}/private-individuals/loyalty?module_id=1`
+    // },
   ] 
   
   return (
@@ -33,23 +33,34 @@ const PrivateIndividualsProductsSection = ({className}:IPrivateIndividualsProduc
       <Title size='3xl' display='h3'>
         Продукты Tcell
       </Title>
-      <ColoredBannerSection 
-        className='mt-24'
-        bgColor='#9747FF'
-        textColor='white'
-        title='Как стать абонентом Tcell?'
-        description='Для того, что бы стать абонентом компании Tcell вам необходимо подойти в любой центр обслуживания с пластиковым паспортом'
-        url={`/${locale}/help/service-points?module_id=1`}
-        btnText='Посмотреть на карте'
-        img='/images/addon_banner_3.webp'
-      />
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-6'>
+      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-24 gap-6'>
+        <div className='col-span-2'>
+          <ColoredBannerSection 
+            className=''
+            bgColor='#9747FF'
+            textColor='white'
+            title='Как стать абонентом Tcell?'
+            description='Для того, что бы стать абонентом компании Tcell вам необходимо подойти в любой центр обслуживания с пластиковым паспортом'
+            url={`/${locale}/help/service-points?module_id=1`}
+            btnText='Посмотреть на карте'
+            img='/images/addon_banner_3.webp'
+          />
+        </div>
+        {
+          services.map(service => (
+            <div className='col-span-2 xl:col-span-1 h-full' key={service.id}>
+              <ServiceCard service={service} />
+            </div>
+          ))
+        }
+      </div>
+      {/* <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-6'>
         {
           services.map(service => (
             <ServiceCard service={service} key={service.id} />
           ))
         }
-      </div>
+      </div> */}
     </section>
   )
 }

@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const ServiceCard = ({service}:IServiceCardProps) => {
   return (
-    <article className='t__card__secondary relative flex flex-col justify-between min-h-[290px]'>
+    <article className='t__card__secondary relative flex flex-col justify-between h-full'>
        <div>
             <Title size='2xl' display='h5'>
                 {service.name}
