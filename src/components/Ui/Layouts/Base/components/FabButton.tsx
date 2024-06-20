@@ -13,7 +13,7 @@ const FabButton = () => {
             id: 1,
             name: 'Telegram',
             icon: '/images/icons/Telegram.svg',
-            link: 'https://t.me/tcellpublic'
+            link: 'https://t.me/Tcellservicebot'
         },
         {
             id: 2,
@@ -27,12 +27,12 @@ const FabButton = () => {
             icon: '/images/icons/Whatsapp.svg',
             link: 'https://wa.me/992927777777'
         },
-        {
-            id: 4,
-            name: 'TelegramBot',
-            icon: '/images/icons/robot.svg',
-            link: 'https://t.me/Tcellservicebot'
-        },
+        // {
+        //     id: 4,
+        //     name: 'TelegramBot',
+        //     icon: '/images/icons/robot.svg',
+        //     link: 'https://t.me/Tcellservicebot'
+        // },
     ]
     
   return (
