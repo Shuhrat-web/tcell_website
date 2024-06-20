@@ -2,6 +2,7 @@ import React from 'react'
 import PcFooter from './components/Footer/PcFooter'
 import { INavigationLinkTab } from './lib/types/IBaseLayoutTypes'
 import BaseNavigation from './components/Navigation/BaseNavigation'
+import FabButton from './components/FabButton'
 
 const BaseLayout = ({
   children
@@ -138,6 +139,7 @@ const BaseLayout = ({
   return (
     <>
       <BaseNavigation links={links} />
+      <FabButton />
         <main className='mb-32'>
           { children }
         </main>

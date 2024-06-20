@@ -14,6 +14,13 @@ export interface INavigationLink{
     children?: INavigationLink[]
 }
 
+export interface IFabLink{
+    id: number;
+    name: string;
+    icon: string;
+    link: string;
+}
+
 
 export interface IPcNavigationProprs{
     links: INavigationLinkTab[];
