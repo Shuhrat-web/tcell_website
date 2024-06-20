@@ -37,7 +37,7 @@ const FabButton = () => {
     
   return (
     <>
-        <div className='fixed right-5 bottom-5'>
+        <div className='fixed right-5 bottom-5 md:right-10 md:bottom-10 z-50'>
             <div className="relative">
                 <ul className={clsx('absolute bottom-20 duration-150 flex flex-col gap-6',{
                     'opacity-100 visible': showLinks,

@@ -30,7 +30,7 @@ const FaqChat = () => {
             </div>
             <TextButton 
                 type='white' 
-                extraClass='flex items-center gap-x-2' 
+                extraClass='flex items-center gap-x-2 z-30' 
                 hideHover 
                 size='none'
                 url='https://wa.me/992927777777 '>
