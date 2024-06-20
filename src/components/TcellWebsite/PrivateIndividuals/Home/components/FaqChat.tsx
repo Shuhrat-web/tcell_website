@@ -32,7 +32,8 @@ const FaqChat = () => {
                 type='white' 
                 extraClass='flex items-center gap-x-2' 
                 hideHover 
-                size='none'>
+                size='none'
+                url='https://wa.me/992927777777 '>
                 Подробнее
                 <HiArrowLongRight />
             </TextButton>

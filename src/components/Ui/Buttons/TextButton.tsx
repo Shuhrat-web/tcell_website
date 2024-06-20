@@ -2,6 +2,7 @@
 import React from 'react'
 import { ITextButtonProps, ITextButtonSettings } from './lib/types/IButtonsType'
 import { FaSpinner } from 'react-icons/fa'
+import Link from 'next/link'
 
 const TextButton = ({
     children,
@@ -14,7 +15,8 @@ const TextButton = ({
     disabled = false,
     extraClass,
     hideHover=false,
-    animate = true
+    animate = true,
+    url
 }:ITextButtonProps) => {
     const settings:ITextButtonSettings = {
         size: {
@@ -61,6 +63,7 @@ const TextButton = ({
             ${settings.round[round]}
             ${animate ? settings.animate : ''}
             ${extraClass}
+            relative
         `}
     >
         {
@@ -68,6 +71,10 @@ const TextButton = ({
             <FaSpinner className="animate-spin h-5 w-5"/>
             :
             children
+        }
+        {
+            url && 
+            <Link className='absolute left-0 top-0 w-full h-full' href={url}/>
         }
     </button>
   )
