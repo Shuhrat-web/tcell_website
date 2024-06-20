@@ -26,12 +26,7 @@ export interface IMobileNavigationProps extends IPcNavigationProprs{
 
 export interface IFooterRow{
     title: string;
-    children?: IFooterRowChild[]
-}
-
-export interface IFooterRowChild{
-    title: string;
-    children?: IFooterRowLink[];
+    children?: IFooterRowLink[]
 }
 
 export interface IFooterRowLink{

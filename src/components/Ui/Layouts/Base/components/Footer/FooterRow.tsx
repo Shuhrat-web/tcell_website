@@ -6,21 +6,16 @@ import Link from 'next/link'
 const FooterRow = ({footerRow}:IFooterRowProps) => {
   return (
     <div>
-        <Title display='h3' size='lg'>{footerRow.title}</Title>
-        <div className='flex flex-col gap-y-6'>
+        <Title display='h3' size='lg' extraClass='mb-8'>{footerRow.title}</Title>
+        <div className='flex flex-col gap-y-4'>
             {footerRow.children?.map((rowParent,i) => (
                 <div key={i}>
-                    <Title size='lg'>{rowParent.title}</Title>
-                    <ul className='text-secondary text-sm space-y-2 mt-4'>
-                        {
-                            rowParent.children?.map((el,i) => (
-                                <li key={i}>
-                                    <Link href={el.url}>
-                                        {el.name}                                    
-                                    </Link>
-                                </li>
-                            ))
-                        }
+                    <ul className='text-[#374151] text-base font-normal'>
+                        <li key={i}>
+                            <Link href={rowParent.url}>
+                                {rowParent.name}                                    
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             ))}

@@ -18,40 +18,45 @@ const PcFooter = () => {
       title: "ЧАСТНЫМ ЛИЦАМ",
       children: [
         {
-          title: "Тарифы",
-          children: [
-            {
-              url: `/${locale}/tarifs?category_id=1&module_id=1`,
-              name: "Список тарифов",
-            },
-          ],
+          url: `/${locale}/`,
+          name: "ГЛАВНАЯ",
         },
         {
-          title: "Новости",
-          children: [
-            {
-              url: `/${locale}/posts?category_id=1&module_id=1`,
-              name: "Лента новостей",
-            },
-          ],
+          url: `/${locale}/posts`,
+          name: "НОВОСТИ",
         },
         {
-          title: "Сервисы",
-          children: [
-            {
-              url: `/${locale}/services?module_id=1`,
-              name: "Активные сервисы",
-            },
-          ],
+          url: `/${locale}/private-individuals/ussd-commands?module_id=1`,
+          name: "USSD–КОМАНДЫ",
         },
         {
-          title: "Команды",
-          children: [
-            {
-              url: `/${locale}/private-individuals/ussd-commands?module_id=1`,
-              name: "Список команд",
-            },
-          ],
+          url: `/${locale}/tarifs?category_id=1&module_id=1`,
+          name: "ТАРИФЫ",
+        },
+        {
+          url: `/${locale}/help/faq?module_id=1`,
+          name: "ПОМОЩЬ",
+        },
+        {
+          url: `/${locale}/help/service-points?module_id=1`,
+          name: "ТОЧКИ ОБСЛУЖИВАНИЯ",
+        },
+      ],
+    },
+    {
+      title: "БИЗНЕСУ",
+      children: [
+        {
+          url: `/${locale}/`,
+          name: "ГЛАВНАЯ",
+        },
+        {
+          url: `/${locale}/posts`,
+          name: "НОВОСТИ",
+        },
+        {
+          url: `/${locale}/tarifs?category_id=1&module_id=1`,
+          name: "ТАРИФЫ",
         },
       ],
     },
@@ -59,54 +64,29 @@ const PcFooter = () => {
       title: "ДЛЯ ДОМА",
       children: [
         {
-          title: "Тарифы",
-          children: [
-            {
-              url: `/${locale}/tarifs?category_id=2&module_id=3`,
-              name: "Список тарифов",
-            },
-          ],
+          url: `/${locale}/`,
+          name: "ГЛАВНАЯ",
         },
-        // {
-        //   title: 'IP Телевидение',
-        //   children:[
-        //     {
-        //       url: `/${locale}/for-home/ip-television`,
-        //       name: 'Информация'
-        //     }
-        //   ]
-        // },
         {
-          title: "Новости",
-          children: [
-            {
-              url: `/${locale}/posts?module_id=3`,
-              name: "Лента новостей",
-            },
-          ],
+          url: `/${locale}/posts`,
+          name: "НОВОСТИ",
+        },
+        {
+          url: `/${locale}/tarifs?category_id=1&module_id=1`,
+          name: "ТАРИФЫ",
         },
       ],
     },
     {
-      title: "ДЛЯ БИЗНЕСА",
+      title: "T–Solution",
       children: [
         {
-          title: "Тарифы",
-          children: [
-            {
-              url: `/${locale}/tarifs?category_id=3&module_id=2`,
-              name: "Список тарифов",
-            },
-          ],
+          url: `/${locale}/`,
+          name: "ГЛАВНАЯ",
         },
         {
-          title: "Новости",
-          children: [
-            {
-              url: `/${locale}/posts?&module_id=2`,
-              name: "Лента новостей",
-            },
-          ],
+          url: `/${locale}/t-solution/chat-bot?module_id=4`,
+          name: "ЧАТ–БОТ",
         },
       ],
     },
@@ -128,18 +108,18 @@ const PcFooter = () => {
           ))}
         </div>
 
-        <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-4 xl:flex justify-between">
+        <div className="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-2 xl:flex justify-between">
 
           <div className="space-y-4">
             <div className="flex space-x-2 items-center">
               <LuMousePointer2 /> <Title>Душанбе</Title>
             </div>
-            <ul className="flex gap-8">
+            <ul className="flex-row md:flex lg:flex xl:flex gap-8">
               <li>
                 <Title color="secondary">Абонентам Tcell</Title>
                 <Title>7070</Title>
               </li>
-              <li>
+              <li className="mt-4 md:mt-0 lg:mt-0 xl:mt-0">
                 <Title color="secondary">Абонентам других операторов</Title>
                 <Title>+992 93 505 0000</Title>
               </li>
