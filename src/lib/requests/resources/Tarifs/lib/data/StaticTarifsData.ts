@@ -9,6 +9,7 @@ export const staticTarifs:ITarif[] = [
         title: "Салом+ 50",
         content: `
             <ul style="list-style: none; padding-left: 0px;  line-height: 1.5;">
+                <li>-Ночной безлимитный интернет (00:00 по 07:00) – бесплатно</li>
                 <li>-Звонки внутри сети – бесплатно</li>
                 <li>-Стоимость GPRS за 1 Mb сверх пакета – 0,02 сомони</li>
                 <li>-Исходящий SMS по РТ – 0,10 сомони</li>
@@ -46,6 +47,7 @@ export const staticTarifs:ITarif[] = [
         title: "Салом+ 70",
         content: `
           <ul style="list-style:none; padding-left: 0px;  line-height: 1.5;">
+            <li>-Ночной безлимитный интернет (00:00 по 07:00) – бесплатно</li>
             <li>-Звонки внутри сети - бесплатно</li>
             <li>-Стоимость GPRS за 1 Mb сверх пакета –0,02 сомони</li>
             <li>-Исходящий SMS по РТ – 0,10 сомони</li>
