@@ -14,13 +14,13 @@ const ShowSolutionsPage = ({ id }: { id: number }) => {
   return (
     <div className="t__container">
       <BreadCrumbs links={breadCrumbs} />
-      <div>
+      <article>
         {
           solution?.children.map((child) => (
             <SolutionContentBlock key={child.id} title={child.title} content={child.content} id={child.id}/>
           ))
         }
-      </div>
+      </article>
     </div>
   );
 };
