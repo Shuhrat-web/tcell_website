@@ -1,13 +1,16 @@
+'use client'
 import React from 'react'
 import { ISolutionCardProps } from './lib/types/IFaqCardTypes'
 import Title from '../../Title/Title'
 import TextButton from '../../Buttons/TextButton'
 import { HiArrowLongRight } from 'react-icons/hi2'
 import Image from 'next/image'
+import { useLocale } from 'next-intl'
 
 
 
 const SolutionCard = ({solution,iconHeight=120,iconWidth=120}:ISolutionCardProps) => {
+    const locale = useLocale()
   return (
     <div className='flex flex-col justify-between t__card__secondary h-full'>
         <div>
@@ -18,11 +21,11 @@ const SolutionCard = ({solution,iconHeight=120,iconWidth=120}:ISolutionCardProps
                 {solution.description}
             </p>
         </div>
-        <div className='flex justify-end items-end'>
-            {/* <TextButton extraClass='flex items-center gap-x-2' hideHover size='none'>
+        <div className='flex justify-between items-end'>
+            <TextButton extraClass='flex items-center gap-x-2' hideHover size='none' url={`/${locale}/t-solution/${solution.id}`}>
                 Подробнее
                 <HiArrowLongRight />
-            </TextButton> */}
+            </TextButton>
             {
                 solution.icon &&
                 <Image 

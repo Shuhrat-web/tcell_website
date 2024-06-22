@@ -15,7 +15,7 @@ const Decision = ({className}: IAdvantageSectionProps) => {
     },
     {
       id: 2,
-      title: 'Оценка эффективности персонала',
+      title: 'Разработка системы оценки производительности сотрудников',
       description: 'Внедрение системы оценки работы персонала - ключевой шаг в развитии организации.',
       icon: '/images/faq_estimation.png'
     },
@@ -27,7 +27,7 @@ const Decision = ({className}: IAdvantageSectionProps) => {
     },
     {
       id: 4,
-      title: 'CHATBOT/Голосовой робот',
+      title: 'Разработка ChatBot',
       description: 'Программы на ИИ для автоматизации коммуникации специалистов с соискателями и внутренними сотрудниками.',
       icon: '/images/faq_chatbot.png'
     },
@@ -39,7 +39,7 @@ const Decision = ({className}: IAdvantageSectionProps) => {
     },
     {
       id: 6,
-      title: 'Разработка модели компетенций',
+      title: 'Оценка удовлетворенности клиентов (CSI)',
       description: 'Инструмент управления эффективностью',
       icon: '/images/faq_model.png'
     }

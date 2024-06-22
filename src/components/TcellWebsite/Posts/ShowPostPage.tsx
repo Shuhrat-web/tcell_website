@@ -10,11 +10,12 @@ import { staticPosts } from '@/lib/requests/resources/Posts/lib/data/StaticPosts
 
 
 const ShowPostsPage = ({id}:{id:number}) => {
+  const post = staticPosts.find(el => el.id == id)
+
   const breadcrumbPages: IBreadCrumb[] = [
     { name: 'Новости', href: '/news', current: false },
-    { name: 'Уважаемые абоненты!', href: '#', current: true }
+    { name: post?.title || "", href: '#', current: true }
   ];
-  const post = staticPosts.find(el => el.id == id)
 
   return (
     <div className='t__container'>
