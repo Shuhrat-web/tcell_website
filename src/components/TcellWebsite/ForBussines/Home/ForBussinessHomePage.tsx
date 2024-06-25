@@ -13,7 +13,7 @@ const ForBussinessHomePage = () => {
     <FromLeftAnimationProvider>
       <div>
         <ImageBanner 
-          img="/images/centered_banner_2.png"
+          img="/images/banner_bussines.webp"
           alt='forBussinesBanner' 
         />
         {/* <TextWithImageBanner 

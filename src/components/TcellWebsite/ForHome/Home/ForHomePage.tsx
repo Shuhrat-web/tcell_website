@@ -12,7 +12,7 @@ const ForHomePage = () => {
     <FromLeftAnimationProvider>
       <div>
       <ImageBanner 
-          img="/images/centered_banner_3.png"
+          img="/images/banner_teznet.webp"
           alt='forHomeBanner' 
         />
         {/* <TextWithImageBanner 

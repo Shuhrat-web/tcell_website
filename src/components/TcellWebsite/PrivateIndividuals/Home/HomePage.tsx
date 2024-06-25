@@ -13,7 +13,7 @@ const HomePage = () => {
     <FromLeftAnimationProvider>
       <div>
         <ImageBanner 
-          img="/images/banner_test.png"
+          img="/images/banner_main.webp"
           alt='privateIndividualsBanner' 
         />
         <div className='t__container mt-24'>
