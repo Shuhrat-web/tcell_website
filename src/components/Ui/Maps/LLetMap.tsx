@@ -1,7 +1,8 @@
 'use client'
 import React from 'react'
 import { MapContainer, Marker, Popup, TileLayer} from 'react-leaflet'
-import MarkerIcon from 'leaflet/dist/images/marker-icon.png'
+// import MarkerIcon from 'leaflet/dist/images/marker-icon.png'
+import MarkerIcon from '/public/oi_map-marker.png'
 import MarkerShadow from 'leaflet/dist/images/marker-shadow.png'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
@@ -20,7 +21,7 @@ const LLetMap = ({markers}:ILLetMapProps) => {
                         new L.Icon({
                             iconUrl: MarkerIcon.src,
                             iconRetinaUrl: MarkerIcon.src,
-                            iconSize: [25, 41],
+                            iconSize: [25, 25],
                             iconAnchor: [12.5, 41],
                             popupAnchor: [0, -41],
                             shadowUrl: MarkerShadow.src,
