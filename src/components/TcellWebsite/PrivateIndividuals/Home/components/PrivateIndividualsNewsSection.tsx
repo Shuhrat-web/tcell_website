@@ -18,7 +18,7 @@ const PrivateIndividualsNewsSection = ({className}:IPrivateIndividualsNewsSectio
         />
         <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-11'>
           {
-            staticPosts.slice(0,3).map(post => (
+            staticPosts.slice(staticPosts.length-3,staticPosts.length).reverse().map(post => (
               <PostCard key={post.id} post={post} />
             ))
           }
