@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { ISolutionCardProps } from './lib/types/IFaqCardTypes'
+import { ISolutionCardProps } from './lib/types/ISolutionCardTypes'
 import Title from '../../Title/Title'
 import TextButton from '../../Buttons/TextButton'
 import { HiArrowLongRight } from 'react-icons/hi2'

@@ -3,7 +3,6 @@ import React from "react";
 import { IFooterRow } from "../../lib/types/IBaseLayoutTypes";
 import FooterRow from "./FooterRow";
 import LogoWithText from "@/components/Ui/LogoWithText";
-import { LuMousePointer2 } from "react-icons/lu";
 import Title from "@/components/Ui/Title/Title";
 import Image from "next/image";
 import { AiFillInstagram } from "react-icons/ai";
@@ -100,7 +99,7 @@ const PcFooter = () => {
     "Лицензии",
   ];
   return (
-    <footer className="bg-[#F2F3F7] py-16 mt-10">
+    <footer className="bg-[#F2F3F7] pb-16 pt-8 mt-10">
       <div className="t__container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {footerRows.map((row, i) => (
@@ -108,54 +107,89 @@ const PcFooter = () => {
           ))}
         </div>
 
-        <div className="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-2 xl:flex justify-between">
+        <div className="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-2 md:grid-cols-2 xl:flex justify-between">
 
-          <div className="space-y-4">
-            <div className="flex space-x-2 items-center">
-              <LuMousePointer2 /> <Title>Душанбе</Title>
-            </div>
-            <ul className="flex-row md:flex lg:flex xl:flex gap-8">
-              <li>
-                <Title color="secondary">Абонентам Tcell</Title>
-                <Title>7070</Title>
-              </li>
-              <li className="mt-4 md:mt-0 lg:mt-0 xl:mt-0">
-                <Title color="secondary">Абонентам других операторов</Title>
-                <Title>+992 93 505 0000</Title>
-              </li>
-            </ul>
-          </div>
-
-          <div className="">
-            <Title>Приложения</Title>
-            <ul className="flex gap-4 mt-4 font-medium">
-              <li className="flex items-center gap-x-2">
-                <Image
-                  unoptimized
-                  height={44}
-                  width={44}
-                  alt="myTcellApp"
-                  src={"/images/myTcell.webp"}
-                />
-                <span className="text-secondary">Мой Tcell</span>
-              </li>
-              <li className="flex items-center gap-x-2">
-                <Image
-                  unoptimized
-                  height={44}
-                  width={44}
-                  alt="chiGapApp"
-                  src={"/images/chiGap.webp"}
-                />
-                <span className="text-secondary">Чигап</span>
-              </li>
-            </ul>
-          </div>
           <div>
-            <Title>Соц.сети</Title>
+            <Title>Контакты</Title>
+            <ul className="flex items-baseline gap-3 mt-4">
+              <li>
+                <Image
+                src={"/phone_footer.svg"}
+                width={17}
+                height={17}
+                unoptimized
+                alt="Phone_footer"
+                />
+              </li>
+              <li>7070 <br /> <span className="text-[#9CA3AF]">для абонетов Tcell</span></li>
+            </ul>
+            <ul className="flex items-baseline gap-3 mt-4">
+              <li>
+                <Image
+                src={"/phone_footer.svg"}
+                width={17}
+                height={17}
+                unoptimized
+                alt="Phone_footer"
+                />
+              </li>
+              <li>+992 93 505 0000 <br /> <span className="text-[#9CA3AF]">для всех абонетов</span></li>
+            </ul>
+          </div>
+
+          <div>
+            <Title>Адрес</Title>
+            <ul className="mt-4">
+              <li className="flex gap-3">
+                <Image
+                src={"/address_footer.svg"}
+                width={20}
+                height={20}
+                unoptimized
+                alt="Address-footer" 
+                /> г. Душанбе, пр. Рудаки 34
+              </li>
+              <li className="flex gap-3 mt-3">
+                <Image
+                src={"/envelope-open.svg"}
+                width={20}
+                height={20}
+                unoptimized
+                alt="Address-footer" 
+                /> hr-info@tcell.tj
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <Title>Приложения</Title>
+            <ul className="flex gap-6 mt-4">
+              <li className="flex gap-3">
+                <Image
+                src={"/images/myTcell.webp"}
+                width={20}
+                height={20}
+                unoptimized
+                alt="MyTcell"
+                /> Мой Tcell
+              </li>
+              <li className="flex gap-3">
+                <Image 
+                src={"/images/chiGap.webp"}
+                width={20}
+                height={20}
+                unoptimized
+                alt="ChiGap"
+                /> Чигап
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <Title>Соцсети</Title>
             <ul className="mt-4 flex gap-3 text-xl">
               <li>
-                <a target="_blank" href="https://www.instagram.com/tcell.tj">
+                <a target="_blank" href="https://www.instagram.com/tcell.tj" className="text-[#9CA3AF]">
                   <AiFillInstagram />
                 </a>
               </li>
@@ -164,6 +198,7 @@ const PcFooter = () => {
                   href="https://t.me/tcellpublic"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="text-[#9CA3AF]"
                 >
                   <FaTelegramPlane />
                 </a>

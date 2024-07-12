@@ -6,7 +6,7 @@ import Link from 'next/link'
 const FooterRow = ({footerRow}:IFooterRowProps) => {
   return (
     <div>
-        <Title display='h3' size='lg' extraClass='mb-8'>{footerRow.title}</Title>
+        <Title display='h3' size='lg' extraClass='mb-8 mt-8'>{footerRow.title}</Title>
         <div className='flex flex-col gap-y-4'>
             {footerRow.children?.map((rowParent,i) => (
                 <div key={i}>

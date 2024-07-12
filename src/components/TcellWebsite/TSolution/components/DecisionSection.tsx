@@ -42,6 +42,24 @@ const Decision = ({className}: IAdvantageSectionProps) => {
       title: 'Оценка удовлетворенности клиентов (CSI)',
       description: 'Показатель CSI (Customer Satisfaction Index) позволяет измерить и отслеживать удовлетворенность клиентов после взаимодействия с вашей компанией, а также сравнивать себя с конкурентами.',
       icon: '/images/faq_model.png'
+    },
+    {
+      id: 7,
+      title: 'Автоматизация процессов',
+      description: 'Сократите издержки и повысите производительность с помощью наших решений по автоматизации бизнес-процессов.',
+      icon: '/images/settings_solution.png',
+    },
+    {
+      id: 8,
+      title: 'CRM для вашего бизнеса',
+      description: 'Управляйте отношениями с клиентами эффективно с нашими CRM-системами. Обучение и поддержка включены.',
+      icon: '/images/crm_solution.png',
+    },
+    {
+      id: 9,
+      title: 'Бизнес-консалтинг',
+      description: 'Профессиональный аудит и консалтинг для выявления проблем и улучшения бизнес-процессов.',
+      icon: '/images/consalting_solution.png',
     }
   ]
   return (
@@ -50,7 +68,7 @@ const Decision = ({className}: IAdvantageSectionProps) => {
       <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-11'>
         {
           decisions.map(faq => (
-            <SolutionCard key={faq.id} solution={faq}/>
+            <SolutionCard key={faq.id} solution={faq} />
           ))
         }
       </div>
