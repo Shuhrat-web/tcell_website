@@ -14,15 +14,15 @@ const PcFooter = () => {
 
   const footerRows: IFooterRow[] = [
     {
-      title: "ЧАСТНЫМ ЛИЦАМ",
+      title: "Частным лицам",
       children: [
         {
           url: `/${locale}/`,
-          name: "ГЛАВНАЯ",
+          name: "Главная",
         },
         {
           url: `/${locale}/posts`,
-          name: "НОВОСТИ",
+          name: "Новости",
         },
         {
           url: `/${locale}/private-individuals/ussd-commands?module_id=1`,
@@ -30,49 +30,49 @@ const PcFooter = () => {
         },
         {
           url: `/${locale}/tarifs?category_id=1&module_id=1`,
-          name: "ТАРИФЫ",
+          name: "Тарифы",
         },
         {
           url: `/${locale}/help/faq?module_id=1`,
-          name: "ПОМОЩЬ",
+          name: "Помощь",
         },
         {
           url: `/${locale}/help/service-points?module_id=1`,
-          name: "ТОЧКИ ОБСЛУЖИВАНИЯ",
+          name: "Точки обслуживания",
         },
       ],
     },
     {
-      title: "БИЗНЕСУ",
+      title: "Бизнесу",
       children: [
         {
           url: `/${locale}/`,
-          name: "ГЛАВНАЯ",
+          name: "Главная",
         },
         {
           url: `/${locale}/posts`,
-          name: "НОВОСТИ",
+          name: "Новости",
         },
         {
           url: `/${locale}/tarifs?category_id=1&module_id=1`,
-          name: "ТАРИФЫ",
+          name: "Тарифы",
         },
       ],
     },
     {
-      title: "ДЛЯ ДОМА",
+      title: "Для дома",
       children: [
         {
           url: `/${locale}/`,
-          name: "ГЛАВНАЯ",
+          name: "Главная",
         },
         {
           url: `/${locale}/posts`,
-          name: "НОВОСТИ",
+          name: "Новости",
         },
         {
           url: `/${locale}/tarifs?category_id=1&module_id=1`,
-          name: "ТАРИФЫ",
+          name: "Тарифы",
         },
       ],
     },
@@ -81,11 +81,11 @@ const PcFooter = () => {
       children: [
         {
           url: `/${locale}/`,
-          name: "ГЛАВНАЯ",
+          name: "Главная",
         },
         {
           url: `/${locale}/t-solution/chat-bot?module_id=4`,
-          name: "ЧАТ–БОТ",
+          name: "Чат-бот",
         },
       ],
     },
@@ -108,7 +108,6 @@ const PcFooter = () => {
         </div>
 
         <div className="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-2 md:grid-cols-2 xl:flex justify-between">
-
           <div>
             <Title>Контакты</Title>
             <ul className="flex items-baseline gap-3 mt-4">
@@ -166,19 +165,17 @@ const PcFooter = () => {
             <ul className="flex gap-6 mt-4">
               <li className="flex gap-3">
                 <Image
-                src={"/images/myTcell.webp"}
-                width={20}
-                height={20}
-                unoptimized
+                src={"/images/myTcell.svg"}
+                width={25}
+                height={25}
                 alt="MyTcell"
                 /> Мой Tcell
               </li>
               <li className="flex gap-3">
                 <Image 
-                src={"/images/chiGap.webp"}
-                width={20}
-                height={20}
-                unoptimized
+                src={"/images/chiGap.svg"}
+                width={25}
+                height={25}
                 alt="ChiGap"
                 /> Чигап
               </li>

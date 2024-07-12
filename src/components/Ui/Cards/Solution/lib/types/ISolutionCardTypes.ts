@@ -4,4 +4,5 @@ export interface ISolutionCardProps{
     solution: ISolution;
     iconHeight?: number;
     iconWidth?: number;
+    showLink?: boolean;
 }

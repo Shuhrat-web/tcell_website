@@ -9,7 +9,7 @@ import { useLocale } from 'next-intl'
 
 
 
-const SolutionCard = ({solution,iconHeight=120,iconWidth=120}:ISolutionCardProps) => {
+const SolutionCard = ({solution,iconHeight=120,iconWidth=120,showLink=true}:ISolutionCardProps) => {
     const locale = useLocale()
   return (
     <div className='flex flex-col justify-between t__card__secondary h-full'>
@@ -21,11 +21,14 @@ const SolutionCard = ({solution,iconHeight=120,iconWidth=120}:ISolutionCardProps
                 {solution.description}
             </p>
         </div>
-        <div className='flex justify-between items-end mt-[30px]'>
-            <TextButton extraClass='flex items-center gap-x-2' hideHover size='none' url={`/${locale}/t-solution/${solution.id}`}>
-                Подробнее
-                <HiArrowLongRight />
-            </TextButton>
+        <div className={`flex ${showLink ? 'justify-between' : 'justify-end'}  items-end mt-[30px]`}>
+            {
+                showLink &&
+                <TextButton extraClass='flex items-center gap-x-2' hideHover size='none' url={`/${locale}/t-solution/${solution.id}`}>
+                    Подробнее
+                    <HiArrowLongRight />
+                </TextButton>
+            }
             {
                 solution.icon &&
                 <Image 
