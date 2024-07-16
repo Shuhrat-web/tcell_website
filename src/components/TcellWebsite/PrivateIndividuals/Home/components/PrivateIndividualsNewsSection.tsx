@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import { IPrivateIndividualsNewsSection } from '../lib/types/IHomePageTypes'
-import { IPost } from '@/lib/requests/resources/Posts/lib/types/IPostsResourcesTypes';
 import PostCard from '@/components/Ui/Cards/Post/PostCard'
 import SectionTitle from '@/components/Ui/Title/SectionTitle'
 import { useLocale } from 'next-intl'
