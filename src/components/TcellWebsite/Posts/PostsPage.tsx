@@ -12,7 +12,8 @@ const PostsPage = () => {
   const breadcrumbPages: IBreadCrumb[] = [
     { name: 'Новости', href: '/news', current: true },
   ];
-  
+
+  const activeposts = [1,2,3,4,7,8,9,22]
 
   return (
     <FadeOutProvider>
@@ -24,7 +25,7 @@ const PostsPage = () => {
         {/* <FilterSection className='mb-4' /> */}
         <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6'>
           {
-            staticPosts.filter(el => el.id !== 5 && el.id !== 6).reverse().map(post => (
+            staticPosts.filter(el => activeposts.includes(el.id)).reverse().map(post => (
               <PostCard key={post.id} post={post} />
             ))
           }
