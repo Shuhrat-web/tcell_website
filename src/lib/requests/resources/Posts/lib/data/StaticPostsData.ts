@@ -1017,11 +1017,11 @@ export const staticPosts:IPost[] = [
         </p>
         <ul style="margin-bottom: 15px;">
           <li>· «Хамкор», «Тичорат 3», «Тичорат 6», «Бизнесмен», «Сохибкори хурд» на «Хамкор 20». <a href="/news/posts/11">Подробнее:</a></li>
-          <li>· «Сохибкори миёна» на «Имтиёз 35». <a href="/news/posts/21">Подробнее:</a></li>
-          <li>· «Тичорат 10» и «Специалист» на «Хамкор 50». <a href="/news/posts/14">Подробнее:</a></li>
-          <li>· «Ватандуст 40» и «Ватандуст 60» на «Имтиёз 66». <a href="/news/posts/19">Подробнее:</a></li>
-          <li>· «Эксперт» на «Хамкор 100». <a href="/news/posts/10">Подробнее:</a></li>
-          <li>· «Менеджер» на «Хамкор 150». <a href="/news/posts/17">Подробнее:</a></li>
+          <li>· «Сохибкори миёна» на «Имтиёз 35». <a  href="/news/posts/21" class="text-primary font-bold">Подробнее</a></li>
+          <li>· «Тичорат 10» и «Специалист» на «Хамкор 50». <a href="/news/posts/14" class="text-primary font-bold">Подробнее</a></li>
+          <li>· «Ватандуст 40» и «Ватандуст 60» на «Имтиёз 66». <a href="/news/posts/19" class="text-primary font-bold">Подробнее</a></li>
+          <li>· «Эксперт» на «Хамкор 100». <a href="/news/posts/10" class="text-primary font-bold">Подробнее</a></li>
+          <li>· «Менеджер» на «Хамкор 150». <a href="/news/posts/17" class="text-primary font-bold">Подробнее</a></li>
           <li>· «Bronze» и «Ватандуст 100» на «Имтиёз 106». Подробности: 8080</li>
           <li>· «Ватандуст 100» и «Silver» на «Имтиёз 66». Подробности: 8080</li>
           <li>· «Ватандуст 150» и «Руководитель» на «Имтиёз 236». Подробности: 8080</li>
