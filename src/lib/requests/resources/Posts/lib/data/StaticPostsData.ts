@@ -1025,7 +1025,7 @@ export const staticPosts:IPost[] = [
             <li>•	«Тичорат 6» на «Хамкор 20». <a href="/news/posts/12" class="text-primary">Подробнее</a></li>
             <li>•	«Бизнесмен» на «Хамкор 20». <a href="/news/posts/20" class="text-primary">Подробнее</a></li>
             <li>• «Сохибкори миёна» на «Имтиёз 35». <a href="/news/posts/21" class="text-primary">Подробнее</a></li>
-            <li>•	«Тичорат 10» на «Хамкор 50». <a href="/news/posts/21" class="text-primary">Подробнее</a></li>
+            <li>•	«Тичорат 10» на «Хамкор 50». <a href="/news/posts/14" class="text-primary">Подробнее</a></li>
             <li>•	«Специалист» на «Хамкор 50». <a href="/news/posts/15" class="text-primary">Подробнее</a></li>
             <li>•	«Ватандуст 40» на «Имтиёз 66». <a href="/news/posts/19" class="text-primary">Подробнее</a></li>
             <li>•	«Ватандуст 60» на «Имтиёз 66». <a href="/news/posts/18" class="text-primary">Подробнее</a></li>
@@ -1034,7 +1034,7 @@ export const staticPosts:IPost[] = [
             <li>•	«Сохибкори хурд» на «Хамкор 20». Подробнее: <span class="text-black font-bold">8080</span></li>
             <li>•	«Bronze» и «Ватандуст 100» на «Имтиёз 106». Подробности: <span class="text-black font-bold">8080</span></li>
             <li>•	«Silver» и «Ватандуст 150» на «Имтиёз 166». Подробности: <span class="text-black font-bold">8080</span></li>
-            <li>•	«Руководитель» и «Gold» на «Имтиёз 236». Подробности: <span class="text-black font-bold"></span> 8080</li>
+            <li>•	«Руководитель» и «Gold» на «Имтиёз 236». Подробности: <span class="text-black font-bold">8080</span></li>
           </ul>
           <p style="margin-bottom: 15px;">
             Вышеуказанные изменения не только расширит ваш доступ к цифровым сервисам, но и обеспечит более выгодное использование мобильной связи, делая звонки еще более доступными и удобными.
@@ -1059,7 +1059,7 @@ export const staticPosts:IPost[] = [
             <li>•	«Тичорат 6» ба «Хамкор 20». <a href="/news/posts/12" class="text-primary">Муфассал</a></li>
             <li>•	«Бизнесмен» ба «Хамкор 20». <a href="/news/posts/20" class="text-primary">Муфассал</a></li>
             <li>•	«Сохибкори миёба» ба «Имтиёз 35». <a href="/news/posts/21" class="text-primary">Муфассал</a></li>
-            <li>•	«Тичорат 10» ба «Хамкор 50». <a href="/news/posts/21" class="text-primary">Муфассал</a></li>
+            <li>•	«Тичорат 10» ба «Хамкор 50». <a href="/news/posts/14" class="text-primary">Муфассал</a></li>
             <li>•	«Специалист» ба «Хамкор 50». <a href="/news/posts/15" class="text-primary">Муфассал</a></li>
             <li>•	«Ватандуст 40» ба «Имтиёз 66». <a href="/news/posts/19" class="text-primary">Муфассал</a></li>
             <li>•	«Ватандуст 60» ба «Имтиёз 66». <a href="/news/posts/18" class="text-primary">Муфассал</a></li>
@@ -1068,10 +1068,10 @@ export const staticPosts:IPost[] = [
             <li>•	«Сохибкори хурд» ба «Хамкор 20». Муфассал: <span class="text-black font-bold">8080</span></li>
             <li>•	«Bronze» ва «Ватандуст 100» ба «Имтиёз 106». Муфассал: <span class="text-black font-bold">8080</span></li>
             <li>•	«Silver» ва «Ватандуст 150» ба «Имтиёз 166». Муфассал: <span class="text-black font-bold">8080</span></li>
-            <li>•	«Руководитель» и «Gold» ба «Имтиёз 236». Муфассал: <span class="text-black font-bold"></span> 8080</li>
+            <li>•	«Руководитель» ва «Gold» ба «Имтиёз 236». Муфассал: <span class="text-black font-bold">8080</span></li>
           </ul>
           <p style="margin-bottom: 15px;">
-            Тагйиротхои дар мазкур, на танҳо дастрасиатонро ба хизматрасониҳои рақамӣ тавсеа мебахшад, балки инчунин истифодаи бароҳат ва фоидаовари алоқаи мобилиро таъмин намуда, зангҳоро боз ҳам дастрас ва қуллай мегардонад.
+            Тағйиротхои дар мазкур, на танҳо дастрасиатонро ба хизматрасониҳои рақамӣ тавсеа мебахшад, балки инчунин истифодаи бароҳат ва фоидаовари алоқаи мобилиро таъмин намуда, зангҳоро боз ҳам дастрас ва қуллай мегардонад.
           </p>
           <p style="margin-bottom: 15px;">
             Гузариш ба тарофаҳои нав ба таври худкор (автоматӣ) аз 1 августи соли 2024, вақте ки пардохти абонентии навбатӣ ҳисоб карда мешавад, сурат мегирад.
