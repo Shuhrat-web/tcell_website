@@ -1066,8 +1066,8 @@ export const staticPosts:IPost[] = [
             <li>•	«Эксперт» ба «Хамкор 100». <a href="/news/posts/10" class="text-primary">Муфассал</a></li>
             <li>•	«Менеджер» ба «Хамкор 150». <a href="/news/posts/17" class="text-primary">Муфассал</a></li>
             <li>•	«Сохибкори хурд» ба «Хамкор 20». Муфассал: <span class="text-black font-bold">8080</span></li>
-            <li>•	«Bronze» и «Ватандуст 100» ба «Имтиёз 106». Муфассал: <span class="text-black font-bold">8080</span></li>
-            <li>•	«Silver» и «Ватандуст 150» ба «Имтиёз 166». Муфассал: <span class="text-black font-bold">8080</span></li>
+            <li>•	«Bronze» ва «Ватандуст 100» ба «Имтиёз 106». Муфассал: <span class="text-black font-bold">8080</span></li>
+            <li>•	«Silver» ва «Ватандуст 150» ба «Имтиёз 166». Муфассал: <span class="text-black font-bold">8080</span></li>
             <li>•	«Руководитель» и «Gold» ба «Имтиёз 236». Муфассал: <span class="text-black font-bold"></span> 8080</li>
           </ul>
           <p style="margin-bottom: 15px;">
