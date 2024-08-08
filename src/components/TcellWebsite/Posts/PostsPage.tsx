@@ -13,7 +13,7 @@ const PostsPage = () => {
     { name: 'Новости', href: '/news', current: true },
   ];
 
-  const hiddenPosts = [5,6]
+  const hiddenPosts = [5,6,10,11,12,13,14,15,16,17,18,19,20,21]
 
   return (
     <FadeOutProvider>
