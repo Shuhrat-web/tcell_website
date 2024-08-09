@@ -10,18 +10,18 @@ const PrivateIndividualsNewsSection = ({className}:IPrivateIndividualsNewsSectio
   const locale = useLocale()
   return (
     <section className={`${className}`}>
-        <SectionTitle 
-        titleText='Новости'
-        routeTitle="Все новости" 
-        route={`/${locale}/posts`}
-        />
-        <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-11'>
-          {
-            staticPosts.slice(staticPosts.length-3,staticPosts.length).reverse().map(post => (
-              <PostCard key={post.id} post={post} />
-            ))
-          }
-        </div>
+      <SectionTitle 
+      titleText='Новости'
+      routeTitle="Все новости" 
+      route={`/${locale}/posts`}
+      />
+      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-11'>
+        {
+          staticPosts.slice(staticPosts.length-3,staticPosts.length).reverse().map(post => (
+            <PostCard key={post.id} post={post} />
+          ))
+        }
+      </div>
     </section>
   )
 }
