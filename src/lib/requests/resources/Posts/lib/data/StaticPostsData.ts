@@ -1,12 +1,13 @@
 import { IPost } from "../types/IPostsResourcesTypes";
 
-export const staticPosts:IPost[] = [
-    {
-      id:1,
-      title: 'Уважаемые абоненты!',
-      excerpt: ' Уведомляем вас, что в сети нашей компании проводятся технические работы',
-      date: '7 июня. 2024 г.',
-      content: `<p style="margin-bottom: 15px;">
+export const staticPosts: IPost[] = [
+  {
+    id: 1,
+    title: "Уважаемые абоненты!",
+    excerpt:
+      " Уведомляем вас, что в сети нашей компании проводятся технические работы",
+    date: "7 июня. 2024 г.",
+    content: `<p style="margin-bottom: 15px;">
           Уведомляем вас, что в сети нашей компании проводятся технические работы, в связи с чем возможны краткосрочные перебои в работе системы. 
         </p>
         <p style="margin-bottom: 15px;">
@@ -15,14 +16,15 @@ export const staticPosts:IPost[] = [
         <p style="margin-bottom: 15px;">
           Также вы можете обратиться за консультацией в центры обслуживания компании Tcell. Благодарим вас за понимание.
         </p>`,
-      img: '/images/postImg.png'
-    },
-    {
-        id:2,
-        title: 'Будьте на связи с обновленным приложением «Чи Гап»!',
-        excerpt: 'ВЫГОДНО звонить на любые мобильные  и кнопочные устройства Таджикистана из любой точки мира.',
-        date: '7 июня. 2024 г.',
-        content: `<p style="margin-bottom: 15px;">
+    img: "/images/postImg.png",
+  },
+  {
+    id: 2,
+    title: "Будьте на связи с обновленным приложением «Чи Гап»!",
+    excerpt:
+      "ВЫГОДНО звонить на любые мобильные  и кнопочные устройства Таджикистана из любой точки мира.",
+    date: "7 июня. 2024 г.",
+    content: `<p style="margin-bottom: 15px;">
               ВЫГОДНО звонить на любые мобильные  и кнопочные устройства Таджикистана из любой точки мира.
             </p>
             <p style="margin-bottom: 15px;">
@@ -41,14 +43,16 @@ export const staticPosts:IPost[] = [
               Скачивайте приложение "Чи Гап" по ссылке https://one.link/chigap 
             </p>
             `,
-        img: '/images/postImg_2.png'
-    },
-    {
-        id:3,
-        title: 'Встречайте! Высокоскоростной домашний интернет TezNet от Tcell теперь в Турсунзаде!',
-        excerpt: 'Благодаря использованию передовой технологии GPON, с гарантированным высоким',
-        date: '7 июня. 2024 г.',
-        content: `<p style="margin-bottom: 15px;">
+    img: "/images/postImg_2.png",
+  },
+  {
+    id: 3,
+    title:
+      "Встречайте! Высокоскоростной домашний интернет TezNet от Tcell теперь в Турсунзаде!",
+    excerpt:
+      "Благодаря использованию передовой технологии GPON, с гарантированным высоким",
+    date: "7 июня. 2024 г.",
+    content: `<p style="margin-bottom: 15px;">
               Благодаря использованию передовой технологии GPON, с гарантированным высоким качеством, жители города Турсунзаде смогут в режиме онлайн смотреть фильмы в HD-качестве, проходить курсы и играть в игры: интернета хватит на всех.
             </p>
             <p style="margin-bottom: 15px;">
@@ -61,14 +65,14 @@ export const staticPosts:IPost[] = [
               Заявки на подключение вы можете оставить по номерам: 2000 (для абонентов Tcell) и 771112000 (для абонентов других операторов).
             </p>
             `,
-        img: '/images/postImg_3.png'
-    },
-    {
-      id:4,
-      title: 'Изменения в тарифных планах «Салом 80» и «Салом 120»',
-      excerpt: 'Доводим до Вашего сведения, что начиная с 24 июня 2024 ',
-      date: '14 июня. 2024 г.',
-      content: `
+    img: "/images/postImg_3.png",
+  },
+  {
+    id: 4,
+    title: "Изменения в тарифных планах «Салом 80» и «Салом 120»",
+    excerpt: "Доводим до Вашего сведения, что начиная с 24 июня 2024 ",
+    date: "14 июня. 2024 г.",
+    content: `
         <div class="border-b border-secondary-400">
           <p style="margin-bottom: 15px;">
             Уважаемые абоненты!
@@ -110,13 +114,13 @@ export const staticPosts:IPost[] = [
           </p>
         </div>
       `,
-      img: '/images/Post_4.png'
+    img: "/images/Post_4.png",
   },
   {
-    id:5,
-    title: 'Смена тарифного плана «Салом 80» на выгодных условиях!',
-    excerpt: 'Мы постоянно работаем над улучшением качества наших услуг',
-    date: '14 июня. 2024 г.',
+    id: 5,
+    title: "Смена тарифного плана «Салом 80» на выгодных условиях!",
+    excerpt: "Мы постоянно работаем над улучшением качества наших услуг",
+    date: "14 июня. 2024 г.",
     content: `
       <div class="border-b border-secondary-400">
         <p style="margin-bottom: 15px;">
@@ -162,13 +166,13 @@ export const staticPosts:IPost[] = [
         </p>
       </div>
     `,
-    img: '/images/Post_6.png'
+    img: "/images/Post_6.png",
   },
   {
-    id:6,
-    title: 'Смена тарифного плана «Салом 120» на выгодных условиях!',
-    excerpt: 'Мы постоянно работаем над улучшением качества наших услуг',
-    date: '14 июня. 2024 г.',
+    id: 6,
+    title: "Смена тарифного плана «Салом 120» на выгодных условиях!",
+    excerpt: "Мы постоянно работаем над улучшением качества наших услуг",
+    date: "14 июня. 2024 г.",
     content: `
       <div class="border-b border-secondary-400">
         <p style="margin-bottom: 15px;">
@@ -217,13 +221,13 @@ export const staticPosts:IPost[] = [
         </p>
       </div>
     `,
-    img: '/images/Post_5.png'
+    img: "/images/Post_5.png",
   },
   {
-    id:7,
-    title: 'Изменения в тарифных планах «Сухбати Шахри»',
-    excerpt: 'Мы рады объявить о грядущих изменениях в тарифных ',
-    date: '14 июня. 2024 г.',
+    id: 7,
+    title: "Изменения в тарифных планах «Сухбати Шахри»",
+    excerpt: "Мы рады объявить о грядущих изменениях в тарифных ",
+    date: "14 июня. 2024 г.",
     content: `
       <div class="border-b border-secondary-400">
         <p style="margin-bottom: 15px;">
@@ -260,13 +264,13 @@ export const staticPosts:IPost[] = [
         </p>
       </div>
     `,
-    img: '/images/Post_7.png'
+    img: "/images/Post_7.png",
   },
   {
-    id:8,
-    title: 'Смена тарифного плана «Осон» на выгодных условиях!',
-    excerpt: 'Мы постоянно работаем над улучшением качества',
-    date: '2 июля. 2024 г.',
+    id: 8,
+    title: "Смена тарифного плана «Осон» на выгодных условиях!",
+    excerpt: "Мы постоянно работаем над улучшением качества",
+    date: "2 июля. 2024 г.",
     content: `
       <div class="border-b border-secondary-400">
         <p style="margin-bottom: 15px;">
@@ -297,13 +301,13 @@ export const staticPosts:IPost[] = [
         </p>
       </div>
     `,
-    img: '/images/post_8.png'
+    img: "/images/post_8.png",
   },
   {
-    id:9,
-    title: 'Изменения в тарифном плане «Аввалин* 2016»',
-    excerpt: 'Мы рады объявить о предстоящих улучшениях',
-    date: '2 июля. 2024 г.',
+    id: 9,
+    title: "Изменения в тарифном плане «Аввалин* 2016»",
+    excerpt: "Мы рады объявить о предстоящих улучшениях",
+    date: "2 июля. 2024 г.",
     content: `
       <div class="border-b border-secondary-400">
         <p style="margin-bottom: 15px;">
@@ -342,13 +346,13 @@ export const staticPosts:IPost[] = [
         </p>
       </div>
     `,
-    img: '/images/post_9.png'
+    img: "/images/post_9.png",
   },
   {
-    id:10,
-    title: 'Смена тарифного плана на выгодных условиях!',
-    excerpt: 'Мы постоянно работаем над улучшением качества наших услуг',
-    date: '16 июля. 2024 г.',
+    id: 10,
+    title: "Смена тарифного плана на выгодных условиях!",
+    excerpt: "Мы постоянно работаем над улучшением качества наших услуг",
+    date: "16 июля. 2024 г.",
     content: `
       <div class="border-b border-secondary-400">
         <p style="margin-bottom: 15px;">
@@ -397,13 +401,13 @@ export const staticPosts:IPost[] = [
         </p>
       </div>
     `,
-    img: '/images/post_10.png'
+    img: "/images/post_10.png",
   },
   {
-    id:11,
-    title: 'Смена тарифного плана на выгодных условиях!',
-    excerpt: 'Мы постоянно работаем над улучшением качества наших услуг',
-    date: '16 июля. 2024 г.',
+    id: 11,
+    title: "Смена тарифного плана на выгодных условиях!",
+    excerpt: "Мы постоянно работаем над улучшением качества наших услуг",
+    date: "16 июля. 2024 г.",
     content: `
       <div class="border-b border-secondary-400">
         <p style="margin-bottom: 15px;">
@@ -458,13 +462,13 @@ export const staticPosts:IPost[] = [
         </p>
       </div>
     `,
-    img: '/images/post_11.png'
+    img: "/images/post_11.png",
   },
   {
-    id:12,
-    title: 'Смена тарифного плана на выгодных условиях!',
-    excerpt: 'Мы постоянно работаем над улучшением качества наших услуг',
-    date: '16 июля. 2024 г.',
+    id: 12,
+    title: "Смена тарифного плана на выгодных условиях!",
+    excerpt: "Мы постоянно работаем над улучшением качества наших услуг",
+    date: "16 июля. 2024 г.",
     content: `
       <div class="border-b border-secondary-400">
         <p style="margin-bottom: 15px;">
@@ -512,13 +516,13 @@ export const staticPosts:IPost[] = [
         </p>
       </div>
     `,
-    img: '/images/post_12.png'
+    img: "/images/post_12.png",
   },
   {
-    id:13,
-    title: 'Смена тарифного плана на выгодных условиях!',
-    excerpt: 'Мы постоянно работаем над улучшением качества наших услуг',
-    date: '16 июля. 2024 г.',
+    id: 13,
+    title: "Смена тарифного плана на выгодных условиях!",
+    excerpt: "Мы постоянно работаем над улучшением качества наших услуг",
+    date: "16 июля. 2024 г.",
     content: `
       <div class="border-b border-secondary-400">
         <p style="margin-bottom: 15px;">
@@ -567,13 +571,13 @@ export const staticPosts:IPost[] = [
         </p>
       </div>
     `,
-    img: '/images/post_13.png'
+    img: "/images/post_13.png",
   },
   {
-    id:14,
-    title: 'Смена тарифного плана на выгодных условиях!',
-    excerpt: 'Мы постоянно работаем над улучшением качества наших услуг',
-    date: '16 июля. 2024 г.',
+    id: 14,
+    title: "Смена тарифного плана на выгодных условиях!",
+    excerpt: "Мы постоянно работаем над улучшением качества наших услуг",
+    date: "16 июля. 2024 г.",
     content: `
       <div class="border-b border-secondary-400">
         <p style="margin-bottom: 15px;">
@@ -622,13 +626,13 @@ export const staticPosts:IPost[] = [
         </p>
       </div>
     `,
-    img: '/images/post_14.png'
+    img: "/images/post_14.png",
   },
   {
-    id:15,
-    title: 'Смена тарифного плана на выгодных условиях!',
-    excerpt: 'Мы постоянно работаем над улучшением качества наших услуг',
-    date: '16 июля. 2024 г.',
+    id: 15,
+    title: "Смена тарифного плана на выгодных условиях!",
+    excerpt: "Мы постоянно работаем над улучшением качества наших услуг",
+    date: "16 июля. 2024 г.",
     content: `
       <div class="border-b border-secondary-400">
         <p style="margin-bottom: 15px;">
@@ -677,13 +681,14 @@ export const staticPosts:IPost[] = [
         </p>
       </div>
     `,
-    img: '/images/post_15.png'
+    img: "/images/post_15.png",
   },
   {
-    id:16,
-    title: 'Смена тарифного плана на выгодных условиях!',
-    excerpt: 'Мы рады объявить о предстоящих улучшениях в тарифном плане «Аввалин* 2016»',
-    date: '16 июля. 2024 г.',
+    id: 16,
+    title: "Смена тарифного плана на выгодных условиях!",
+    excerpt:
+      "Мы рады объявить о предстоящих улучшениях в тарифном плане «Аввалин* 2016»",
+    date: "16 июля. 2024 г.",
     content: `
       <div class="border-b border-secondary-400">
         <p style="margin-bottom: 15px;">
@@ -732,13 +737,13 @@ export const staticPosts:IPost[] = [
         </p>
       </div>
     `,
-    img: '/images/post_16.png'
+    img: "/images/post_16.png",
   },
   {
-    id:17,
-    title: 'Смена тарифного плана на выгодных условиях!',
-    excerpt: 'Мы постоянно работаем над улучшением качества наших услуг',
-    date: '16 июля. 2024 г.',
+    id: 17,
+    title: "Смена тарифного плана на выгодных условиях!",
+    excerpt: "Мы постоянно работаем над улучшением качества наших услуг",
+    date: "16 июля. 2024 г.",
     content: `
       <div class="border-b border-secondary-400">
         <p style="margin-bottom: 15px;">
@@ -787,13 +792,13 @@ export const staticPosts:IPost[] = [
         </p>
       </div>
     `,
-    img: '/images/post_17.png'
+    img: "/images/post_17.png",
   },
   {
-    id:18,
-    title: 'Смена тарифного плана на выгодных условиях!',
-    excerpt: 'Мы постоянно работаем над улучшением качества наших услуг',
-    date: '16 июля. 2024 г.',
+    id: 18,
+    title: "Смена тарифного плана на выгодных условиях!",
+    excerpt: "Мы постоянно работаем над улучшением качества наших услуг",
+    date: "16 июля. 2024 г.",
     content: `
       <div class="border-b border-secondary-400">
         <p style="margin-bottom: 15px;">
@@ -842,13 +847,13 @@ export const staticPosts:IPost[] = [
         </p>
       </div>
     `,
-    img: '/images/post_18.png'
+    img: "/images/post_18.png",
   },
   {
     id: 19,
-    title: 'Смена тарифного плана на выгодных условиях!',
-    excerpt: 'Мы постоянно работаем над улучшением качества наших услуг',
-    date: '16 июля. 2024 г.',
+    title: "Смена тарифного плана на выгодных условиях!",
+    excerpt: "Мы постоянно работаем над улучшением качества наших услуг",
+    date: "16 июля. 2024 г.",
     content: `
       <div class="border-b border-secondary-400">
         <p style="margin-bottom: 15px;">
@@ -897,13 +902,13 @@ export const staticPosts:IPost[] = [
         </p>
       </div>
     `,
-    img: '/images/post_19.png'
+    img: "/images/post_19.png",
   },
   {
     id: 20,
-    title: 'Смена тарифного плана на выгодных условиях!',
-    excerpt: 'Мы постоянно работаем над улучшением качества наших услуг',
-    date: '16 июля. 2024 г.',
+    title: "Смена тарифного плана на выгодных условиях!",
+    excerpt: "Мы постоянно работаем над улучшением качества наших услуг",
+    date: "16 июля. 2024 г.",
     content: `
       <div class="border-b border-secondary-400">
         <p style="margin-bottom: 15px;">
@@ -958,13 +963,13 @@ export const staticPosts:IPost[] = [
         </p>
       </div>
     `,
-    img: '/images/post_20.png'
+    img: "/images/post_20.png",
   },
   {
     id: 21,
-    title: 'Смена тарифного плана на выгодных условиях!',
-    excerpt: 'Мы постоянно работаем над улучшением качества наших услуг',
-    date: '16 июля. 2024 г.',
+    title: "Смена тарифного плана на выгодных условиях!",
+    excerpt: "Мы постоянно работаем над улучшением качества наших услуг",
+    date: "16 июля. 2024 г.",
     content: `
       <div class="border-b border-secondary-400">
         <p style="margin-bottom: 15px;">
@@ -1007,14 +1012,14 @@ export const staticPosts:IPost[] = [
         </p>
       </div>
     `,
-    img: '/images/post_21.png'
+    img: "/images/post_21.png",
   },
   {
-      id: 22,
-      title: 'Изменения в корпоративных тарифных планах на выгодных условиях',
-      excerpt: 'Мы постоянно работаем над улучшением качества наших услуг',
-      date: '16 июля. 2024 г.',
-      content: `
+    id: 22,
+    title: "Изменения в корпоративных тарифных планах на выгодных условиях",
+    excerpt: "Мы постоянно работаем над улучшением качества наших услуг",
+    date: "16 июля. 2024 г.",
+    content: `
         <div class="mt-5 border-b border-secondary-400">
           <p style="margin-bottom: 15px;">
             Уважаемые абоненты!
@@ -1081,14 +1086,14 @@ export const staticPosts:IPost[] = [
           </p>
         </div>
       `,
-      img: ''
-    },
-    {
-      id: 23,
-      title: 'Изменение тарифного плана «Next 2016» на выгодных условиях!',
-      excerpt: 'Мы рады сообщить вам о предстоящей смене тарифного плана',
-      date: '8 августа. 2024 г.',
-      content: `
+    img: "",
+  },
+  {
+    id: 23,
+    title: "Изменение тарифного плана «Next 2016» на выгодных условиях!",
+    excerpt: "Мы рады сообщить вам о предстоящей смене тарифного плана",
+    date: "8 августа. 2024 г.",
+    content: `
         <div class="border-b border-secondary-400">
           <p style="margin-bottom: 15px;">
             Уважаемые абоненты!
@@ -1144,14 +1149,14 @@ export const staticPosts:IPost[] = [
           </p>
         </div>
       `,
-      img: '/images/post_22.png'
-    },
-    {
-      id: 24,
-      title: 'Изменение условий в линейке тарифов "+Интернет"',
-      excerpt: 'Сообщаем вам, что с 20 августа 2024 года',
-      date: '8 августа. 2024 г.',
-      content: `
+    img: "/images/post_22.png",
+  },
+  {
+    id: 24,
+    title: 'Изменение условий в линейке тарифов "+Интернет"',
+    excerpt: "Сообщаем вам, что с 20 августа 2024 года",
+    date: "8 августа. 2024 г.",
+    content: `
         <div class="border-b border-secondary-400">
           <p style="margin: 32px 0;">
             Уважаемые абоненты!
@@ -1175,14 +1180,14 @@ export const staticPosts:IPost[] = [
           </p>
         </div>
       `,
-      img: ''
-    },
-    {
-      id: 25,
-      title: 'Изменения в тарифном плане «Даркор 25»',
-      excerpt: 'Информируем Вас о том, что с 20 августа 2024 года',
-      date: '9 августа. 2024 г.',
-      content: `
+    img: "",
+  },
+  {
+    id: 25,
+    title: "Изменения в тарифном плане «Даркор 25»",
+    excerpt: "Информируем Вас о том, что с 20 августа 2024 года",
+    date: "9 августа. 2024 г.",
+    content: `
         <div class="border-b border-secondary-400">
           <p style="margin-bottom: 15px;">
             Уважаемые абоненты!
@@ -1223,14 +1228,14 @@ export const staticPosts:IPost[] = [
           </p>
         </div>
       `,
-      img: '/images/post_25.png'
-    },
-    {
-      id: 26,
-      title: 'Изменения в тарифном плане «Даркор 30»',
-      excerpt: 'Информируем Вас о том, что с 20 августа 2024 года',
-      date: '9 августа. 2024 г.',
-      content: `
+    img: "/images/post_25.png",
+  },
+  {
+    id: 26,
+    title: "Изменения в тарифном плане «Даркор 30»",
+    excerpt: "Информируем Вас о том, что с 20 августа 2024 года",
+    date: "9 августа. 2024 г.",
+    content: `
         <div class="border-b border-secondary-400">
           <p style="margin-bottom: 15px;">
             Уважаемые абоненты!
@@ -1268,6 +1273,55 @@ export const staticPosts:IPost[] = [
           </p>
         </div>
       `,
-      img: '/images/post_26.png'
-    },    
-  ]
+    img: "/images/post_26.png",
+  },
+  {
+    id: 27,
+    title: "Смена тарифного плана «TezNet 3» на выгодных условиях!",
+    excerpt: "Мы рады сообщить вам о предстоящей смене тарифного плана",
+    date: "30  августа. 2024 г.",
+    content: `
+        <div class="border-b border-secondary-400">
+          <p style="margin-bottom: 15px;">
+            Уважаемые абоненты! 
+          </p>
+          <p style="margin-bottom: 15px;">
+            Мы рады сообщить вам о предстоящей смене тарифного плана «TezNet 3» на обновленный, более выгодный тарифный план «TezNet 5+», без изменения стоимости абонентской платы!
+          </p>
+          <p style="margin-bottom: 15px;">
+            Перевод абонентов на тарифный план "TezNet 5+" будет осуществлен автоматически, <span style="color: #374151">c 10 сентября 2024 года,</span> года при начислении следующей абонентской платы.
+          </p>
+          <p style="margin-bottom: 15px;">
+            С новым тарифным планом вы получите больше возможностей для доступа к высокоскоростному домашнему интернету, что особенно важно в современном мире постоянного онлайн-взаимодействия.
+          </p>
+          <p style="margin-bottom: 15px;">
+            <span style="color: #374151">Социальные сети включает следующие сервисы:</span> Viber, WhatsApp, Telegram, IMO, WeChat, Facebook Messenger, Instagram, VKontakte, Odnoklassniki, Facebook, Tik-Tok, YouTube.
+          </p>
+          <p class="text-primary font-bold" style="margin-bottom: 15px;">
+            Оставайтесь с нами и наслаждайтесь улучшенными условиями высокоскоростного домашнего интернета!
+          </p>
+        </div>
+         <div class="mt-5">
+          <p style="margin-bottom: 15px;">
+            Муштариёни азиз!
+          </p>
+          <p style="margin-bottom: 15px;">
+            Мо бо камоли хушнудӣ дар бораи тағйироти дарпешистодаи тарофаи нақшавии «TezNet 3» ба тарофаи муфиди «TezNet 5+», бе тағйири арзиши пардохти абонентӣ иттилоъ медиҳем!
+          </p>
+          <p style="margin-bottom: 15px;">
+           Гузариш ба тарофаи «TezNet 5+» ба таври худкор (автоматӣ) аз <span style="color: #374151">10 cентябр соли 2024,</span> вақте ки пардохти абонентии навбатӣ ҳисоб карда мешавад, сурат мегирад.
+          </p>
+          <p style="margin-bottom: 15px;">
+           Бо тарофаи нав, Шумо имконияти дастрасии бештар ба интернети баландсуръати хонагиро дарёфт хоҳед кард, ки дар дунёи муосир барои фаъолияти ҳамешагии онлайнӣ хеле муҳим арзёбӣ мегардад.
+          </p>
+          <p style="margin-bottom: 15px;">
+            <span style="color: #374151">Шабакаҳои иҷтимоӣ зеринро дар бар мегиранд:</span> Viber, WhatsApp, Telegram, IMO, WeChat, Facebook Messenger, Instagram, VKontakte, Odnoklassniki, Facebook, Tik-Tok, YouTube.
+          </p>
+          <p class="text-primary font-bold" style="margin-bottom: 15px;">
+            Бо мо бимонед ва аз шартҳои беҳтари интернети хонагии баландсуръат ҳаловат баред!
+          </p>
+        </div>
+      `,
+    img: "/images/post_27.png",
+  },
+];
