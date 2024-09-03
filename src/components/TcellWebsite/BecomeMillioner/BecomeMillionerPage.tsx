@@ -7,11 +7,11 @@ import BecomeMillionerPrizeSection from "./components/BecomeMillionerPrizeSectio
 
 const BecomeMillionerPage = () => {
   return (
-    <div className="t__container md:px-40 lg:px-60">
+    <div className="t__container md:px-40 lg:px-56">
       <BecomeMillionerHeadSection />
       <BecomeMillionerParticipationSection />
       <BecomeMillionerConditionsSection />
-      <BecomeMillionerToSeeSection />
+      {/* <BecomeMillionerToSeeSection /> */}
       <BecomeMillionerPrizeSection />
     </div>
   );

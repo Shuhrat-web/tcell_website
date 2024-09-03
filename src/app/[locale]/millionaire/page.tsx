@@ -1,4 +1,4 @@
-import BecomeMillionerPage from '@/components/TcellWebsite/PrivateIndividuals/BecomeMillioner/BecomeMillionerPage'
+import BecomeMillionerPage from '@/components/TcellWebsite/BecomeMillioner/BecomeMillionerPage'
 import { Metadata } from 'next'
 import React from 'react'
 
