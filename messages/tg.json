@@ -1,5 +1,10 @@
 {
-    "Index": {
-      "title": "Салом!"
+  "Index": {
+    "title": "Салом!"
+  },
+  "Millionaire":{
+    "head": {
+      "title": "Стань миллионером!"
     }
   }
+}
