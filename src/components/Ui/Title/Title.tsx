@@ -13,12 +13,13 @@ const Title = ({children,size = 'md',font='md', color='none', centered = false,u
             xl: 'text-[20px] md:text-[20px]',
             '2xl': 'text-lg xl:text-3xl',
             '3xl': 'text-xl xl:text-[38px]',
+            '4xl': 'text-4xl'
         },
         font:  {
             sm: 'font-normal',
             md: 'font-semibold',
             lg: 'font-bold',
-            'xl': 'font-extrabold'
+            'xl': 'font-extrabold',
 
         },
         color:{

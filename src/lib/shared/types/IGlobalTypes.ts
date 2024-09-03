@@ -1,4 +1,4 @@
-export type TUiSize = 'xl' | '2xl' |'3xl' | 'lg' | 'sm'| 'xs' | 'none' | 'full' | 'md'
+export type TUiSize = 'xl' | '2xl' |'3xl' | '4xl' | 'lg' | 'sm'| 'xs' | 'none' | 'full' | 'md'
 export type TUiVariant = 'primary' | 'warning' | 'danger' | 'white' | 'none' | 'black' | 'secondary' | 'text'
 
 export interface IChild {
@@ -29,6 +29,7 @@ export interface ISizes {
     xl?: string;
     '2xl'?: string;
     '3xl'?: string;
+    '4xl'?: string;
     lg: string;
     md: string;
     sm: string;
