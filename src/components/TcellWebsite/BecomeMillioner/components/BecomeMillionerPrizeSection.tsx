@@ -1,12 +1,14 @@
+'use client'
 import Title from "@/components/Ui/Title/Title";
-import Image from "next/image";
+import { useTranslations } from "next-intl";
 import React from "react";
 
 const BecomeMillionerPrizeSection = () => {
+  const t = useTranslations("Millionaire")
   return (
     <div className="mt-16">
       <Title size="2xl" display="h4">
-        Даты проведения розыгрышей
+        {t("prize.title")}
       </Title>
       <div className="overflow-x-auto bg-[#F0F0F0] rounded-xl mt-8">
         <table className="mt-8 w-full">
@@ -14,84 +16,83 @@ const BecomeMillionerPrizeSection = () => {
             <tr>
               <th className="text-[14px] text-[#262626] leading-4 p-5"></th>
               <th className="text-[14px] text-[#262626] leading-4 p-5">
-                Октябрь (05.10.2024)
+              {t("prize.october")}
               </th>
               <th className="text-[14px] text-[#262626] leading-4 p-5">
-                Ноябрь (07.11.2024)
+              {t("prize.november")}
               </th>
               <th className="text-[14px] text-[#262626] leading-4 p-5">
-                Декабрь (04.12.2024)
+              {t("prize.december")}
               </th>
               <th className="text-[14px] text-[#262626] leading-4 p-5">
-                Январь (04.01.2025)
+              {t("prize.january")}
               </th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td className="text-[14px] text-[#262626] leading-4 p-5 text-center">
-                1 приз
+              {t("prize.firstPrize")}
               </td>
               <td className="text-[14px] text-[#262626] leading-4 p-5 text-center">
-                10 000 сомони
+              {t("prize.firstPrizeSomoni")}
               </td>
               <td className="text-[14px] text-[#262626] leading-4 p-5 text-center">
-                10 000 сомони
+              {t("prize.firstPrizeSomoni")}
               </td>
               <td className="text-[14px] text-[#262626] leading-4 p-5 text-center">
-                10 000 сомони
+              {t("prize.firstPrizeSomoni")}
               </td>
               <td className="text-[14px] text-[#262626] leading-4 p-5 text-center">
-                10 000 сомони
-              </td>
-            </tr>
-            <tr>
-              <td className="text-[14px] text-[#262626] leading-4 p-5 text-center">
-                2 приз
-              </td>
-              <td className="text-[14px] text-[#262626] leading-4 p-5 text-center">
-                15 000 сомони
-              </td>
-              <td className="text-[14px] text-[#262626] leading-4 p-5 text-center">
-                15 000 сомони
-              </td>
-              <td className="text-[14px] text-[#262626] leading-4 p-5 text-center">
-                15 000 сомони
-              </td>
-              <td className="text-[14px] text-[#262626] leading-4 p-5 text-center">
-                15 000 сомони
+              {t("prize.firstPrizeSomoni")}
               </td>
             </tr>
             <tr>
               <td className="text-[14px] text-[#262626] leading-4 p-5 text-center">
-                3 приз
+              {t("prize.secondPrize")}
               </td>
               <td className="text-[14px] text-[#262626] leading-4 p-5 text-center">
-                25 000 сомони
+              {t("prize.secondPrizeSomoni")}
               </td>
               <td className="text-[14px] text-[#262626] leading-4 p-5 text-center">
-                25 000 сомони
+              {t("prize.secondPrizeSomoni")}
               </td>
               <td className="text-[14px] text-[#262626] leading-4 p-5 text-center">
-                25 000 сомони
+              {t("prize.secondPrizeSomoni")}
               </td>
               <td className="text-[14px] text-[#262626] leading-4 p-5 text-center">
-                25 000 сомони
+              {t("prize.secondPrizeSomoni")}
+              </td>
+            </tr>
+            <tr>
+              <td className="text-[14px] text-[#262626] leading-4 p-5 text-center">
+              {t("prize.thirdPrize")}
+              </td>
+              <td className="text-[14px] text-[#262626] leading-4 p-5 text-center">
+              {t("prize.thirdPrizeSomoni")}
+              </td>
+              <td className="text-[14px] text-[#262626] leading-4 p-5 text-center">
+              {t("prize.thirdPrizeSomoni")}
+              </td>
+              <td className="text-[14px] text-[#262626] leading-4 p-5 text-center">
+              {t("prize.thirdPrizeSomoni")}
+              </td>
+              <td className="text-[14px] text-[#262626] leading-4 p-5 text-center">
+              {t("prize.thirdPrizeSomoni")}
               </td>
             </tr>
           </tbody>
         </table>
         <div className="p-5">
-          <p className="text-base text-[#262626] leading-5">
-            Вы можете посмотреть трансляцию в прямом эфире на TV Varzish и на наших страницах в Instagram, Facebook,
-            YouTube.
+          <p className="text-base text-[#262626] leading-[20px]">
+          {t("prize.watchOnline")}
           </p>
-          <p className="text-base text-[#262626] leading-5 mt-4">Финальный розыгрыш состоится 4 января 2025 года.</p>
+          <p className="text-base text-[#262626] leading-[20px] mt-4">{t("prize.dateFinalePrize")}</p>
         </div>
       </div>
 
       <div className="bg-[#F0F0F0] rounded-xl p-5 mt-6">
-        <p className="text-[14px] text-black leading-[18px] font-normal">Лицензия Министерства финансов Республики Таджикистан №043/24 от 02.09.24</p>
+        <p className="text-[14px] text-black leading-[18px] font-normal">{t("prize.licenses")}</p>
       </div>
     </div>
   );

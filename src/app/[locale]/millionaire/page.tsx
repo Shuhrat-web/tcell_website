@@ -3,8 +3,8 @@ import { Metadata } from 'next'
 import React from 'react'
 
 export const metadata: Metadata = {
-    title: 'Tcell - Become millioner',
-    description: 'Tcell - Become millioner'
+    title: 'Tcell - Millionaire',
+    description: 'Tcell - Millionaire'
 }
 
 const BecomeMillionaire = () => {
