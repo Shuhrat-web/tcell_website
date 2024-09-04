@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { IFooterRow } from "../../lib/types/IBaseLayoutTypes";
 import FooterRow from "./FooterRow";
 import LogoWithText from "@/components/Ui/LogoWithText";
@@ -8,9 +8,20 @@ import Image from "next/image";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaTelegramPlane } from "react-icons/fa";
 import { useLocale } from "next-intl";
+import { useSearchParams } from "next/navigation";
+import clsx from "clsx";
 
 const PcFooter = () => {
+  const [showFooter, setShowFooter] = useState(true)
   const locale = useLocale();
+  const query = useSearchParams()
+
+  useEffect(() => {
+    const showFooterParam = query.get("show_navigation")
+    if(showFooterParam === "false") {
+      setShowFooter(false)
+    }
+  }, [])
 
   const footerRows: IFooterRow[] = [
     {
@@ -97,9 +108,9 @@ const PcFooter = () => {
     "Публичная оферта",
     "Политика конфеденциальности",
     "Лицензии",
-  ];
+  ]; 
   return (
-    <footer className="bg-[#F2F3F7] pb-16 pt-8 mt-10">
+    <footer className={clsx("bg-[#F2F3F7] pb-16 pt-8 mt-10", {'hidden': !showFooter})}>
       <div className="t__container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {footerRows.map((row, i) => (

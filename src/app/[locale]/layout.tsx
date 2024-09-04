@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import BaseLayout from "@/components/Ui/Layouts/Base/BaseLayout";
 import { getMessages, unstable_setRequestLocale } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
+import { useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
