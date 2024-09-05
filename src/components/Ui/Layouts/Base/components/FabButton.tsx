@@ -1,12 +1,24 @@
 'use client'
 import { HiChatAlt, HiX } from "react-icons/hi";
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { IFabLink } from "../lib/types/IBaseLayoutTypes";
 import Image from "next/image";
 import clsx from "clsx";
+import { useSearchParams } from "next/navigation";
 
 const FabButton = () => {
     const [showLinks,setShowLinks] = useState<boolean>(false)
+
+    const [showFabButton, setShowFabButton] = useState(true)
+    const query = useSearchParams()
+
+    useEffect (() => {
+        const queryParam = query.get("fab_button")
+         
+        if (queryParam === "false") {
+            setShowFabButton(false)
+        }
+    }, [])
 
     const links:IFabLink[] = [
         {
@@ -37,7 +49,7 @@ const FabButton = () => {
     
   return (
     <>
-        <div className='fixed right-5 bottom-5 md:right-10 md:bottom-10 z-50'>
+        <div className={clsx('fixed right-5 bottom-5 md:right-10 md:bottom-10 z-50', {hidden: !showFabButton})}>
             <div className="relative">
                 <ul className={clsx('absolute bottom-20 duration-150 flex flex-col gap-6',{
                     'opacity-100 visible': showLinks,
