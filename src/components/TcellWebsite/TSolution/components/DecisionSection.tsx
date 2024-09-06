@@ -43,32 +43,46 @@ const Decision = ({className}: IAdvantageSectionProps) => {
       description: 'Показатель CSI (Customer Satisfaction Index) позволяет измерить и отслеживать удовлетворенность клиентов после взаимодействия с вашей компанией, а также сравнивать себя с конкурентами.',
       icon: '/images/faq_model.png'
     },
-    {
-      id: 7,
-      title: 'Автоматизация процессов',
-      description: 'Сократите издержки и повысите производительность с помощью наших решений по автоматизации бизнес-процессов.',
-      icon: '/images/settings_solution.png',
-    },
-    {
-      id: 8,
-      title: 'CRM для вашего бизнеса',
-      description: 'Управляйте отношениями с клиентами эффективно с нашими CRM-системами. Обучение и поддержка включены.',
-      icon: '/images/crm_solution.png',
-    },
+    // {
+    //   id: 7,
+    //   title: 'Автоматизация процессов',
+    //   description: 'Сократите издержки и повысите производительность с помощью наших решений по автоматизации бизнес-процессов.',
+    //   icon: '/images/settings_solution.png',
+    // },
+    // {
+    //   id: 8,
+    //   title: 'CRM для вашего бизнеса',
+    //   description: 'Управляйте отношениями с клиентами эффективно с нашими CRM-системами. Обучение и поддержка включены.',
+    //   icon: '/images/settings_solution.png',
+    // },
     {
       id: 9,
+      title: 'Bitrix24 для вашего бизнеса',
+      description: 'Адаптируется под нужды бизнеса любого масштаба, упрощает взаимодействие внутри команды и повышает общую эффективность работы.',
+      icon: '/bitrix_icon.svg',
+    },
+    {
+      id: 10,
       title: 'Бизнес-консалтинг',
       description: 'Профессиональный аудит и консалтинг для выявления проблем и улучшения бизнес-процессов.',
       icon: '/images/consalting_solution.png',
     }
   ]
+
+  const sortedDecisions = [...decisions].sort((a, b) => {
+    if (a.id === 9) return -1;
+    if (b.id === 9) return 1;
+    if (a.id === 1) return b.id === 9 ? 1 : -1;
+    if (b.id === 10) return -1;
+    return a.id - b.id;
+  });
   return (
     <div className={className}>
       <SectionTitle titleText='Решения T-Solution'/>
       <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-11'>
         {
-          decisions.map(solition => (
-            <SolutionCard showLink={[7,8,9].includes(solition.id) ? false : true} key={solition.id} solution={solition} />
+          sortedDecisions .map(solition => (
+            <SolutionCard showLink={[10].includes(solition.id) ? false : true} key={solition.id} solution={solition} />
           ))
         }
       </div>

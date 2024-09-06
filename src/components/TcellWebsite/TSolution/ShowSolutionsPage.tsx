@@ -7,7 +7,7 @@ import SolutionContentBlock from "./components/SolutionContentBlock";
 const ShowSolutionsPage = ({ id }: { id: number }) => {
   const solution = staticSolutions.find((el) => el.id === id);
   const breadCrumbs: IBreadCrumb[] = [
-    { name: "T–Solution", href: "/t-solution", current: false },
+    { name: "T–Solution", href: "/ru/t-solution", current: false },
     { name: solution?.name || "", href: "#", current: true },
   ];
 

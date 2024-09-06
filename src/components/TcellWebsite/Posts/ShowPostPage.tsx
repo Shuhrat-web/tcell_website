@@ -13,7 +13,7 @@ const ShowPostsPage = ({id}:{id:number}) => {
   const post = staticPosts.find(el => el.id == id)
 
   const breadcrumbPages: IBreadCrumb[] = [
-    { name: 'Новости', href: '/news', current: false },
+    { name: 'Новости', href: '/ru/posts', current: false },
     { name: post?.title || "", href: '#', current: true }
   ];
 
