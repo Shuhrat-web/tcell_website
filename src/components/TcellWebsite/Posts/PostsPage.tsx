@@ -10,7 +10,7 @@ import React from 'react'
 
 const PostsPage = () => {
   const breadcrumbPages: IBreadCrumb[] = [
-    { name: 'Новости', href: '/news', current: true },
+    { name: 'Новости', href: '/ru/posts', current: true },
   ];
 
   const hiddenPosts = [5,6,10,11,12,13,14,15,16,17,18,19,20,21]

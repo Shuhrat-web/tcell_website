@@ -499,4 +499,497 @@ export const staticSolutions: ISolutionPost[] =[
             },
         ]
     },
+    {
+        id: 9,
+        name: "Bitrix24 для вашего бизнеса",
+        children: [
+            {
+                id: 1,
+                title: "",
+                content: `
+                <div>
+                    <div class="bg-[#F0F0F0] py-8 rounded-3xl text-center">
+                        <p class="text-[#141414] font-medium text-4xl leading-7">Битрикс24</p>
+                        <p class="text-[#595959] font-medium text-lg mt-4 leading-7">Бизнес работает в «Битрикс24».</p>
+                    </div>
+                </div>
+                `
+            },
+            {
+                id: 2,
+                title: "",
+                content: `
+                <div>
+                    <img src="/images/bitrix.png" style="width: 832px"/>
+                </div>
+                `
+            },
+            {
+                id: 3,
+                title: "Что такое Битрикс24?",
+                content: `
+                <div class="mt-8 grid gap-6 items-center grid-cols-1 xl:grid-cols-2">
+                    <div class="bg-[#F0F0F0] p-5 rounded-3xl">
+                        <p class="text-[#262626] font-semibold text-lg leading-7">Битрикс24.CRM — <br/> эффективно поддерживает процесс продаж:</p>
+                        <ul class="mt-5">
+                            <li style="margin-bottom: 8px">— Контролирует все каналы коммуникации с клиентами;</li>
+                            <li style="margin-bottom: 8px">— Рекомендует менеджерам следующие шаги;</li>
+                            <li style="margin-bottom: 8px">— Автоматизирует процесс продаж;</li>
+                            <li style="margin-bottom: 8px">— Формирует рассылки для различных сегментов;</li>
+                            <li style="margin-bottom: 8px">— Уведомляет руководителя о возникающих проблемах;</li>
+                            <li style="margin-bottom: 8px">— Обеспечивает интеграцию с 1С.</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="/images/bitrix_resourse.png"/>
+                    </div>
+                </div>
+
+                <div class="mt-24 grid gap-6 items-center grid-cols-1 xl:grid-cols-2">
+                    <div class="flex justify-center">
+                        <img src="/images/bitrix_contact.png"/>
+                    </div>
+                    <div class="bg-[#F0F0F0] p-5 rounded-3xl">
+                        <p class="text-[#262626] font-semibold text-lg leading-7">Битрикс24.Контакт-центр —объединяет в CRM все каналы коммуникации с клиентами:</p>
+                        <ul class="mt-5">
+                            <li style="margin-bottom: 8px">— Телефонные звонки;</li>
+                            <li style="margin-bottom: 8px">— Электронные письма;</li>
+                            <li style="margin-bottom: 8px">— Автоматизирует процесс продаж;</li>
+                            <li style="margin-bottom: 8px">— Чат на сайте;</li>
+                            <li style="margin-bottom: 8px">— Сообщения на Facebook;</li>
+                            <li style="margin-bottom: 8px">— Заказы в Instagram;</li>
+                            <li style="margin-bottom: 8px">— Вопросы в ВКонтакте;</li>
+                            <li style="margin-bottom: 8px">— Переписку в Яндекс.Чат и других платформах.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-24 grid gap-6 items-center grid-cols-1 xl:grid-cols-2">
+                    <div class="bg-[#F0F0F0] p-5 rounded-3xl">
+                        <p class="text-[#262626] font-semibold text-lg leading-7">Битрикс24.Задачи и проекты — помогают работать слаженно и завершать дела в срок:</p>
+                        <ul class="mt-5">
+                            <li style="margin-bottom: 8px">— Все участники контролируют процесс и вносят корректировки своевременно;</li>
+                            <li style="margin-bottom: 8px">— Напоминания о задачах приходят через счётчики;</li>
+                            <li style="margin-bottom: 8px">— Автоматизирует процесс продаж;</li>
+                            <li style="margin-bottom: 8px">— Задача автоматически поднимается вверх списка по приоритету и срочности;</li>
+                            <li style="margin-bottom: 8px">— Постановщик сразу получает уведомление о нарушении сроков;</li>
+                            <li style="margin-bottom: 8px">— Невыполнение задачи влияет на коэффициент эффективности как ответственного, так и соисполнителей.</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="/images/bitrix_exercises.png"/>
+                    </div>
+                </div>
+
+                <div class="mt-24 grid gap-6 items-center grid-cols-1 xl:grid-cols-2">
+                    <div class="flex justify-center">
+                        <img src="/images/bitrix_website.png"/>
+                    </div>
+                    <div class="bg-[#F0F0F0] p-5 rounded-3xl">
+                        <p class="text-[#262626] font-semibold text-lg leading-7">Битрикс24.Сайты и магазины —создаются не только для красоты, но и для привлечения клиентов.</p>
+                        <ul class="mt-5">
+                            <li style="margin-bottom: 8px">— Бесплатный онлайн-чат;</li>
+                            <li style="margin-bottom: 8px">— Графический редактор;</li>
+                            <li style="margin-bottom: 8px">— Автоматизирует процесс продаж;</li>
+                            <li style="margin-bottom: 8px">— Многостраничный сайт;</li>
+                            <li style="margin-bottom: 8px">— Сообщения на Facebook;</li>
+                            <li style="margin-bottom: 8px">— Встроенные виджеты;</li>
+                            <li style="margin-bottom: 8px">— Анимация блоков;</li>
+                            <li style="margin-bottom: 8px">— Бесплатный хостинг и домен;</li>
+                            <li style="margin-bottom: 8px">— SEO-оптимизация.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-24 grid gap-6 items-center grid-cols-1 xl:grid-cols-2">
+                    <div class="bg-[#F0F0F0] p-5 rounded-3xl">
+                        <p class="text-[#262626] font-semibold text-lg leading-7">БИТРИКС24.Офис — помогает эффективно работать вместе:</p>
+                        <ul class="mt-5">
+                            <li style="margin-bottom: 8px">— Открытые и закрытые чаты;</li>
+                            <li style="margin-bottom: 8px">— Общий диск;</li>
+                            <li style="margin-bottom: 8px">— Календарь для встреч с учётом планов участников;</li>
+                            <li style="margin-bottom: 8px">— Создание групп по направлениям;</li>
+                            <li style="margin-bottom: 8px">— Регулярные отчёты руководителю;</li>
+                            <li style="margin-bottom: 8px">— Бизнес-процессы и другие инструменты для совместной работы.</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="/images/bitrix_office.png"/>
+                    </div>
+                </div>
+                `
+            },
+            {
+                id: 4,
+                title: "Преимущества",
+                content: `
+                <div class="mt-8 grid gap-6 grid-cols-1 xl:grid-cols-2 items-center">
+                    <div class="flex justify-center">
+                        <img src="/images/bitrix_advantage.png"/>
+                    </div>
+                    <div>
+                        <div class="bg-[#F0F0F0] rounded-3xl p-5" style="margin-bottom: 22px">
+                            <p class="text-lg text-[#262626] leading-7 font-semibold">Единое управление</p>
+                            <p class="text-base text-[#262626] leading-6 font-normal">Объединение всех бизнес-процессов на одной платформе</p>
+                        </div>
+                        <div class="bg-[#F0F0F0] rounded-3xl p-5" style="margin-bottom: 22px">
+                            <p class="text-lg text-[#262626] leading-7 font-semibold">Автоматизация задач</p>
+                            <p class="text-base text-[#262626] leading-6 font-normal">Ускорение работы через автоматизацию рутинных операций</p>
+                        </div>
+                        <div class="bg-[#F0F0F0] rounded-3xl p-5" style="margin-bottom: 22px">
+                            <p class="text-lg text-[#262626] leading-7 font-semibold">Гибкость</p>
+                            <p class="text-base text-[#262626] leading-6 font-normal">Настройка и масштабируемость для любого бизнеса</p>
+                        </div>
+                        <div class="bg-[#F0F0F0] rounded-3xl p-5" style="margin-bottom: 22px">
+                            <p class="text-lg text-[#262626] leading-7 font-semibold">Эффективная работа</p>
+                            <p class="text-base text-[#262626] leading-6 font-normal">Упрощение командного взаимодействия и повышение продуктивности</p>
+                        </div>
+                    </div>
+                </div>
+                `
+            },
+            // {
+            //     id: 5,
+            //     title: "Тарифы",
+            //     content: `
+            //     <div class="mt-8 grid gap-6 grid-cols-1 xl:grid-cols-2 items-center">
+            //         <div class="bg-[#F0F0F0] p-5 rounded-3xl">
+            //             <p class="text-lg text-[#262626] leading-7 font-semibold">Интернет-магазин + CRM</p>
+            //             <div class="border-b-2 stroke-secondary-50" style="padding-bottom: 24px">
+            //                 <div class="flex justify-between mt-6 ">
+            //                     <p class="text-base text-[#262626] leading-6 font-normal">Кол-во страниц:</p>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">12</p>
+            //                 </div>
+            //                 <div class="flex justify-between mt-4">
+            //                     <p class="text-base text-[#262626] leading-6 font-normal">Стоимость:</p>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">12 000 TJS</p>
+            //                 </div>
+            //             </div>
+
+            //             <div style="margin: 24px 0px">
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox_primary.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">Экстранет</p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox_primary.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">eCommerce-платформа </p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">Многодепартаментность</p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">Веб-кластер</p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">VIP поддержка 24/7</p>
+            //                 </div>
+            //             </div>
+
+            //             <button class="py-4 w-full rounded-3xl" style="background: #FFF" onclick="document.getElementById('contact-us').scrollIntoView({behavior: 'smooth'})">Оформить заявку</button>
+            //         </div>
+
+            //         <div class="bg-[#F0F0F0] p-5 rounded-3xl">
+            //             <p class="text-lg text-[#262626] leading-7 font-semibold">Корпоративный портал XL</p>
+            //             <div class="border-b-2 stroke-secondary-50" style="padding-bottom: 24px">
+            //                 <div class="flex justify-between mt-6 ">
+            //                     <p class="text-base text-[#262626] leading-6 font-normal">Кол-во страниц:</p>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">50</p>
+            //                 </div>
+            //                 <div class="flex justify-between mt-4">
+            //                     <p class="text-base text-[#262626] leading-6 font-normal">Стоимость:</p>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">15 000 TJS</p>
+            //                 </div>
+            //             </div>
+
+            //             <div style="margin: 24px 0px">
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox_primary.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">Экстранет</p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox_primary.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">eCommerce-платформа </p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">Многодепартаментность</p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">Веб-кластер</p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">VIP поддержка 24/7</p>
+            //                 </div>
+            //             </div>
+
+            //             <button class="py-4 w-full rounded-3xl" style="background: #FFF" onclick="document.getElementById('contact-us').scrollIntoView({behavior: 'smooth'})">Оформить заявку</button>
+            //         </div>
+
+            //         <div class="bg-[#F0F0F0] p-5 rounded-3xl">
+            //             <p class="text-lg text-[#262626] leading-7 font-semibold">Корпоративный портал XXL</p>
+            //             <div class="border-b-2 stroke-secondary-50" style="padding-bottom: 24px">
+            //                 <div class="flex justify-between mt-6 ">
+            //                     <p class="text-base text-[#262626] leading-6 font-normal">Кол-во страниц:</p>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">100</p>
+            //                 </div>
+            //                 <div class="flex justify-between mt-4">
+            //                     <p class="text-base text-[#262626] leading-6 font-normal">Стоимость:</p>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">22 000 TJS</p>
+            //                 </div>
+            //             </div>
+
+            //             <div style="margin: 24px 0px">
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox_primary.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">Экстранет</p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox_primary.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">eCommerce-платформа </p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">Многодепартаментность</p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">Веб-кластер</p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">VIP поддержка 24/7</p>
+            //                 </div>
+            //             </div>
+
+            //             <button class="py-4 w-full rounded-3xl" style="background: #FFF" onclick="document.getElementById('contact-us').scrollIntoView({behavior: 'smooth'})">Оформить заявку</button>
+            //         </div>
+
+            //         <div class="bg-[#F0F0F0] p-5 rounded-3xl">
+            //             <p class="text-lg text-[#262626] leading-7 font-semibold">Корпоративный портал XXXL</p>
+            //             <div class="border-b-2 stroke-secondary-50" style="padding-bottom: 24px">
+            //                 <div class="flex justify-between mt-6 ">
+            //                     <p class="text-base text-[#262626] leading-6 font-normal">Кол-во страниц:</p>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">250</p>
+            //                 </div>
+            //                 <div class="flex justify-between mt-4">
+            //                     <p class="text-base text-[#262626] leading-6 font-normal">Стоимость:</p>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">32 000 TJS</p>
+            //                 </div>
+            //             </div>
+
+            //             <div style="margin: 24px 0px">
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox_primary.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">Экстранет</p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox_primary.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">eCommerce-платформа </p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">Многодепартаментность</p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">Веб-кластер</p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">VIP поддержка 24/7</p>
+            //                 </div>
+            //             </div>
+
+            //             <button class="py-4 w-full rounded-3xl" style="background: #FFF" onclick="document.getElementById('contact-us').scrollIntoView({behavior: 'smooth'})">Оформить заявку</button>
+            //         </div>
+
+            //         <div class="bg-[#F0F0F0] p-5 rounded-3xl">
+            //             <p class="text-lg text-[#262626] leading-7 font-semibold">Корпоративный портал XXXXL</p>
+            //             <div class="border-b-2 stroke-secondary-50" style="padding-bottom: 24px">
+            //                 <div class="flex justify-between mt-6 ">
+            //                     <p class="text-base text-[#262626] leading-6 font-normal">Кол-во страниц:</p>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">500</p>
+            //                 </div>
+            //                 <div class="flex justify-between mt-4">
+            //                     <p class="text-base text-[#262626] leading-6 font-normal">Стоимость:</p>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">43 000 TJS</p>
+            //                 </div>
+            //             </div>
+
+            //             <div style="margin: 24px 0px">
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox_primary.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">Экстранет</p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox_primary.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">eCommerce-платформа </p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">Многодепартаментность</p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">Веб-кластер</p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">VIP поддержка 24/7</p>
+            //                 </div>
+            //             </div>
+
+            //             <button class="py-4 w-full rounded-3xl" style="background: #FFF" onclick="document.getElementById('contact-us').scrollIntoView({behavior: 'smooth'})">Оформить заявку</button>
+            //         </div>
+
+            //         <div class="bg-[#F0F0F0] p-5 rounded-3xl">
+            //             <p class="text-lg text-[#262626] leading-7 font-semibold">Энтерпрайз</p>
+            //             <div class="border-b-2 stroke-secondary-50" style="padding-bottom: 24px">
+            //                 <div class="flex justify-between mt-6 ">
+            //                     <p class="text-base text-[#262626] leading-6 font-normal">Кол-во страниц:</p>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">1000+</p>
+            //                 </div>
+            //                 <div class="flex justify-between mt-4">
+            //                     <p class="text-base text-[#262626] leading-6 font-normal">Стоимость:</p>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">120 000 TJS</p>
+            //                 </div>
+            //             </div>
+
+            //             <div style="margin: 24px 0px">
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox_primary.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">Экстранет</p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox_primary.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">eCommerce-платформа </p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox_primary.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">Многодепартаментность</p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox_primary.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">Веб-кластер</p>
+            //                 </div>
+            //                 <div class="flex gap-2">
+            //                     <img src="/bitrix_checkbox_primary.svg"/>
+            //                     <p class="text-base text-[#262626] leading-6 font-medium">VIP поддержка 24/7</p>
+            //                 </div>
+            //             </div>
+
+            //             <button class="py-4 w-full rounded-3xl" style="background: #FFF" onclick="document.getElementById('contact-us').scrollIntoView({behavior: 'smooth'})">Оформить заявку</button>
+            //         </div>
+            //     </div>
+            //     `
+            // },
+            {
+                id: 5,
+                title: "Сертификаты",
+                content: `
+                <div class="mt-8 grid gap-6 grid-cols-1 xl:grid-cols-2 items-center">
+                    <a href="/files/bitrix_24_crm.pdf" download class="flex justify-between items-end bg-[#F0F0F0] p-5 rounded-xl">
+                        <div>
+                            <img src="/bitrix_pdf.svg"/>
+                            <p class="text-lg text-[#262626] leading-7 font-semibold mt-6">Битрикс24.CRM</p>
+                        </div>
+                        <div>
+                            <img src="/bitrix_import.svg"/>
+                        </div>
+                    </a>
+                    <a href="/files/bitrix_base_course.pdf" download class="flex justify-between items-end bg-[#F0F0F0] p-5 rounded-xl">
+                        <div>
+                            <img src="/bitrix_pdf.svg"/>
+                            <p class="text-lg text-[#262626] leading-7 font-semibold mt-6">Базовый курс партнера Битрикс24</p>
+                        </div>
+                        <div>
+                            <img src="/bitrix_import.svg"/>
+                        </div>
+                    </a>
+                    <a href="/files/bitrix_app_application.pdf" download class="flex justify-between items-end bg-[#F0F0F0] p-5 rounded-xl">
+                        <div>
+                            <img src="/bitrix_pdf.svg"/>
+                            <p class="text-lg text-[#262626] leading-7 font-semibold mt-6">Приложение с заявками от клиентов</p>
+                        </div>
+                        <div>
+                            <img src="/bitrix_import.svg"/>
+                        </div>
+                    </a>
+                    <a href="/files/bitrix_manager_sales.pdf" download class="flex justify-between items-end bg-[#F0F0F0] p-5 rounded-xl">
+                        <div>
+                            <img src="/bitrix_pdf.svg"/>
+                            <p class="text-lg text-[#262626] leading-7 font-semibold mt-6">Менеджер по продажам Битрикс24</p>
+                        </div>
+                        <div>
+                            <img src="/bitrix_import.svg"/>
+                        </div>
+                    </a>
+                </div>
+                `
+            },
+            {
+                id: 6,
+                title: "Свяжитесь с нами",
+                content: `
+                <form id="contact-us" class="mt-8 grid gap-6 grid-cols-1 xl:grid-cols-2 items-center">
+                    <div class="bg-[#F0F0F0] rounded-3xl p-5">
+                        <div class="flex flex-col gap-3">
+                            <input placeholder="ФИО" class="p-4 bg-gray-200 focus:border-gray-500 transition-colors duration-300 rounded-xl"/>
+                            <input placeholder="Название компании" class="p-4 bg-gray-200 focus:border-gray-500 transition-colors duration-300 rounded-xl"/>
+                            <input placeholder="Тариф" class="p-4 bg-gray-200 focus:border-gray-500 transition-colors duration-300 rounded-xl"/>
+                            <input placeholder="Номер телефона" type="number" class="p-4 bg-gray-200 focus:border-gray-500 transition-colors duration-300 rounded-xl w-full no-arrows"/>
+                        </div>
+                        <button class="py-3 text-white w-full mt-6 rounded-xl" style="background: #801DBD">Оставить заявку</button>
+                        <ToastCOntainer/>
+                    </div>
+
+                    <div class="bg-[#F0F0F0] rounded-3xl p-5">
+                        <p class="text-lg text-[#262626] leading-7 font-semibold">Контактные данные</p>
+                        <p class="text-base text-[#262626] leading-6 font-medium mt-3">Если у вас остались вопросы, вы можете связаться с нами по нижеперечисленным контактам</p>
+                        <div class="mt-6">
+                            <p class="text-lg text-[#262626] leading-7 font-semibold">
+                                +992 93 505 0000
+                            </p>
+                            <p class="text-base text-[#8C8C8C] leading-6 font-medium">
+                                <span class="flex gap-2">
+                                    <img src="/bitrix_call.svg"/>
+                                    Номер для связи
+                                </span>
+                            </p>
+                        </div>
+                        <div class="mt-6">
+                            <p class="text-lg text-[#262626] leading-7 font-semibold">
+                                indigotj2024@gmail.com
+                            </p>
+                            <p class="text-base text-[#8C8C8C] leading-6 font-medium">
+                                <span class="flex gap-2">
+                                    <img src="/bitrix_sms-tracking.svg"/>
+                                    Электронная почта
+                                </span>
+                            </p>
+                        </div>
+                        <div class="mt-6">
+                            <p class="text-lg text-[#262626] leading-7 font-semibold">
+                                г. Душанбе, пр. Рудаки 34
+                            </p>
+                            <p class="text-base text-[#8C8C8C] leading-6 font-medium">
+                                <span class="flex gap-2">
+                                    <img src="/bitrix_map.svg"/>
+                                    Адрес
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </form>
+
+                `
+            }
+        ]
+    }
 ]

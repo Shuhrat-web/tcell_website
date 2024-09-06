@@ -7,7 +7,7 @@ import FadeOutProvider from "@/components/Ui/AnimationProviders/FadeOutProvider"
 
 const ChatBotPage = () => {
   const breadcrumbPages: IBreadCrumb[] = [
-    { name: "t-solution", href: "", current: false },
+    { name: "t-solution", href: "/ru/t-solution", current: false },
     { name: "Чат бот", href: "", current: true },
   ];
 
