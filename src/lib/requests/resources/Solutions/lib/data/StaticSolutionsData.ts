@@ -1,21 +1,21 @@
 import { ISolutionPost } from "../types/ISolutionsRequestTypes";
 
-export const staticSolutions: ISolutionPost[] =[
-    {
+export const staticSolutions: ISolutionPost[] = [
+  {
+    id: 1,
+    name: "Опросник Gallup + eNPS",
+    children: [
+      {
         id: 1,
-        name: "Опросник Gallup + eNPS",
-        children: [
-            {
-                id: 1,
-                title: "Опросник Gallup + eNPS",
-                content:  `<p style="margin-top: 32px;">
+        title: "Опросник Gallup + eNPS",
+        content: `<p style="margin-top: 32px;">
                 В современном мире успешное управление персоналом является ключевым фактором для достижения устойчивого роста и конкурентоспособности компании. Одними из самых эффективных инструментов для измерения вовлеченности и лояльности сотрудников являются опросники Gallup Q12 и eNPS.
                 </p>`,
-            },
-            {
-                id: 2,
-                title: "Опросник Gallup Q12",
-                content:  `<p style="margin: 32px 0 32px 0">
+      },
+      {
+        id: 2,
+        title: "Опросник Gallup Q12",
+        content: `<p style="margin: 32px 0 32px 0">
                 Gallup Q12 – это методика, состоящая из 12 вопросов, которые помогают определить уровень вовлеченности сотрудников в вашей компании. Этот опросник позволяет выявить ключевые аспекты, влияющие на мотивацию и продуктивность персонала.
                 </p>
 
@@ -35,11 +35,11 @@ export const staticSolutions: ISolutionPost[] =[
                     <li style="margin: 16px 0 0 32px;">Степень вовлеченности и стремления к развитию в текущей роли.</li>
                 </ul>
                 `,
-            },
-            {
-                id: 3,
-                title: "Опросник eNPS",
-                content:  `<p style="margin: 32px 0 32px 0">
+      },
+      {
+        id: 3,
+        title: "Опросник eNPS",
+        content: `<p style="margin: 32px 0 32px 0">
                Опросник eNPS (Employee Net Promoter Score) – это инструмент для измерения лояльности сотрудников и их готовности рекомендовать вашу компанию как работодателя. Этот показатель дает четкое представление о текущем уровне удовлетворенности персонала.
                 </p>
 
@@ -61,25 +61,25 @@ export const staticSolutions: ISolutionPost[] =[
 
                 <p style="color: #821EBE;">Свяжитесь с нами, чтобы узнать больше о том, как Gallup Q12 и eNPS могут помочь вашей компании достичь новых высот в управлении персоналом.</p>
                 `,
-            },
-        ]
-    },
+      },
+    ],
+  },
 
-    {
-        id: 2,
-        name: "Разработка системы оценки производительности сотрудников",
-        children: [
-            {
-                id: 1,
-                title: "Разработка системы оценки производительности сотрудников",
-                content:  `<p style="margin-top: 32px;">
+  {
+    id: 2,
+    name: "Разработка системы оценки производительности сотрудников",
+    children: [
+      {
+        id: 1,
+        title: "Разработка системы оценки производительности сотрудников",
+        content: `<p style="margin-top: 32px;">
                 В условиях конкурентной борьбы на рынке крайне важно удерживать ценные кадры и повышать их производительность. Оценка персонала является мощным инструментом для достижения целей и KPI вашей компании. За 20 лет работы мы оценили более двухсот руководителей и бесчисленное количество сотрудников, что позволило нам разработать эффективную методологию, помогающую понять потенциал роста каждого сотрудника и создать действенные планы развития.
                 </p>`,
-            },
-            {
-                id: 2,
-                title: "Удерживайте свои кадры в конкурентной борьбе",
-                content:  `<p style="margin: 32px 0 32px 0">
+      },
+      {
+        id: 2,
+        title: "Удерживайте свои кадры в конкурентной борьбе",
+        content: `<p style="margin: 32px 0 32px 0">
                 Современная система оценки производительности сотрудников позволяет не только измерять их текущие достижения, но и планировать дальнейшее развитие. Это инструмент, который помогает компании достигать поставленных целей и ключевых показателей эффективности (KPI).</p>
 
                 <p>Наша авторская методология позволяет:</p>
@@ -90,11 +90,11 @@ export const staticSolutions: ISolutionPost[] =[
                     <li style="margin: 16px 0 0 32px;">Автоматизировать процесс оценки, чтобы сделать его максимально эффективным и прозрачным.</li>
                 </ul>
                 `,
-            },
-            {
-                id: 3,
-                title: "Этапы разработки системы оценки производительности",
-                content:  `<p style="color: #821EBE; margin-top: 32px">1. Анализ текущей ситуации:</p>
+      },
+      {
+        id: 3,
+        title: "Этапы разработки системы оценки производительности",
+        content: `<p style="color: #821EBE; margin-top: 32px">1. Анализ текущей ситуации:</p>
 
                 <ul style="list-style-type:disc">
                     <li style="margin: 16px 0 0 32px;">Определение целей и KPI компании.</li>
@@ -128,11 +128,11 @@ export const staticSolutions: ISolutionPost[] =[
                     <li style="margin: 16px 0 0 32px;">Внедрение специализированного программного обеспечения для автоматизации процесса оценки.</li>
                     <li style="margin: 16px 0 0 32px;">Обучение сотрудников и менеджеров использованию новой системы.</li>
                 </ul>`,
-            },
-            {
-                id: 4,
-                title: "Преимущества использования системы оценки производительности",
-                content:  `
+      },
+      {
+        id: 4,
+        title: "Преимущества использования системы оценки производительности",
+        content: `
                 <ul style="list-style-type:disc; margin-top: 32px; color: #821EBE;">
                     <li style="margin: 32px 0 0 16px;"> 
                         <span style="color: #821EBE;">Повышение мотивации и вовлеченности:</span>
@@ -152,25 +152,25 @@ export const staticSolutions: ISolutionPost[] =[
 
                 <p style="color: #821EBE;">Свяжитесь с нами, чтобы узнать больше о том, как наша система оценки производительности сотрудников может помочь вашей компании достичь новых высот в управлении персоналом.</p>
                 `,
-            },
-        ]
-    },
+      },
+    ],
+  },
 
-    {
-        id: 3,
-        name: "Разработка профиля должности",
-        children: [
-            {
-                id: 1,
-                title: "Разработка профиля должности",
-                content:  `<p style="margin-top: 32px;">
+  {
+    id: 3,
+    name: "Разработка профиля должности",
+    children: [
+      {
+        id: 1,
+        title: "Разработка профиля должности",
+        content: `<p style="margin-top: 32px;">
                 Для успешного функционирования любой компании важно, чтобы каждый сотрудник точно соответствовал требованиям своей должности. Это обеспечивает высокую производительность, мотивацию и удовлетворенность работой. Разработка модели компетенций должностей позволяет четко определить, какими навыками и качествами должен обладать сотрудник, чтобы эффективно исполнять свои обязанности.
                 </p>`,
-            },
-            {
-                id: 2,
-                title: "Разработка Модели Компетенций Должностей",
-                content:  `<p style="margin: 32px 0 32px 0">
+      },
+      {
+        id: 2,
+        title: "Разработка Модели Компетенций Должностей",
+        content: `<p style="margin: 32px 0 32px 0">
                 Какой должен быть сотрудник, чтобы хорошо исполнять свои должностные обязанности? Ответ на этот вопрос лежит в создании модели компетенций должностей. Этот процесс включает в себя определение ключевых навыков, знаний и качеств, которые необходимы для выполнения конкретной роли в вашей компании.
                 </p>
 
@@ -181,11 +181,11 @@ export const staticSolutions: ISolutionPost[] =[
                     <li style="margin: 16px 0 0 32px;">Создать подробные «портреты» сотрудников для каждой должности, что позволит эффективно подбирать персонал и разрабатывать планы их развития.</li>
                 </ul>
                 `,
-            },
-            {
-                id: 3,
-                title: "Этапы разработки модели компетенций",
-                content:  `<p style="color: #821EBE; margin-top: 32px">1. Анализ текущих сотрудников:</p>
+      },
+      {
+        id: 3,
+        title: "Этапы разработки модели компетенций",
+        content: `<p style="color: #821EBE; margin-top: 32px">1. Анализ текущих сотрудников:</p>
 
                 <ul style="list-style-type:disc">
                     <li style="margin: 16px 0 0 32px;">Изучение навыков и качеств лучших сотрудников в компании.</li>
@@ -212,11 +212,11 @@ export const staticSolutions: ISolutionPost[] =[
                     <li style="margin: 16px 0 0 32px;">Обучение менеджеров и HR-специалистов использованию модели компетенций в процессе подбора и оценки персонала.</li>
                     <li style="margin: 16px 0 0 32px;">Разработка планов развития и обучения на основе созданных моделей.</li>
                 </ul>`,
-            },
-            {
-                id: 4,
-                title: "Преимущества использования модели компетенций",
-                content:  `
+      },
+      {
+        id: 4,
+        title: "Преимущества использования модели компетенций",
+        content: `
                 <ul style="list-style-type:disc; margin-top: 32px; color: #821EBE;">
                     <li style="margin: 32px 0 0 16px;"> 
                         <span style="color: #821EBE;">Повышение эффективности подбора персонала:</span>
@@ -236,25 +236,25 @@ export const staticSolutions: ISolutionPost[] =[
 
                 <p style="color: #821EBE;">Свяжитесь с нами, чтобы узнать больше о том, как наши решения по разработке моделей компетенций могут помочь вашей компании достичь новых высот.</p>
                 `,
-            },
-        ]
-    },
+      },
+    ],
+  },
 
-    {
-        id: 4,
-        name: "Разработка ChatBot",
-        children: [
-            {
-                id: 1,
-                title: "Разработка ChatBot",
-                content:  `<p style="margin-top: 32px;">
+  {
+    id: 4,
+    name: "Разработка ChatBot",
+    children: [
+      {
+        id: 1,
+        title: "Разработка ChatBot",
+        content: `<p style="margin-top: 32px;">
                 Как работает коммуникация в вашей организации? В условиях современного рынка эффективное взаимодействие с клиентами — это ключ к успеху. Чат-боты на основе искусственного интеллекта позволяют автоматизировать общение, обрабатывать информацию и решать задачи по заданному сценарию. Если у вас не хватает человеческих ресурсов, это решение идеально подходит для вас.
                 </p>`,
-            },
-            {
-                id: 2,
-                title: "Оптимизация коммуникаций",
-                content:  `<p style="margin: 32px 0 32px 0">
+      },
+      {
+        id: 2,
+        title: "Оптимизация коммуникаций",
+        content: `<p style="margin: 32px 0 32px 0">
                Чат-бот — это программа на основе искусственного интеллекта, которая взаимодействует с клиентами по заранее подготовленным сценариям. Этот инструмент не только заменяет нехватку человеческих ресурсов, но и обеспечивает круглосуточную поддержку клиентов.</p>
 
                 <p>Наши сертифицированные эксперты по разработке чат-ботов помогут вам:</p>
@@ -265,11 +265,11 @@ export const staticSolutions: ISolutionPost[] =[
                     <li style="margin: 16px 0 0 32px;">Автоматизировать процессы обслуживания клиентов, что повысит их удовлетворенность и лояльность.</li>
                 </ul>
                 `,
-            },
-            {
-                id: 3,
-                title: "Этапы разработки чат-бота",
-                content:  `<p style="color: #821EBE; margin-top: 32px">1. Анализ потребностей:</p>
+      },
+      {
+        id: 3,
+        title: "Этапы разработки чат-бота",
+        content: `<p style="color: #821EBE; margin-top: 32px">1. Анализ потребностей:</p>
 
                 <ul style="list-style-type:disc">
                     <li style="margin: 16px 0 0 32px;">Изучение специфики вашей компании и задач, которые необходимо решить с помощью чат-бота.</li>
@@ -296,11 +296,11 @@ export const staticSolutions: ISolutionPost[] =[
                     <li style="margin: 16px 0 0 32px;">Обеспечение постоянной поддержки и обновления чат-бота.</li>
                     <li style="margin: 16px 0 0 32px;">Адаптация сценариев и функций чат-бота в зависимости от изменений в потребностях вашей компании.</li>
                 </ul>`,
-            },
-            {
-                id: 4,
-                title: "Преимущества использования чат-бота",
-                content:  `
+      },
+      {
+        id: 4,
+        title: "Преимущества использования чат-бота",
+        content: `
                 <ul style="list-style-type:disc; margin-top: 32px; color: #821EBE;">
                     <li style="margin: 32px 0 0 16px;"> 
                         <span style="color: #821EBE;">Экономия ресурсов: </span>
@@ -320,25 +320,25 @@ export const staticSolutions: ISolutionPost[] =[
 
                 <p style="color: #821EBE;">Свяжитесь с нами, чтобы узнать больше о том, как разработка чат-бота может помочь вашей компании достичь новых высот в управлении клиентскими коммуникациями и бизнес-процессами.</p>
                 `,
-            },
-        ]
-    },
+      },
+    ],
+  },
 
-    {
-        id: 5,
-        name: "Разработка внутренних документов",
-        children: [
-            {
-                id: 1,
-                title: "Разработка внутренних документов",
-                content:  `<p style="margin-top: 32px;">
+  {
+    id: 5,
+    name: "Разработка внутренних документов",
+    children: [
+      {
+        id: 1,
+        title: "Разработка внутренних документов",
+        content: `<p style="margin-top: 32px;">
                 Эффективная работа компании невозможна без четко регламентированных внутренних документов. Они помогают улучшить коммуникацию и оптимизировать процессы внутри организации. Мы предлагаем услуги по разработке процедур и политик, которые будут соответствовать вашим бизнес-целям и потребностям.
                 </p>`,
-            },
-            {
-                id: 2,
-                title: "Повышение эффективности",
-                content:  `<p style="margin: 32px 0 32px 0">
+      },
+      {
+        id: 2,
+        title: "Повышение эффективности",
+        content: `<p style="margin: 32px 0 32px 0">
                Совместно с вами мы разработаем все необходимые внутренние документы, включая процедуры и политики, что позволит улучшить коммуникацию и оптимизировать рабочие процессы в вашей компании.</p>
 
                 <p>Наши эксперты помогут вам:</p>
@@ -349,11 +349,11 @@ export const staticSolutions: ISolutionPost[] =[
                     <li style="margin: 16px 0 0 32px;">Обеспечить соответствие всех процедур и политик актуальным законодательным требованиям и лучшим практикам.</li>
                 </ul>
                 `,
-            },
-            {
-                id: 3,
-                title: "Этапы разработки внутренних документов",
-                content:  `<p style="color: #821EBE; margin-top: 32px">1. Анализ текущей ситуации:</p>
+      },
+      {
+        id: 3,
+        title: "Этапы разработки внутренних документов",
+        content: `<p style="color: #821EBE; margin-top: 32px">1. Анализ текущей ситуации:</p>
 
                 <ul style="list-style-type:disc">
                     <li style="margin: 16px 0 0 32px;">Изучение существующих внутренних документов и выявление пробелов.</li>
@@ -387,11 +387,11 @@ export const staticSolutions: ISolutionPost[] =[
                     <li style="margin: 16px 0 0 32px;">Регулярный мониторинг соблюдения процедур и политик.</li>
                     <li style="margin: 16px 0 0 32px;">Обновление документов в соответствии с изменениями в законодательстве и бизнес-процессах.</li>
                 </ul>`,
-            },
-            {
-                id: 4,
-                title: "Преимущества использования разработанных документов",
-                content:  `
+      },
+      {
+        id: 4,
+        title: "Преимущества использования разработанных документов",
+        content: `
                 <ul style="list-style-type:disc; margin-top: 32px; color: #821EBE;">
                     <li style="margin: 32px 0 0 16px;"> 
                         <span style="color: #821EBE;">Улучшение коммуникации:</span>
@@ -411,25 +411,25 @@ export const staticSolutions: ISolutionPost[] =[
 
                 <p style="color: #821EBE;">Свяжитесь с нами, чтобы узнать больше о том, как разработка внутренних документов может помочь вашей компании достичь новых высот в управлении и развитии бизнеса.</p>
                 `,
-            },
-        ]
-    },
+      },
+    ],
+  },
 
-    {
-        id: 6,
-        name: "Оценка удовлетворенности клиентов (CSI)",
-        children: [
-            {
-                id: 1,
-                title: "Оценка удовлетворенности клиентов (CSI)",
-                content:  `<p style="margin-top: 32px;">
+  {
+    id: 6,
+    name: "Оценка удовлетворенности клиентов (CSI)",
+    children: [
+      {
+        id: 1,
+        title: "Оценка удовлетворенности клиентов (CSI)",
+        content: `<p style="margin-top: 32px;">
                 Удовлетворенность клиентов является ключевым фактором успеха любой компании. Показатель CSI (Customer Satisfaction Index) позволяет измерить и отслеживать удовлетворенность клиентов после взаимодействия с вашей компанией, а также сравнивать себя с конкурентами. Это мощный инструмент для улучшения качества обслуживания и повышения лояльности клиентов.
                 </p>`,
-            },
-            {
-                id: 2,
-                title: "Оптимизация коммуникаций",
-                content:  `<p style="margin: 32px 0 32px 0">
+      },
+      {
+        id: 2,
+        title: "Оптимизация коммуникаций",
+        content: `<p style="margin: 32px 0 32px 0">
               Метрика CSI позволяет не только измерить удовлетворенность клиентов, но и сравнить уровень предоставляемых услуг с конкурентами. Это дает возможность получить объективное мнение о качестве услуг нескольких компаний и понять, как клиенты видят ваш бизнес на фоне конкурентов.</p
 
                 <p>Наши эксперты помогут вам:</p>
@@ -440,11 +440,11 @@ export const staticSolutions: ISolutionPost[] =[
                     <li style="margin: 16px 0 0 32px;">Разработать меры по улучшению сервиса на основе результатов CSI.</li>
                 </ul>
                 `,
-            },
-            {
-                id: 3,
-                title: "Этапы оценки удовлетворенности клиентов",
-                content:  `<p style="color: #821EBE; margin-top: 32px">1. Разработка методики измерения CSI:</p>
+      },
+      {
+        id: 3,
+        title: "Этапы оценки удовлетворенности клиентов",
+        content: `<p style="color: #821EBE; margin-top: 32px">1. Разработка методики измерения CSI:</p>
 
                 <ul style="list-style-type:disc">
                     <li style="margin: 16px 0 0 32px;">Определение ключевых характеристик услуг, влияющих на удовлетворенность клиентов.
@@ -472,11 +472,11 @@ export const staticSolutions: ISolutionPost[] =[
                     <li style="margin: 16px 0 0 32px;">Определение мер по улучшению характеристик услуг, которые наиболее сильно влияют на удовлетворенность клиентов.</li>
                     <li style="margin: 16px 0 0 32px;">Внедрение изменений и отслеживание их эффективности.</li>
                 </ul>`,
-            },
-            {
-                id: 4,
-                title: "Преимущества использования метрики CSI",
-                content:  `
+      },
+      {
+        id: 4,
+        title: "Преимущества использования метрики CSI",
+        content: `
                 <ul style="list-style-type:disc; margin-top: 32px; color: #821EBE;">
                     <li style="margin: 32px 0 0 16px;"> 
                         <span style="color: #821EBE;">Сравнение с конкурентами:</span>
@@ -496,38 +496,38 @@ export const staticSolutions: ISolutionPost[] =[
 
                 <p style="color: #821EBE;">Свяжитесь с нами, чтобы узнать больше о том, как оценка удовлетворенности клиентов с помощью CSI может помочь вашей компании достичь новых высот в управлении качеством обслуживания и повышении лояльности клиентов.</p>
                 `,
-            },
-        ]
-    },
-    {
-        id: 9,
-        name: "Bitrix24 для вашего бизнеса",
-        children: [
-            {
-                id: 1,
-                title: "",
-                content: `
+      },
+    ],
+  },
+  {
+    id: 9,
+    name: "Bitrix24 для вашего бизнеса",
+    children: [
+      {
+        id: 1,
+        title: "",
+        content: `
                 <div>
                     <div class="bg-[#F0F0F0] py-8 rounded-3xl text-center">
                         <p class="text-[#141414] font-medium text-4xl leading-7">Битрикс24</p>
                         <p class="text-[#595959] font-medium text-lg mt-4 leading-7">Бизнес работает в «Битрикс24».</p>
                     </div>
                 </div>
-                `
-            },
-            {
-                id: 2,
-                title: "",
-                content: `
+                `,
+      },
+      {
+        id: 2,
+        title: "",
+        content: `
                 <div>
                     <img src="/images/bitrix.png" style="width: 832px"/>
                 </div>
-                `
-            },
-            {
-                id: 3,
-                title: "Что такое Битрикс24?",
-                content: `
+                `,
+      },
+      {
+        id: 3,
+        title: "Что такое Битрикс24?",
+        content: `
                 <div class="mt-8 grid gap-6 items-center grid-cols-1 xl:grid-cols-2">
                     <div class="bg-[#F0F0F0] p-5 rounded-3xl">
                         <p class="text-[#262626] font-semibold text-lg leading-7">Битрикс24.CRM — <br/> эффективно поддерживает процесс продаж:</p>
@@ -617,12 +617,12 @@ export const staticSolutions: ISolutionPost[] =[
                         <img src="/images/bitrix_office.png"/>
                     </div>
                 </div>
-                `
-            },
-            {
-                id: 4,
-                title: "Преимущества",
-                content: `
+                `,
+      },
+      {
+        id: 4,
+        title: "Преимущества",
+        content: `
                 <div class="mt-8 grid gap-6 grid-cols-1 xl:grid-cols-2 items-center">
                     <div class="flex justify-center">
                         <img src="/images/bitrix_advantage.png"/>
@@ -646,253 +646,253 @@ export const staticSolutions: ISolutionPost[] =[
                         </div>
                     </div>
                 </div>
-                `
-            },
-            // {
-            //     id: 5,
-            //     title: "Тарифы",
-            //     content: `
-            //     <div class="mt-8 grid gap-6 grid-cols-1 xl:grid-cols-2 items-center">
-            //         <div class="bg-[#F0F0F0] p-5 rounded-3xl">
-            //             <p class="text-lg text-[#262626] leading-7 font-semibold">Интернет-магазин + CRM</p>
-            //             <div class="border-b-2 stroke-secondary-50" style="padding-bottom: 24px">
-            //                 <div class="flex justify-between mt-6 ">
-            //                     <p class="text-base text-[#262626] leading-6 font-normal">Кол-во страниц:</p>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">12</p>
-            //                 </div>
-            //                 <div class="flex justify-between mt-4">
-            //                     <p class="text-base text-[#262626] leading-6 font-normal">Стоимость:</p>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">12 000 TJS</p>
-            //                 </div>
-            //             </div>
+                `,
+      },
+      // {
+      //     id: 5,
+      //     title: "Тарифы",
+      //     content: `
+      //     <div class="mt-8 grid gap-6 grid-cols-1 xl:grid-cols-2 items-center">
+      //         <div class="bg-[#F0F0F0] p-5 rounded-3xl">
+      //             <p class="text-lg text-[#262626] leading-7 font-semibold">Интернет-магазин + CRM</p>
+      //             <div class="border-b-2 stroke-secondary-50" style="padding-bottom: 24px">
+      //                 <div class="flex justify-between mt-6 ">
+      //                     <p class="text-base text-[#262626] leading-6 font-normal">Кол-во страниц:</p>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">12</p>
+      //                 </div>
+      //                 <div class="flex justify-between mt-4">
+      //                     <p class="text-base text-[#262626] leading-6 font-normal">Стоимость:</p>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">12 000 TJS</p>
+      //                 </div>
+      //             </div>
 
-            //             <div style="margin: 24px 0px">
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox_primary.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">Экстранет</p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox_primary.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">eCommerce-платформа </p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">Многодепартаментность</p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">Веб-кластер</p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">VIP поддержка 24/7</p>
-            //                 </div>
-            //             </div>
+      //             <div style="margin: 24px 0px">
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox_primary.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">Экстранет</p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox_primary.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">eCommerce-платформа </p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">Многодепартаментность</p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">Веб-кластер</p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">VIP поддержка 24/7</p>
+      //                 </div>
+      //             </div>
 
-            //             <button class="py-4 w-full rounded-3xl" style="background: #FFF" onclick="document.getElementById('contact-us').scrollIntoView({behavior: 'smooth'})">Оформить заявку</button>
-            //         </div>
+      //             <button class="py-4 w-full rounded-3xl" style="background: #FFF" onclick="document.getElementById('contact-us').scrollIntoView({behavior: 'smooth'})">Оформить заявку</button>
+      //         </div>
 
-            //         <div class="bg-[#F0F0F0] p-5 rounded-3xl">
-            //             <p class="text-lg text-[#262626] leading-7 font-semibold">Корпоративный портал XL</p>
-            //             <div class="border-b-2 stroke-secondary-50" style="padding-bottom: 24px">
-            //                 <div class="flex justify-between mt-6 ">
-            //                     <p class="text-base text-[#262626] leading-6 font-normal">Кол-во страниц:</p>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">50</p>
-            //                 </div>
-            //                 <div class="flex justify-between mt-4">
-            //                     <p class="text-base text-[#262626] leading-6 font-normal">Стоимость:</p>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">15 000 TJS</p>
-            //                 </div>
-            //             </div>
+      //         <div class="bg-[#F0F0F0] p-5 rounded-3xl">
+      //             <p class="text-lg text-[#262626] leading-7 font-semibold">Корпоративный портал XL</p>
+      //             <div class="border-b-2 stroke-secondary-50" style="padding-bottom: 24px">
+      //                 <div class="flex justify-between mt-6 ">
+      //                     <p class="text-base text-[#262626] leading-6 font-normal">Кол-во страниц:</p>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">50</p>
+      //                 </div>
+      //                 <div class="flex justify-between mt-4">
+      //                     <p class="text-base text-[#262626] leading-6 font-normal">Стоимость:</p>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">15 000 TJS</p>
+      //                 </div>
+      //             </div>
 
-            //             <div style="margin: 24px 0px">
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox_primary.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">Экстранет</p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox_primary.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">eCommerce-платформа </p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">Многодепартаментность</p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">Веб-кластер</p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">VIP поддержка 24/7</p>
-            //                 </div>
-            //             </div>
+      //             <div style="margin: 24px 0px">
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox_primary.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">Экстранет</p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox_primary.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">eCommerce-платформа </p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">Многодепартаментность</p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">Веб-кластер</p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">VIP поддержка 24/7</p>
+      //                 </div>
+      //             </div>
 
-            //             <button class="py-4 w-full rounded-3xl" style="background: #FFF" onclick="document.getElementById('contact-us').scrollIntoView({behavior: 'smooth'})">Оформить заявку</button>
-            //         </div>
+      //             <button class="py-4 w-full rounded-3xl" style="background: #FFF" onclick="document.getElementById('contact-us').scrollIntoView({behavior: 'smooth'})">Оформить заявку</button>
+      //         </div>
 
-            //         <div class="bg-[#F0F0F0] p-5 rounded-3xl">
-            //             <p class="text-lg text-[#262626] leading-7 font-semibold">Корпоративный портал XXL</p>
-            //             <div class="border-b-2 stroke-secondary-50" style="padding-bottom: 24px">
-            //                 <div class="flex justify-between mt-6 ">
-            //                     <p class="text-base text-[#262626] leading-6 font-normal">Кол-во страниц:</p>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">100</p>
-            //                 </div>
-            //                 <div class="flex justify-between mt-4">
-            //                     <p class="text-base text-[#262626] leading-6 font-normal">Стоимость:</p>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">22 000 TJS</p>
-            //                 </div>
-            //             </div>
+      //         <div class="bg-[#F0F0F0] p-5 rounded-3xl">
+      //             <p class="text-lg text-[#262626] leading-7 font-semibold">Корпоративный портал XXL</p>
+      //             <div class="border-b-2 stroke-secondary-50" style="padding-bottom: 24px">
+      //                 <div class="flex justify-between mt-6 ">
+      //                     <p class="text-base text-[#262626] leading-6 font-normal">Кол-во страниц:</p>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">100</p>
+      //                 </div>
+      //                 <div class="flex justify-between mt-4">
+      //                     <p class="text-base text-[#262626] leading-6 font-normal">Стоимость:</p>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">22 000 TJS</p>
+      //                 </div>
+      //             </div>
 
-            //             <div style="margin: 24px 0px">
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox_primary.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">Экстранет</p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox_primary.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">eCommerce-платформа </p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">Многодепартаментность</p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">Веб-кластер</p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">VIP поддержка 24/7</p>
-            //                 </div>
-            //             </div>
+      //             <div style="margin: 24px 0px">
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox_primary.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">Экстранет</p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox_primary.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">eCommerce-платформа </p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">Многодепартаментность</p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">Веб-кластер</p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">VIP поддержка 24/7</p>
+      //                 </div>
+      //             </div>
 
-            //             <button class="py-4 w-full rounded-3xl" style="background: #FFF" onclick="document.getElementById('contact-us').scrollIntoView({behavior: 'smooth'})">Оформить заявку</button>
-            //         </div>
+      //             <button class="py-4 w-full rounded-3xl" style="background: #FFF" onclick="document.getElementById('contact-us').scrollIntoView({behavior: 'smooth'})">Оформить заявку</button>
+      //         </div>
 
-            //         <div class="bg-[#F0F0F0] p-5 rounded-3xl">
-            //             <p class="text-lg text-[#262626] leading-7 font-semibold">Корпоративный портал XXXL</p>
-            //             <div class="border-b-2 stroke-secondary-50" style="padding-bottom: 24px">
-            //                 <div class="flex justify-between mt-6 ">
-            //                     <p class="text-base text-[#262626] leading-6 font-normal">Кол-во страниц:</p>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">250</p>
-            //                 </div>
-            //                 <div class="flex justify-between mt-4">
-            //                     <p class="text-base text-[#262626] leading-6 font-normal">Стоимость:</p>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">32 000 TJS</p>
-            //                 </div>
-            //             </div>
+      //         <div class="bg-[#F0F0F0] p-5 rounded-3xl">
+      //             <p class="text-lg text-[#262626] leading-7 font-semibold">Корпоративный портал XXXL</p>
+      //             <div class="border-b-2 stroke-secondary-50" style="padding-bottom: 24px">
+      //                 <div class="flex justify-between mt-6 ">
+      //                     <p class="text-base text-[#262626] leading-6 font-normal">Кол-во страниц:</p>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">250</p>
+      //                 </div>
+      //                 <div class="flex justify-between mt-4">
+      //                     <p class="text-base text-[#262626] leading-6 font-normal">Стоимость:</p>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">32 000 TJS</p>
+      //                 </div>
+      //             </div>
 
-            //             <div style="margin: 24px 0px">
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox_primary.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">Экстранет</p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox_primary.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">eCommerce-платформа </p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">Многодепартаментность</p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">Веб-кластер</p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">VIP поддержка 24/7</p>
-            //                 </div>
-            //             </div>
+      //             <div style="margin: 24px 0px">
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox_primary.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">Экстранет</p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox_primary.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">eCommerce-платформа </p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">Многодепартаментность</p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">Веб-кластер</p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">VIP поддержка 24/7</p>
+      //                 </div>
+      //             </div>
 
-            //             <button class="py-4 w-full rounded-3xl" style="background: #FFF" onclick="document.getElementById('contact-us').scrollIntoView({behavior: 'smooth'})">Оформить заявку</button>
-            //         </div>
+      //             <button class="py-4 w-full rounded-3xl" style="background: #FFF" onclick="document.getElementById('contact-us').scrollIntoView({behavior: 'smooth'})">Оформить заявку</button>
+      //         </div>
 
-            //         <div class="bg-[#F0F0F0] p-5 rounded-3xl">
-            //             <p class="text-lg text-[#262626] leading-7 font-semibold">Корпоративный портал XXXXL</p>
-            //             <div class="border-b-2 stroke-secondary-50" style="padding-bottom: 24px">
-            //                 <div class="flex justify-between mt-6 ">
-            //                     <p class="text-base text-[#262626] leading-6 font-normal">Кол-во страниц:</p>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">500</p>
-            //                 </div>
-            //                 <div class="flex justify-between mt-4">
-            //                     <p class="text-base text-[#262626] leading-6 font-normal">Стоимость:</p>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">43 000 TJS</p>
-            //                 </div>
-            //             </div>
+      //         <div class="bg-[#F0F0F0] p-5 rounded-3xl">
+      //             <p class="text-lg text-[#262626] leading-7 font-semibold">Корпоративный портал XXXXL</p>
+      //             <div class="border-b-2 stroke-secondary-50" style="padding-bottom: 24px">
+      //                 <div class="flex justify-between mt-6 ">
+      //                     <p class="text-base text-[#262626] leading-6 font-normal">Кол-во страниц:</p>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">500</p>
+      //                 </div>
+      //                 <div class="flex justify-between mt-4">
+      //                     <p class="text-base text-[#262626] leading-6 font-normal">Стоимость:</p>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">43 000 TJS</p>
+      //                 </div>
+      //             </div>
 
-            //             <div style="margin: 24px 0px">
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox_primary.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">Экстранет</p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox_primary.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">eCommerce-платформа </p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">Многодепартаментность</p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">Веб-кластер</p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">VIP поддержка 24/7</p>
-            //                 </div>
-            //             </div>
+      //             <div style="margin: 24px 0px">
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox_primary.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">Экстранет</p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox_primary.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">eCommerce-платформа </p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">Многодепартаментность</p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">Веб-кластер</p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">VIP поддержка 24/7</p>
+      //                 </div>
+      //             </div>
 
-            //             <button class="py-4 w-full rounded-3xl" style="background: #FFF" onclick="document.getElementById('contact-us').scrollIntoView({behavior: 'smooth'})">Оформить заявку</button>
-            //         </div>
+      //             <button class="py-4 w-full rounded-3xl" style="background: #FFF" onclick="document.getElementById('contact-us').scrollIntoView({behavior: 'smooth'})">Оформить заявку</button>
+      //         </div>
 
-            //         <div class="bg-[#F0F0F0] p-5 rounded-3xl">
-            //             <p class="text-lg text-[#262626] leading-7 font-semibold">Энтерпрайз</p>
-            //             <div class="border-b-2 stroke-secondary-50" style="padding-bottom: 24px">
-            //                 <div class="flex justify-between mt-6 ">
-            //                     <p class="text-base text-[#262626] leading-6 font-normal">Кол-во страниц:</p>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">1000+</p>
-            //                 </div>
-            //                 <div class="flex justify-between mt-4">
-            //                     <p class="text-base text-[#262626] leading-6 font-normal">Стоимость:</p>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">120 000 TJS</p>
-            //                 </div>
-            //             </div>
+      //         <div class="bg-[#F0F0F0] p-5 rounded-3xl">
+      //             <p class="text-lg text-[#262626] leading-7 font-semibold">Энтерпрайз</p>
+      //             <div class="border-b-2 stroke-secondary-50" style="padding-bottom: 24px">
+      //                 <div class="flex justify-between mt-6 ">
+      //                     <p class="text-base text-[#262626] leading-6 font-normal">Кол-во страниц:</p>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">1000+</p>
+      //                 </div>
+      //                 <div class="flex justify-between mt-4">
+      //                     <p class="text-base text-[#262626] leading-6 font-normal">Стоимость:</p>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">120 000 TJS</p>
+      //                 </div>
+      //             </div>
 
-            //             <div style="margin: 24px 0px">
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox_primary.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">Экстранет</p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox_primary.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">eCommerce-платформа </p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox_primary.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">Многодепартаментность</p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox_primary.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">Веб-кластер</p>
-            //                 </div>
-            //                 <div class="flex gap-2">
-            //                     <img src="/bitrix_checkbox_primary.svg"/>
-            //                     <p class="text-base text-[#262626] leading-6 font-medium">VIP поддержка 24/7</p>
-            //                 </div>
-            //             </div>
+      //             <div style="margin: 24px 0px">
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox_primary.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">Экстранет</p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox_primary.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">eCommerce-платформа </p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox_primary.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">Многодепартаментность</p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox_primary.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">Веб-кластер</p>
+      //                 </div>
+      //                 <div class="flex gap-2">
+      //                     <img src="/bitrix_checkbox_primary.svg"/>
+      //                     <p class="text-base text-[#262626] leading-6 font-medium">VIP поддержка 24/7</p>
+      //                 </div>
+      //             </div>
 
-            //             <button class="py-4 w-full rounded-3xl" style="background: #FFF" onclick="document.getElementById('contact-us').scrollIntoView({behavior: 'smooth'})">Оформить заявку</button>
-            //         </div>
-            //     </div>
-            //     `
-            // },
-            {
-                id: 5,
-                title: "Сертификаты",
-                content: `
+      //             <button class="py-4 w-full rounded-3xl" style="background: #FFF" onclick="document.getElementById('contact-us').scrollIntoView({behavior: 'smooth'})">Оформить заявку</button>
+      //         </div>
+      //     </div>
+      //     `
+      // },
+      {
+        id: 5,
+        title: "Сертификаты",
+        content: `
                 <div class="mt-8 grid gap-6 grid-cols-1 xl:grid-cols-2 items-center">
                     <a href="/files/bitrix_24_crm.pdf" download class="flex justify-between items-end bg-[#F0F0F0] p-5 rounded-xl">
                         <div>
@@ -931,12 +931,12 @@ export const staticSolutions: ISolutionPost[] =[
                         </div>
                     </a>
                 </div>
-                `
-            },
-            {
-                id: 6,
-                title: "Свяжитесь с нами",
-                content: `
+                `,
+      },
+      {
+        id: 6,
+        title: "Свяжитесь с нами",
+        content: `
                 <form id="contact-us" class="mt-8 grid gap-6 grid-cols-1 xl:grid-cols-2 items-center">
                     <div class="bg-[#F0F0F0] rounded-3xl p-5">
                         <div class="flex flex-col gap-3">
@@ -954,7 +954,7 @@ export const staticSolutions: ISolutionPost[] =[
                         <p class="text-base text-[#262626] leading-6 font-medium mt-3">Если у вас остались вопросы, вы можете связаться с нами по нижеперечисленным контактам</p>
                         <div class="mt-6">
                             <p class="text-lg text-[#262626] leading-7 font-semibold">
-                                +992 93 505 0000
+                                +992 99 333 10 01
                             </p>
                             <p class="text-base text-[#8C8C8C] leading-6 font-medium">
                                 <span class="flex gap-2">
@@ -988,8 +988,8 @@ export const staticSolutions: ISolutionPost[] =[
                     </div>
                 </form>
 
-                `
-            }
-        ]
-    }
-]
+                `,
+      },
+    ],
+  },
+];
