@@ -1,4 +1,5 @@
 'use client'
+import ContainButton from '@/components/Ui/Buttons/ContainButton';
 import Title from '@/components/Ui/Title/Title';
 import { useTranslations } from 'next-intl';
 import React from 'react'
@@ -35,6 +36,14 @@ const BecomeMillionerForChiGapSection = () => {
           {t("chigap.check")}
         </span>
       </p>
+      <ContainButton
+        url="tel: ++992707707707"
+        extraClass="mt-4 w-full xl:w-[384px]"
+        size="xl"
+        round="xl"
+      >
+        {t("chigap.call")}
+      </ContainButton>
     </section>
   );
 }

@@ -23,6 +23,7 @@ const ContainButton = ({
             md: 'px-6 py-2',
             sm: 'px-4 py-1.5',
             lg: 'px-8 py-2',
+            xl: 'px-8 py-3',
             none: '',
             full:'w-full h-full'
         },
@@ -40,6 +41,7 @@ const ContainButton = ({
             md: 'rounded-md',
             sm: 'rounded',
             lg: 'rounded-lg',
+            xl: 'rounded-xl',
             full: 'rounded-full',
             none: ''
         },
