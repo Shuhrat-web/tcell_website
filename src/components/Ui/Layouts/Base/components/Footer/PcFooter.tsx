@@ -21,7 +21,7 @@ const PcFooter = () => {
     if(showFooterParam === "false") {
       setShowFooter(false)
     }
-  }, [])
+  }, [query])
 
   const footerRows: IFooterRow[] = [
     {

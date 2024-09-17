@@ -3,6 +3,7 @@ import Title from "@/components/Ui/Title/Title";
 import React from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import ContainButton from "@/components/Ui/Buttons/ContainButton";
 
 const BecomeMillionerParticipation = () => {
   const t = useTranslations("Millionaire")
@@ -19,12 +20,20 @@ const BecomeMillionerParticipation = () => {
           <p className="text-base font-normal leading-5 text-[#262626] mt-3">
             {t("participation.description")}
           </p>
+          <ContainButton
+            url="tel:707"
+            extraClass="mt-4 w-full"
+            size="xl"
+            round="xl"
+          >
+            {t("participation.call")}
+          </ContainButton>
         </div>
-        <div className="bg-[#F0F0F0] rounded-[20px] h-full">
+        <div className="bg-[#F0F0F0] rounded-[20px] h-full pt-[10px]">
           <Image
             src={t("participation.srcImg")}
             width={704}
-            height={244}
+            height={400}
             alt=""
             unoptimized
           />

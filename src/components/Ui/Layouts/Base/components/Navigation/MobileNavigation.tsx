@@ -29,7 +29,7 @@ const MobileNavigation = ({ links }: IMobileNavigationProps) => {
     }
     if (showNavigationDialog) document.body.style.overflow = "hidden";
     else document.body.style.overflow = "auto";
-  }, [showNavigationDialog]);
+  }, [showNavigationDialog, query]);
   return (
     <>
       <NavigationDialog
