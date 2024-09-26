@@ -525,7 +525,6 @@ export const staticTarifs: ITarif[] = [
     content: `
         <ul style="list-style:none; padding-left: 0px;  line-height: 1.8;">
           <li>-Оказание страховой помощи: www.bima.tj</li>
-          <li>-Сумма страховой помощи: 500 сом</li>
           <li>-Колл-центр компании BIMA 5511</li>
           <li>-Срок страхования устанавливается 30 дней с момента подключения на сумму 500 сомони, согласно ТП;</li>
           <li>-Скидки при посещении заведений Zira (5%) , GYM  (10%), Juventus (5%)</li>
@@ -566,7 +565,6 @@ export const staticTarifs: ITarif[] = [
     content: `
         <ul style="list-style:none; padding-left: 0px;  line-height: 1.8;">
           <li>-Оказание страховой помощи: www.bima.tj</li>
-          <li>-Сумма страховой помощи: 1000 сом</li>
           <li>-Колл-центр компании BIMA 5511</li>
           <li>-Срок страхования устанавливается 30 дней с момента подключения на сумму 1000 сомони, согласно ТП;</li>
           <li>-Скидки при посещении заведений Zira (10%) , GYM  (20%), Juventus (10%), Fly TJ (2%)</li>
