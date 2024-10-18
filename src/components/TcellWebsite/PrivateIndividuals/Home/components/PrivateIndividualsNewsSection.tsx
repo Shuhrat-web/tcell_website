@@ -21,7 +21,10 @@ const PrivateIndividualsNewsSection = ({className}:IPrivateIndividualsNewsSectio
             <PostCard key={post.id} post={post} />
           ))
         }
+        <div className='cf-integrated-support-4' />
       </div>
+      <div className='cf-integrated-support-2' />
+      <div className='cf-integrated-support-3' />
     </section>
   )
 }

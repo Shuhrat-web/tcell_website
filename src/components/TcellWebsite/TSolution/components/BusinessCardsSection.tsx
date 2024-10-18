@@ -34,6 +34,7 @@ const BusinessCardsSection = ({className}: IAdvantageSectionProps) => {
                     <BenefitCard key={benefit.id} benefit={benefit}/>
                 ))
             }
+            <div className='cf-integrated-support-4' />
         </div>
     </div>
   )

@@ -40,6 +40,7 @@ const AdvantageSection = ({className}: IAdvantageSectionProps) => {
             {advantages.map(benefit => (
                 <BenefitCard key={benefit.id} benefit={benefit} />
             ))}
+            <div className='cf-integrated-support-4' />
         </div>
     </div>
   )

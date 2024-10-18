@@ -87,6 +87,7 @@ const PcNavigation = ({links}:IPcNavigationProprs) => {
           </ContainButton> */}
         </div>
       </div>
+      <div className='cf-integrated-support-1' />
     </div>
   )
 }

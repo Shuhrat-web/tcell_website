@@ -29,6 +29,7 @@ const PostsPage = () => {
               <PostCard key={post.id} post={post} />
             ))
           }
+        <div className='cf-integrated-support-4' />
         </div>
       </div>
     </FadeOutProvider>      

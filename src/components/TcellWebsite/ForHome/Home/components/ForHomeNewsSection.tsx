@@ -22,6 +22,7 @@ const ForHomeNewsSection = ({className}:IBusinessNewsSecropnProps) => {
               <PostCard key={post.id} post={post} />
             ))
           }
+        <div className='cf-integrated-support-4' />
         </div>
     </section>
   )

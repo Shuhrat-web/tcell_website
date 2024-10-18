@@ -4,6 +4,7 @@ import BaseLayout from "@/components/Ui/Layouts/Base/BaseLayout";
 import { getMessages, unstable_setRequestLocale } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { useEffect, useState } from "react";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,16 @@ export default async  function RootLayout({
     <html lang={locale}>
       <head>
         <link rel="icon" href="/logo.svg" sizes="any" />
+        <Script
+          id="comfolks-script"
+          dangerouslySetInnerHTML={{
+            __html: `
+              var s=document.createElement("script");s.type="text/javascript";s.async=true;
+              s.src="https://api.comfolks.com/install.js?cf_api_key=A5yTs7tr";
+              var x=document.getElementsByTagName("head")[0];x.appendChild(s);
+            `,
+          }}
+        />
       </head>
       <body className={inter.className}>
       <NextIntlClientProvider locale={locale} messages={messages}>

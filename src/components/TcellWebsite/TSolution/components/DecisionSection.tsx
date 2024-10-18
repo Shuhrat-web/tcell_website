@@ -85,6 +85,7 @@ const Decision = ({className}: IAdvantageSectionProps) => {
             <SolutionCard showLink={[10].includes(solition.id) ? false : true} key={solition.id} solution={solition} />
           ))
         }
+        <div className='cf-integrated-support-4' />
       </div>
     </div>
   )

@@ -20,6 +20,7 @@ const ForHomeTarifsSection = ({ className }: IForHomeTarifsSectionProps) => {
         {staticTarifs.filter(tarif => tarif.category_id === 2).slice(0,3).map((tarif) => (
           <TarifCard tarif={tarif} key={tarif.id} />
         ))}
+        <div className='cf-integrated-support-4' />
       </div>
     </div>
   );

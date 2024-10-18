@@ -231,6 +231,7 @@ const PcFooter = () => {
           ))}
         </ul>
       </div>
+      <div className="cf-integrated-support-8" />
     </footer>
   );
 };

@@ -19,6 +19,7 @@ const PrivateIndividualsTarifsSection = ({className}:IPrivateIndividualsTarifsSe
         {staticTarifs.filter(tarif => tarif.category_id === 1).slice(3,6).reverse().map((tarif) => (
           <TarifCard showImg key={tarif.id} tarif={tarif}/>
         ))}
+        <div className='cf-integrated-support-4' />
       </div>
     </section>
   )

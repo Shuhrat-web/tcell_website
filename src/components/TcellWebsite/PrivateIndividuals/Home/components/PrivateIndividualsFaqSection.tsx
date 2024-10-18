@@ -24,6 +24,7 @@ const PrivateIndividualsFaqSection = ({className}:IPrivateIndividualsFaqSectionP
                     ))
                 }
             </div>
+            <div className='cf-integrated-support-7' />
         </div>
     </section>
   )

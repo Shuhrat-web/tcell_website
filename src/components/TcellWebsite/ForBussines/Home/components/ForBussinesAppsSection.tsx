@@ -44,6 +44,8 @@ const ForBussinesAppsSection = ({className}:IForBussinesAppsSectionProps) => {
               <ProductCard product={product} key={product.id} />
             ))   
           }
+          <div className='cf-integrated-support-5' />
+          <div className='cf-integrated-support-6' />
         </div>
       </section>
     )
